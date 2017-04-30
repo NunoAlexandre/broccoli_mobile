@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BC08A0451EAD10D1006E23D8 /* MainAreaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC08A0431EAD10D1006E23D8 /* MainAreaViewController.swift */; };
+		BC08A0471EAD1474006E23D8 /* Eureka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC17D5581EA68BFA0015FD52 /* Eureka.framework */; };
+		BC08A0491EAD3368006E23D8 /* UserDayFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC08A0481EAD3368006E23D8 /* UserDayFormViewController.swift */; };
+		BC17D55B1EA690C50015FD52 /* SignupFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC17D55A1EA690C50015FD52 /* SignupFormViewController.swift */; };
+		BC8B3D861EA50AAE000BC305 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8B3D851EA50AAE000BC305 /* AppDelegate.swift */; };
+		BC8B3D881EA50AAE000BC305 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8B3D871EA50AAE000BC305 /* LoginViewController.swift */; };
+		BC8B3D8A1EA50AAE000BC305 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8B3D891EA50AAE000BC305 /* SignupViewController.swift */; };
+		BC8B3D8D1EA50AAE000BC305 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC8B3D8B1EA50AAE000BC305 /* Main.storyboard */; settings = {ASSET_TAGS = (home, ); }; };
+		BC8B3D8F1EA50AAE000BC305 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC8B3D8E1EA50AAE000BC305 /* Assets.xcassets */; };
+		BC8B3D921EA50AAE000BC305 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC8B3D901EA50AAE000BC305 /* LaunchScreen.storyboard */; };
+		BC8B3D9D1EA50AAE000BC305 /* broccoliTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8B3D9C1EA50AAE000BC305 /* broccoliTests.swift */; };
+		BC8B3DA81EA50AAE000BC305 /* broccoliUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8B3DA71EA50AAE000BC305 /* broccoliUITests.swift */; };
+		BC8B3DB71EA522CB000BC305 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC8B3DB61EA522CB000BC305 /* Alamofire.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BC8B3D991EA50AAE000BC305 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC8B3D7A1EA50AAE000BC305 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC8B3D811EA50AAE000BC305;
+			remoteInfo = broccoli;
+		};
+		BC8B3DA41EA50AAE000BC305 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC8B3D7A1EA50AAE000BC305 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC8B3D811EA50AAE000BC305;
+			remoteInfo = broccoli;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BC08A0431EAD10D1006E23D8 /* MainAreaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainAreaViewController.swift; sourceTree = "<group>"; };
+		BC08A0481EAD3368006E23D8 /* UserDayFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDayFormViewController.swift; sourceTree = "<group>"; };
+		BC08A04A1EAD433E006E23D8 /* Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Playground.playground; sourceTree = "<group>"; };
+		BC17D5581EA68BFA0015FD52 /* Eureka.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Eureka.framework; path = Carthage/Build/iOS/Eureka.framework; sourceTree = "<group>"; };
+		BC17D55A1EA690C50015FD52 /* SignupFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupFormViewController.swift; sourceTree = "<group>"; };
+		BC8B3D821EA50AAE000BC305 /* broccoli.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = broccoli.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC8B3D851EA50AAE000BC305 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BC8B3D871EA50AAE000BC305 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		BC8B3D891EA50AAE000BC305 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		BC8B3D8C1EA50AAE000BC305 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BC8B3D8E1EA50AAE000BC305 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BC8B3D911EA50AAE000BC305 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BC8B3D931EA50AAE000BC305 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC8B3D981EA50AAE000BC305 /* broccoliTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = broccoliTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC8B3D9C1EA50AAE000BC305 /* broccoliTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = broccoliTests.swift; sourceTree = "<group>"; };
+		BC8B3D9E1EA50AAE000BC305 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC8B3DA31EA50AAE000BC305 /* broccoliUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = broccoliUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC8B3DA71EA50AAE000BC305 /* broccoliUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = broccoliUITests.swift; sourceTree = "<group>"; };
+		BC8B3DA91EA50AAE000BC305 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC8B3DB61EA522CB000BC305 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BC8B3D7F1EA50AAE000BC305 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC08A0471EAD1474006E23D8 /* Eureka.framework in Frameworks */,
+				BC8B3DB71EA522CB000BC305 /* Alamofire.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC8B3D951EA50AAE000BC305 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC8B3DA01EA50AAE000BC305 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BC8B3D791EA50AAE000BC305 = {
+			isa = PBXGroup;
+			children = (
+				BC8B3D841EA50AAE000BC305 /* broccoli */,
+				BC8B3D9B1EA50AAE000BC305 /* broccoliTests */,
+				BC8B3DA61EA50AAE000BC305 /* broccoliUITests */,
+				BC8B3D831EA50AAE000BC305 /* Products */,
+				BC8B3DB51EA522CB000BC305 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BC8B3D831EA50AAE000BC305 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BC8B3D821EA50AAE000BC305 /* broccoli.app */,
+				BC8B3D981EA50AAE000BC305 /* broccoliTests.xctest */,
+				BC8B3DA31EA50AAE000BC305 /* broccoliUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC8B3D841EA50AAE000BC305 /* broccoli */ = {
+			isa = PBXGroup;
+			children = (
+				BC8B3D851EA50AAE000BC305 /* AppDelegate.swift */,
+				BC8B3D871EA50AAE000BC305 /* LoginViewController.swift */,
+				BC8B3D891EA50AAE000BC305 /* SignupViewController.swift */,
+				BC17D55A1EA690C50015FD52 /* SignupFormViewController.swift */,
+				BC8B3D8B1EA50AAE000BC305 /* Main.storyboard */,
+				BC8B3D8E1EA50AAE000BC305 /* Assets.xcassets */,
+				BC8B3D901EA50AAE000BC305 /* LaunchScreen.storyboard */,
+				BC8B3D931EA50AAE000BC305 /* Info.plist */,
+				BC08A0431EAD10D1006E23D8 /* MainAreaViewController.swift */,
+				BC08A0481EAD3368006E23D8 /* UserDayFormViewController.swift */,
+				BC08A04A1EAD433E006E23D8 /* Playground.playground */,
+			);
+			path = broccoli;
+			sourceTree = "<group>";
+		};
+		BC8B3D9B1EA50AAE000BC305 /* broccoliTests */ = {
+			isa = PBXGroup;
+			children = (
+				BC8B3D9C1EA50AAE000BC305 /* broccoliTests.swift */,
+				BC8B3D9E1EA50AAE000BC305 /* Info.plist */,
+			);
+			path = broccoliTests;
+			sourceTree = "<group>";
+		};
+		BC8B3DA61EA50AAE000BC305 /* broccoliUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BC8B3DA71EA50AAE000BC305 /* broccoliUITests.swift */,
+				BC8B3DA91EA50AAE000BC305 /* Info.plist */,
+			);
+			path = broccoliUITests;
+			sourceTree = "<group>";
+		};
+		BC8B3DB51EA522CB000BC305 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BC17D5581EA68BFA0015FD52 /* Eureka.framework */,
+				BC8B3DB61EA522CB000BC305 /* Alamofire.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BC8B3D811EA50AAE000BC305 /* broccoli */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC8B3DAC1EA50AAE000BC305 /* Build configuration list for PBXNativeTarget "broccoli" */;
+			buildPhases = (
+				BC8B3D7E1EA50AAE000BC305 /* Sources */,
+				BC8B3D7F1EA50AAE000BC305 /* Frameworks */,
+				BC8B3D801EA50AAE000BC305 /* Resources */,
+				BC8B3DB81EA52310000BC305 /* Run Script */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = broccoli;
+			productName = broccoli;
+			productReference = BC8B3D821EA50AAE000BC305 /* broccoli.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BC8B3D971EA50AAE000BC305 /* broccoliTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC8B3DAF1EA50AAE000BC305 /* Build configuration list for PBXNativeTarget "broccoliTests" */;
+			buildPhases = (
+				BC8B3D941EA50AAE000BC305 /* Sources */,
+				BC8B3D951EA50AAE000BC305 /* Frameworks */,
+				BC8B3D961EA50AAE000BC305 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC8B3D9A1EA50AAE000BC305 /* PBXTargetDependency */,
+			);
+			name = broccoliTests;
+			productName = broccoliTests;
+			productReference = BC8B3D981EA50AAE000BC305 /* broccoliTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BC8B3DA21EA50AAE000BC305 /* broccoliUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC8B3DB21EA50AAE000BC305 /* Build configuration list for PBXNativeTarget "broccoliUITests" */;
+			buildPhases = (
+				BC8B3D9F1EA50AAE000BC305 /* Sources */,
+				BC8B3DA01EA50AAE000BC305 /* Frameworks */,
+				BC8B3DA11EA50AAE000BC305 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC8B3DA51EA50AAE000BC305 /* PBXTargetDependency */,
+			);
+			name = broccoliUITests;
+			productName = broccoliUITests;
+			productReference = BC8B3DA31EA50AAE000BC305 /* broccoliUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BC8B3D7A1EA50AAE000BC305 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				KnownAssetTags = (
+					home,
+				);
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = nunoalexandre;
+				TargetAttributes = {
+					BC8B3D811EA50AAE000BC305 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = NR4448Q277;
+						ProvisioningStyle = Automatic;
+					};
+					BC8B3D971EA50AAE000BC305 = {
+						CreatedOnToolsVersion = 8.3.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BC8B3D811EA50AAE000BC305;
+					};
+					BC8B3DA21EA50AAE000BC305 = {
+						CreatedOnToolsVersion = 8.3.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BC8B3D811EA50AAE000BC305;
+					};
+				};
+			};
+			buildConfigurationList = BC8B3D7D1EA50AAE000BC305 /* Build configuration list for PBXProject "broccoli" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BC8B3D791EA50AAE000BC305;
+			productRefGroup = BC8B3D831EA50AAE000BC305 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BC8B3D811EA50AAE000BC305 /* broccoli */,
+				BC8B3D971EA50AAE000BC305 /* broccoliTests */,
+				BC8B3DA21EA50AAE000BC305 /* broccoliUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BC8B3D801EA50AAE000BC305 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC8B3D921EA50AAE000BC305 /* LaunchScreen.storyboard in Resources */,
+				BC8B3D8F1EA50AAE000BC305 /* Assets.xcassets in Resources */,
+				BC8B3D8D1EA50AAE000BC305 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC8B3D961EA50AAE000BC305 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC8B3DA11EA50AAE000BC305 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BC8B3DB81EA52310000BC305 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Eureka.framework",
+			);
+			name = "Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BC8B3D7E1EA50AAE000BC305 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC8B3D8A1EA50AAE000BC305 /* SignupViewController.swift in Sources */,
+				BC8B3D861EA50AAE000BC305 /* AppDelegate.swift in Sources */,
+				BC08A0491EAD3368006E23D8 /* UserDayFormViewController.swift in Sources */,
+				BC17D55B1EA690C50015FD52 /* SignupFormViewController.swift in Sources */,
+				BC08A0451EAD10D1006E23D8 /* MainAreaViewController.swift in Sources */,
+				BC8B3D881EA50AAE000BC305 /* LoginViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC8B3D941EA50AAE000BC305 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC8B3D9D1EA50AAE000BC305 /* broccoliTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC8B3D9F1EA50AAE000BC305 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC8B3DA81EA50AAE000BC305 /* broccoliUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BC8B3D9A1EA50AAE000BC305 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC8B3D811EA50AAE000BC305 /* broccoli */;
+			targetProxy = BC8B3D991EA50AAE000BC305 /* PBXContainerItemProxy */;
+		};
+		BC8B3DA51EA50AAE000BC305 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC8B3D811EA50AAE000BC305 /* broccoli */;
+			targetProxy = BC8B3DA41EA50AAE000BC305 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BC8B3D8B1EA50AAE000BC305 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC8B3D8C1EA50AAE000BC305 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BC8B3D901EA50AAE000BC305 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC8B3D911EA50AAE000BC305 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BC8B3DAA1EA50AAE000BC305 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BC8B3DAB1EA50AAE000BC305 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BC8B3DAD1EA50AAE000BC305 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = NR4448Q277;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = broccoli/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nunoalexandre.broccoli;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		BC8B3DAE1EA50AAE000BC305 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = NR4448Q277;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = broccoli/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nunoalexandre.broccoli;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		BC8B3DB01EA50AAE000BC305 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = broccoliTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nunoalexandre.broccoliTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/broccoli.app/broccoli";
+			};
+			name = Debug;
+		};
+		BC8B3DB11EA50AAE000BC305 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = broccoliTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nunoalexandre.broccoliTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/broccoli.app/broccoli";
+			};
+			name = Release;
+		};
+		BC8B3DB31EA50AAE000BC305 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = broccoliUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nunoalexandre.broccoliUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = broccoli;
+			};
+			name = Debug;
+		};
+		BC8B3DB41EA50AAE000BC305 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = broccoliUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nunoalexandre.broccoliUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = broccoli;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BC8B3D7D1EA50AAE000BC305 /* Build configuration list for PBXProject "broccoli" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC8B3DAA1EA50AAE000BC305 /* Debug */,
+				BC8B3DAB1EA50AAE000BC305 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC8B3DAC1EA50AAE000BC305 /* Build configuration list for PBXNativeTarget "broccoli" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC8B3DAD1EA50AAE000BC305 /* Debug */,
+				BC8B3DAE1EA50AAE000BC305 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC8B3DAF1EA50AAE000BC305 /* Build configuration list for PBXNativeTarget "broccoliTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC8B3DB01EA50AAE000BC305 /* Debug */,
+				BC8B3DB11EA50AAE000BC305 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC8B3DB21EA50AAE000BC305 /* Build configuration list for PBXNativeTarget "broccoliUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC8B3DB31EA50AAE000BC305 /* Debug */,
+				BC8B3DB41EA50AAE000BC305 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BC8B3D7A1EA50AAE000BC305 /* Project object */;
+}
