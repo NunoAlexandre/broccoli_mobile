@@ -10,10 +10,8 @@
 		BC08A0451EAD10D1006E23D8 /* MainAreaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC08A0431EAD10D1006E23D8 /* MainAreaViewController.swift */; };
 		BC08A0471EAD1474006E23D8 /* Eureka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC17D5581EA68BFA0015FD52 /* Eureka.framework */; };
 		BC08A0491EAD3368006E23D8 /* UserDayFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC08A0481EAD3368006E23D8 /* UserDayFormViewController.swift */; };
-		BC17D55B1EA690C50015FD52 /* SignupFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC17D55A1EA690C50015FD52 /* SignupFormViewController.swift */; };
 		BC8B3D861EA50AAE000BC305 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8B3D851EA50AAE000BC305 /* AppDelegate.swift */; };
 		BC8B3D881EA50AAE000BC305 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8B3D871EA50AAE000BC305 /* LoginViewController.swift */; };
-		BC8B3D8A1EA50AAE000BC305 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8B3D891EA50AAE000BC305 /* SignupViewController.swift */; };
 		BC8B3D8D1EA50AAE000BC305 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC8B3D8B1EA50AAE000BC305 /* Main.storyboard */; settings = {ASSET_TAGS = (home, ); }; };
 		BC8B3D8F1EA50AAE000BC305 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC8B3D8E1EA50AAE000BC305 /* Assets.xcassets */; };
 		BC8B3D921EA50AAE000BC305 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC8B3D901EA50AAE000BC305 /* LaunchScreen.storyboard */; };
@@ -45,13 +43,10 @@
 /* Begin PBXFileReference section */
 		BC08A0431EAD10D1006E23D8 /* MainAreaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainAreaViewController.swift; sourceTree = "<group>"; };
 		BC08A0481EAD3368006E23D8 /* UserDayFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDayFormViewController.swift; sourceTree = "<group>"; };
-		BC08A04A1EAD433E006E23D8 /* Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Playground.playground; sourceTree = "<group>"; };
 		BC17D5581EA68BFA0015FD52 /* Eureka.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Eureka.framework; path = Carthage/Build/iOS/Eureka.framework; sourceTree = "<group>"; };
-		BC17D55A1EA690C50015FD52 /* SignupFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupFormViewController.swift; sourceTree = "<group>"; };
 		BC8B3D821EA50AAE000BC305 /* broccoli.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = broccoli.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC8B3D851EA50AAE000BC305 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC8B3D871EA50AAE000BC305 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		BC8B3D891EA50AAE000BC305 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		BC8B3D8C1EA50AAE000BC305 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BC8B3D8E1EA50AAE000BC305 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC8B3D911EA50AAE000BC305 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -123,15 +118,12 @@
 			children = (
 				BC8B3D851EA50AAE000BC305 /* AppDelegate.swift */,
 				BC8B3D871EA50AAE000BC305 /* LoginViewController.swift */,
-				BC8B3D891EA50AAE000BC305 /* SignupViewController.swift */,
-				BC17D55A1EA690C50015FD52 /* SignupFormViewController.swift */,
 				BC8B3D8B1EA50AAE000BC305 /* Main.storyboard */,
 				BC8B3D8E1EA50AAE000BC305 /* Assets.xcassets */,
 				BC8B3D901EA50AAE000BC305 /* LaunchScreen.storyboard */,
 				BC8B3D931EA50AAE000BC305 /* Info.plist */,
 				BC08A0431EAD10D1006E23D8 /* MainAreaViewController.swift */,
 				BC08A0481EAD3368006E23D8 /* UserDayFormViewController.swift */,
-				BC08A04A1EAD433E006E23D8 /* Playground.playground */,
 				BCBA07E41EB9136A00152465 /* Auth0.plist */,
 			);
 			path = broccoli;
@@ -327,10 +319,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC8B3D8A1EA50AAE000BC305 /* SignupViewController.swift in Sources */,
 				BC8B3D861EA50AAE000BC305 /* AppDelegate.swift in Sources */,
 				BC08A0491EAD3368006E23D8 /* UserDayFormViewController.swift in Sources */,
-				BC17D55B1EA690C50015FD52 /* SignupFormViewController.swift in Sources */,
 				BC08A0451EAD10D1006E23D8 /* MainAreaViewController.swift in Sources */,
 				BC8B3D881EA50AAE000BC305 /* LoginViewController.swift in Sources */,
 			);
