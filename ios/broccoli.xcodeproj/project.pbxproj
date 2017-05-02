@@ -20,6 +20,9 @@
 		BC8B3D9D1EA50AAE000BC305 /* broccoliTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8B3D9C1EA50AAE000BC305 /* broccoliTests.swift */; };
 		BC8B3DA81EA50AAE000BC305 /* broccoliUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8B3DA71EA50AAE000BC305 /* broccoliUITests.swift */; };
 		BC8B3DB71EA522CB000BC305 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC8B3DB61EA522CB000BC305 /* Alamofire.framework */; };
+		BCBA07E51EB9136A00152465 /* Auth0.plist in Resources */ = {isa = PBXBuildFile; fileRef = BCBA07E41EB9136A00152465 /* Auth0.plist */; };
+		BCBA07E81EB9187A00152465 /* Auth0.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCBA07E61EB9187A00152465 /* Auth0.framework */; };
+		BCBA07E91EB9187A00152465 /* Lock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCBA07E71EB9187A00152465 /* Lock.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +63,9 @@
 		BC8B3DA71EA50AAE000BC305 /* broccoliUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = broccoliUITests.swift; sourceTree = "<group>"; };
 		BC8B3DA91EA50AAE000BC305 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC8B3DB61EA522CB000BC305 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		BCBA07E41EB9136A00152465 /* Auth0.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Auth0.plist; sourceTree = "<group>"; };
+		BCBA07E61EB9187A00152465 /* Auth0.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Auth0.framework; path = Carthage/Build/iOS/Auth0.framework; sourceTree = "<group>"; };
+		BCBA07E71EB9187A00152465 /* Lock.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Lock.framework; path = Carthage/Build/iOS/Lock.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +73,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCBA07E81EB9187A00152465 /* Auth0.framework in Frameworks */,
+				BCBA07E91EB9187A00152465 /* Lock.framework in Frameworks */,
 				BC08A0471EAD1474006E23D8 /* Eureka.framework in Frameworks */,
 				BC8B3DB71EA522CB000BC305 /* Alamofire.framework in Frameworks */,
 			);
@@ -124,6 +132,7 @@
 				BC08A0431EAD10D1006E23D8 /* MainAreaViewController.swift */,
 				BC08A0481EAD3368006E23D8 /* UserDayFormViewController.swift */,
 				BC08A04A1EAD433E006E23D8 /* Playground.playground */,
+				BCBA07E41EB9136A00152465 /* Auth0.plist */,
 			);
 			path = broccoli;
 			sourceTree = "<group>";
@@ -149,6 +158,8 @@
 		BC8B3DB51EA522CB000BC305 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BCBA07E61EB9187A00152465 /* Auth0.framework */,
+				BCBA07E71EB9187A00152465 /* Lock.framework */,
 				BC17D5581EA68BFA0015FD52 /* Eureka.framework */,
 				BC8B3DB61EA522CB000BC305 /* Alamofire.framework */,
 			);
@@ -270,6 +281,7 @@
 				BC8B3D921EA50AAE000BC305 /* LaunchScreen.storyboard in Resources */,
 				BC8B3D8F1EA50AAE000BC305 /* Assets.xcassets in Resources */,
 				BC8B3D8D1EA50AAE000BC305 /* Main.storyboard in Resources */,
+				BCBA07E51EB9136A00152465 /* Auth0.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +310,8 @@
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Eureka.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Lock.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Auth0.framework",
 			);
 			name = "Run Script";
 			outputPaths = (
