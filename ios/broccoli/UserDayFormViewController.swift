@@ -64,9 +64,6 @@ class UserDayFormViewController: FormViewController {
                                 }
                             }
                     }
-
-        // Do any additional setup after loading the view.
-        
                 }
     }
     

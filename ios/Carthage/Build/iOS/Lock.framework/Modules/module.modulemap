@@ -1,0 +1,10 @@
+framework module Lock {
+  umbrella header "Lock.h"
+
+  export *
+  module * { export * }
+}
+
+module Lock.Swift {
+    header "Lock-Swift.h"
+}
