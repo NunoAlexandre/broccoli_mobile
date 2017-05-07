@@ -10,6 +10,7 @@ import UIKit
 import Alamofire
 import Eureka
 import Lock
+import Auth0
 
 class LoginViewController : UIViewController {
     
@@ -24,17 +25,12 @@ class LoginViewController : UIViewController {
                 $0.primaryColor = UIColor ( red: 0.3784, green: 0.7333, blue: 0.6784, alpha: 1.0 )
             }
             .onAuth { credentials in
-                // Do something with credentials e.g.: save them.
-                // Lock will not save these objects for you.
-                // Lock will dismiss itself automatically by default.
+                UserDefaults.standard.set(credentials.idToken!, forKey: "idToken")
                 self.performSegue(withIdentifier: "segueOnSuccessfulLogin", sender: nil)
             }
             .present(from: self)
         
     }
-    
-
-    
     
 }
 
