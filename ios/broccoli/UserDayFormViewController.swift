@@ -38,11 +38,14 @@ class UserDayFormViewController: FormViewController {
                 .onCellSelection {  cell, row in
                     let styled = DateFormatter()
                     styled.dateFormat = "yyyy-MM-dd"
-                    let userDay = ["user_day" : ["user_id": 5, "day" : styled.string(from: (self.form.values()["day"] as! Date)),
+                    let userDay = ["user_day" : ["day" : styled.string(from: (self.form.values()["day"] as! Date)),
                                                  "level" : self.form.values()["level"] as! String,
                                                  "note" : self.form.values()["note"] as! String]]
                     
-                    Alamofire.request("https://nabroccoli.herokuapp.com/api/days", method: .post, parameters: userDay, encoding: JSONEncoding.default)
+                    let headers = ["Authorization": " Bearer \(UserDefaults.standard.value(forKey: "idToken")!)" ]
+                    
+                    Alamofire.request("https://nabroccoli.herokuapp.com/api/days", method: .post, parameters: userDay,
+                                      encoding: JSONEncoding.default, headers: headers)
                         .responseJSON { response in
                             print(response)
                             if let status = response.response?.statusCode {
@@ -55,7 +58,13 @@ class UserDayFormViewController: FormViewController {
                                     self.present(alert, animated: true, completion: nil)
                                 case 422:
                                     let alert = UIAlertController(title: "Ups!",
-                                                                  message: response.error?.localizedDescription,
+                                                                  message: "You have already registered the selected day.",
+                                                                  preferredStyle: .alert)
+                                    alert.addAction(UIAlertAction(title: "Oke", style: .default, handler: { (action) -> Void in }))
+                                    self.present(alert, animated: true, completion: nil)
+                                case 401:
+                                    let alert = UIAlertController(title: "Ups!",
+                                                                  message: "A login a week keeps the hacker asleep!",
                                                                   preferredStyle: .alert)
                                     alert.addAction(UIAlertAction(title: "Oke", style: .default, handler: { (action) -> Void in }))
                                     self.present(alert, animated: true, completion: nil)
