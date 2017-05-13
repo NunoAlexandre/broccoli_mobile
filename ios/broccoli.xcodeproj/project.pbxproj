@@ -11,6 +11,7 @@
 		BC08A0471EAD1474006E23D8 /* Eureka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC17D5581EA68BFA0015FD52 /* Eureka.framework */; };
 		BC08A0491EAD3368006E23D8 /* UserDayFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC08A0481EAD3368006E23D8 /* UserDayFormViewController.swift */; };
 		BC764F691EC7591B00258E11 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC764F681EC7591B00258E11 /* Charts.framework */; };
+		BC764F6B1EC7823800258E11 /* MyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC764F6A1EC7823800258E11 /* MyVC.swift */; };
 		BC8B3D861EA50AAE000BC305 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8B3D851EA50AAE000BC305 /* AppDelegate.swift */; };
 		BC8B3D881EA50AAE000BC305 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8B3D871EA50AAE000BC305 /* LoginViewController.swift */; };
 		BC8B3D8D1EA50AAE000BC305 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC8B3D8B1EA50AAE000BC305 /* Main.storyboard */; settings = {ASSET_TAGS = (home, ); }; };
@@ -47,6 +48,7 @@
 		BC08A0481EAD3368006E23D8 /* UserDayFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDayFormViewController.swift; sourceTree = "<group>"; };
 		BC17D5581EA68BFA0015FD52 /* Eureka.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Eureka.framework; path = Carthage/Build/iOS/Eureka.framework; sourceTree = "<group>"; };
 		BC764F681EC7591B00258E11 /* Charts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Charts.framework; path = Carthage/Build/iOS/Charts.framework; sourceTree = "<group>"; };
+		BC764F6A1EC7823800258E11 /* MyVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyVC.swift; sourceTree = "<group>"; };
 		BC8B3D821EA50AAE000BC305 /* broccoli.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = broccoli.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC8B3D851EA50AAE000BC305 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC8B3D871EA50AAE000BC305 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				BC08A0481EAD3368006E23D8 /* UserDayFormViewController.swift */,
 				BCBA07E41EB9136A00152465 /* Auth0.plist */,
 				BCFC0B8E1EC4E5090082A581 /* UserToken.swift */,
+				BC764F6A1EC7823800258E11 /* MyVC.swift */,
 			);
 			path = broccoli;
 			sourceTree = "<group>";
@@ -339,6 +342,7 @@
 				BC08A0491EAD3368006E23D8 /* UserDayFormViewController.swift in Sources */,
 				BCFC0B8F1EC4E5090082A581 /* UserToken.swift in Sources */,
 				BC08A0451EAD10D1006E23D8 /* MainAreaViewController.swift in Sources */,
+				BC764F6B1EC7823800258E11 /* MyVC.swift in Sources */,
 				BC8B3D881EA50AAE000BC305 /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

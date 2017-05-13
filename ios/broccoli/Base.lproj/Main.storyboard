@@ -37,42 +37,68 @@
                     <navigationItem key="navigationItem" id="DpG-Oz-WgP"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
-                        <segue destination="42E-hV-g31" kind="show" identifier="OnSuccessfulLogin" action="showDetailViewController:sender:" id="OEZ-Op-SH3"/>
+                        <segue destination="t9f-TY-3Hz" kind="show" identifier="OnSuccessfulLogin" id="fTc-Ya-cDC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1745.625" y="-321.12676056338029"/>
         </scene>
-        <!--Main Area View Controller-->
-        <scene sceneID="Xx1-6a-UeD">
+        <!--Item 2-->
+        <scene sceneID="oiZ-fx-4zj">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="42E-hV-g31" customClass="MainAreaViewController" customModule="broccoli" customModuleProvider="target" sceneMemberID="viewController">
-                    <connections>
-                        <segue destination="lp0-CQ-gFv" kind="show" id="a4X-3j-vxQ"/>
-                    </connections>
-                </pageViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8OO-SB-OlL" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2719" y="-321"/>
-        </scene>
-        <!--User Day Form View Controller-->
-        <scene sceneID="N8z-yT-Aiv">
-            <objects>
-                <viewController storyboardIdentifier="UserDayViewController" id="lp0-CQ-gFv" customClass="UserDayFormViewController" customModule="broccoli" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="FRR-6U-Yki" customClass="UserDayFormViewController" customModule="broccoli" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="7ag-Gc-Chc"/>
-                        <viewControllerLayoutGuide type="bottom" id="iqE-8n-Hk7"/>
+                        <viewControllerLayoutGuide type="top" id="Ts0-BS-Fgm"/>
+                        <viewControllerLayoutGuide type="bottom" id="zme-Dd-lzJ"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="tR8-np-4F1" customClass="UserDayFormViewController">
+                    <view key="view" contentMode="scaleToFill" id="BOg-Df-Gue">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="pf0-IQ-68z"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="193-eH-Vas" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rlm-WA-uZy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3661" y="-508"/>
+            <point key="canvasLocation" x="3401" y="1039"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="u1b-3u-Eb5">
+            <objects>
+                <viewController id="weS-yK-4P3" customClass="MyVC" customModule="broccoli" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="H2N-2P-4R1"/>
+                        <viewControllerLayoutGuide type="bottom" id="hmf-M1-o6J"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fZ0-vH-Ucu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="Vb7-4n-1Mb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VgF-20-ewz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3399.375" y="375"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="nzY-fF-GLb">
+            <objects>
+                <tabBarController id="t9f-TY-3Hz" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="VTX-g6-Mr8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="weS-yK-4P3" kind="relationship" relationship="viewControllers" id="nb6-28-icA"/>
+                        <segue destination="FRR-6U-Yki" kind="relationship" relationship="viewControllers" id="d1D-kA-5fz"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DPb-wn-cUt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2388" y="707"/>
         </scene>
     </scenes>
     <resources>
