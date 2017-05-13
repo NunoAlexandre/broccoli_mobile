@@ -14,22 +14,28 @@ import Auth0
 
 class LoginViewController : UIViewController {
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        Lock
-            .classic()
-            .withStyle {
-                $0.title = "Broccoli"
-                $0.headerBlur = .extraLight
-                $0.logo = LazyImage(name: "broccoli")
-                $0.primaryColor = UIColor ( red: 0.3784, green: 0.7333, blue: 0.6784, alpha: 1.0 )
-            }
-            .onAuth { credentials in
-                UserDefaults.standard.set(credentials.idToken!, forKey: "idToken")
-                self.performSegue(withIdentifier: "segueOnSuccessfulLogin", sender: nil)
-            }
-            .present(from: self)
-        
+    override func viewDidAppear(_ animated: Bool) {
+        if UserToken().isPresent() { didSuceedToLogin() }
+        else {
+            Lock
+                .classic()
+                .withStyle {
+                    $0.title = "Broccoli"
+                    $0.headerBlur = .extraLight
+                    $0.logo = LazyImage(name: "broccoli")
+                    $0.primaryColor = UIColor ( red: 0.3784, green: 0.7333, blue: 0.6784, alpha: 1.0 )
+                }
+                .onAuth {
+                    _ = UserToken(token: $0.idToken!)
+                    self.didSuceedToLogin()
+                }
+                .present(from: self)
+        }
+    }
+    
+    
+    func didSuceedToLogin() {
+        self.performSegue(withIdentifier: "OnSuccessfulLogin", sender: nil)
     }
     
 }
