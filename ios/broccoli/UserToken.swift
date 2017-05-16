@@ -9,7 +9,7 @@
 import Foundation
 
 class UserToken {
-    let key = "broccoli.user.token"
+    let key = "broccoli.user.token13"
     
     init() {}
     
@@ -27,5 +27,10 @@ class UserToken {
     
     func isPresent() -> Bool {
         return !isMissing()
+    }
+    
+    func remove() {
+       UserDefaults.standard.removeObject(forKey: key)
+       UserDefaults.standard.synchronize()
     }
 }

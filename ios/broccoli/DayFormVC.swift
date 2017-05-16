@@ -10,7 +10,7 @@ import UIKit
 import Eureka
 import Alamofire
 
-class UserDayFormViewController: FormViewController {
+class DayFormVC : FormViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
