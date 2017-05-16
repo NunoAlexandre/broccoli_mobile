@@ -35,7 +35,9 @@ class LoginViewController : UIViewController {
     
     
     func didSuceedToLogin() {
-        self.performSegue(withIdentifier: "OnSuccessfulLogin", sender: nil)
+        DispatchQueue.main.async(){
+            self.performSegue(withIdentifier: "OnSuccessfulLogin", sender: nil)
+        }
     }
     
 }
