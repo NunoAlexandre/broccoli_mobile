@@ -24,6 +24,7 @@
 		BCBA07E51EB9136A00152465 /* Auth0.plist in Resources */ = {isa = PBXBuildFile; fileRef = BCBA07E41EB9136A00152465 /* Auth0.plist */; };
 		BCBA07E81EB9187A00152465 /* Auth0.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCBA07E61EB9187A00152465 /* Auth0.framework */; };
 		BCBA07E91EB9187A00152465 /* Lock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCBA07E71EB9187A00152465 /* Lock.framework */; };
+		BCCF115A1ECB716300F6450E /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCF11591ECB716300F6450E /* Graph.swift */; };
 		BCFC0B8F1EC4E5090082A581 /* UserToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFC0B8E1EC4E5090082A581 /* UserToken.swift */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +70,7 @@
 		BCBA07E41EB9136A00152465 /* Auth0.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Auth0.plist; sourceTree = "<group>"; };
 		BCBA07E61EB9187A00152465 /* Auth0.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Auth0.framework; path = Carthage/Build/iOS/Auth0.framework; sourceTree = "<group>"; };
 		BCBA07E71EB9187A00152465 /* Lock.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Lock.framework; path = Carthage/Build/iOS/Lock.framework; sourceTree = "<group>"; };
+		BCCF11591ECB716300F6450E /* Graph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
 		BCFC0B8E1EC4E5090082A581 /* UserToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserToken.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,7 +107,7 @@
 		BC4FF9C81ECB4D620062CC77 /* home */ = {
 			isa = PBXGroup;
 			children = (
-				BC764F6A1EC7823800258E11 /* JourneyVC.swift */,
+				BCCF115B1ECB731300F6450E /* Journey */,
 				BC08A0481EAD3368006E23D8 /* DayFormVC.swift */,
 				BC4FF9C61ECB49470062CC77 /* SettingsVC.swift */,
 			);
@@ -195,6 +197,15 @@
 				BC8B3DB61EA522CB000BC305 /* Alamofire.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BCCF115B1ECB731300F6450E /* Journey */ = {
+			isa = PBXGroup;
+			children = (
+				BC764F6A1EC7823800258E11 /* JourneyVC.swift */,
+				BCCF11591ECB716300F6450E /* Graph.swift */,
+			);
+			name = Journey;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -359,6 +370,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCCF115A1ECB716300F6450E /* Graph.swift in Sources */,
 				BC8B3D861EA50AAE000BC305 /* AppDelegate.swift in Sources */,
 				BC08A0491EAD3368006E23D8 /* DayFormVC.swift in Sources */,
 				BC4FF9C71ECB49470062CC77 /* SettingsVC.swift in Sources */,
