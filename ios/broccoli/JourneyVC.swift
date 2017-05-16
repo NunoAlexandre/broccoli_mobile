@@ -10,37 +10,35 @@ import Foundation
 import UIKit
 import Chameleon
 import Alamofire
+import Lock
 
-class MyVC: UIViewController {
-//    var lineChartView: LineChartView!
+class JourneyVC : UIViewController {
     @IBOutlet weak var chartView: UIView!
     
     override open func viewDidLoad()
     {
         super.viewDidLoad()
         
-        
         let graphView = ScrollableGraphView(frame: chartView.frame)
-//        let data: [Double] = getData()//[1, 2, 5, 8, 21]
         let labels = ["one", "two", "three", "four", "five", "six"]
         
         
-        graphView.backgroundFillColor = UIColor.flatWhite()//UIColor.white//UIColor.darkGray//("#333333")
+        graphView.backgroundFillColor = UIColor.flatWhite()
         graphView.rangeMax = 21
         graphView.lineWidth = 1
-        graphView.lineColor = UIColor.white//("#777777")
+        graphView.lineColor = UIColor.white
         graphView.lineStyle = .smooth
         
         graphView.shouldFill = true
         graphView.fillType = ScrollableGraphViewFillType.gradient
-        graphView.fillColor = UIColor.flatGreen()//UIColor.cyan//colorFromHex("#555555")
+        graphView.fillColor = UIColor.flatGreen()
         graphView.fillGradientType = .linear
-        graphView.fillGradientStartColor = UIColor.flatGreen()//UIColor.cyan//UIColor.colorFromHex("#555555")
-        graphView.fillGradientEndColor = UIColor.flatGreen()//UIColor.darkText//UIColor.colorFromHex("#444444")
+        graphView.fillGradientStartColor = UIColor.flatGreen()
+        graphView.fillGradientEndColor = UIColor.flatGreen()
         
         graphView.dataPointSpacing = 80
         graphView.dataPointSize = 3
-        graphView.dataPointFillColor = UIColor.white//()
+        graphView.dataPointFillColor = UIColor.white
         
         graphView.referenceLineLabelFont = UIFont.boldSystemFont(ofSize: 8)
         graphView.referenceLineColor = UIColor.white.withAlphaComponent(0.2)
@@ -48,6 +46,7 @@ class MyVC: UIViewController {
         graphView.dataPointLabelColor = UIColor.white.withAlphaComponent(0.5)
         
         setData(graph: graphView, withLabels: labels)
+        
     }
     
     func setData(graph : ScrollableGraphView, withLabels labels: [String]) {
