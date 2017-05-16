@@ -33,18 +33,15 @@ class GuardVC : UIViewController {
     }
     
     override func viewDidLoad() {
-        if UserToken().isPresent() {
-            didSuceedToLogin() }
+        if UserToken().isPresent() { didSuceedToLogin() }
     }
     
     
     func didSuceedToLogin() {
-        DispatchQueue.main.async(){
-            print("Will perform segue")
+        DispatchQueue.main.async() {
             self.performSegue(withIdentifier: "OnSuccessfulLogin", sender: nil)
         }
     }
 
-    
 }
 

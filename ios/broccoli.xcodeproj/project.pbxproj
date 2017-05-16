@@ -25,6 +25,7 @@
 		BCBA07E81EB9187A00152465 /* Auth0.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCBA07E61EB9187A00152465 /* Auth0.framework */; };
 		BCBA07E91EB9187A00152465 /* Lock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCBA07E71EB9187A00152465 /* Lock.framework */; };
 		BCCF115A1ECB716300F6450E /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCF11591ECB716300F6450E /* Graph.swift */; };
+		BCF8B8121ECB963B00126CCA /* DefaultNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF8B8111ECB963B00126CCA /* DefaultNavigationBar.swift */; };
 		BCFC0B8F1EC4E5090082A581 /* UserToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFC0B8E1EC4E5090082A581 /* UserToken.swift */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +72,7 @@
 		BCBA07E61EB9187A00152465 /* Auth0.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Auth0.framework; path = Carthage/Build/iOS/Auth0.framework; sourceTree = "<group>"; };
 		BCBA07E71EB9187A00152465 /* Lock.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Lock.framework; path = Carthage/Build/iOS/Lock.framework; sourceTree = "<group>"; };
 		BCCF11591ECB716300F6450E /* Graph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
+		BCF8B8111ECB963B00126CCA /* DefaultNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultNavigationBar.swift; sourceTree = "<group>"; };
 		BCFC0B8E1EC4E5090082A581 /* UserToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserToken.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,6 +106,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BC4FAB831ECB8CCB000EA05D /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				BCF8B8111ECB963B00126CCA /* DefaultNavigationBar.swift */,
+			);
+			name = ui;
+			sourceTree = "<group>";
+		};
 		BC4FF9C81ECB4D620062CC77 /* home */ = {
 			isa = PBXGroup;
 			children = (
@@ -155,6 +165,7 @@
 		BC8B3D841EA50AAE000BC305 /* broccoli */ = {
 			isa = PBXGroup;
 			children = (
+				BC4FAB831ECB8CCB000EA05D /* ui */,
 				BC4FF9C91ECB4DD20062CC77 /* libs */,
 				BC4FF9CA1ECB4DE90062CC77 /* auth */,
 				BC4FF9C81ECB4D620062CC77 /* home */,
@@ -377,6 +388,7 @@
 				BCFC0B8F1EC4E5090082A581 /* UserToken.swift in Sources */,
 				BC4FF9C11EC9BBC90062CC77 /* ScrollableGraphView.swift in Sources */,
 				BC764F6B1EC7823800258E11 /* JourneyVC.swift in Sources */,
+				BCF8B8121ECB963B00126CCA /* DefaultNavigationBar.swift in Sources */,
 				BC8B3D881EA50AAE000BC305 /* GuardVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
