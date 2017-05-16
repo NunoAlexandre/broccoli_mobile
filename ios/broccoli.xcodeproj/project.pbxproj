@@ -7,11 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BC08A0451EAD10D1006E23D8 /* MainAreaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC08A0431EAD10D1006E23D8 /* MainAreaViewController.swift */; };
 		BC08A0471EAD1474006E23D8 /* Eureka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC17D5581EA68BFA0015FD52 /* Eureka.framework */; };
-		BC08A0491EAD3368006E23D8 /* UserDayFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC08A0481EAD3368006E23D8 /* UserDayFormViewController.swift */; };
+		BC08A0491EAD3368006E23D8 /* DayFormVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC08A0481EAD3368006E23D8 /* DayFormVC.swift */; };
+		BC4FF9C11EC9BBC90062CC77 /* ScrollableGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4FF9C01EC9BBC90062CC77 /* ScrollableGraphView.swift */; };
+		BC4FF9C31EC9E22C0062CC77 /* Chameleon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC4FF9C21EC9E22C0062CC77 /* Chameleon.framework */; };
+		BC4FF9C71ECB49470062CC77 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4FF9C61ECB49470062CC77 /* SettingsVC.swift */; };
+		BC764F6B1EC7823800258E11 /* JourneyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC764F6A1EC7823800258E11 /* JourneyVC.swift */; };
 		BC8B3D861EA50AAE000BC305 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8B3D851EA50AAE000BC305 /* AppDelegate.swift */; };
-		BC8B3D881EA50AAE000BC305 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8B3D871EA50AAE000BC305 /* LoginViewController.swift */; };
+		BC8B3D881EA50AAE000BC305 /* GuardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8B3D871EA50AAE000BC305 /* GuardVC.swift */; };
 		BC8B3D8D1EA50AAE000BC305 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC8B3D8B1EA50AAE000BC305 /* Main.storyboard */; settings = {ASSET_TAGS = (home, ); }; };
 		BC8B3D8F1EA50AAE000BC305 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC8B3D8E1EA50AAE000BC305 /* Assets.xcassets */; };
 		BC8B3D921EA50AAE000BC305 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC8B3D901EA50AAE000BC305 /* LaunchScreen.storyboard */; };
@@ -21,6 +24,7 @@
 		BCBA07E51EB9136A00152465 /* Auth0.plist in Resources */ = {isa = PBXBuildFile; fileRef = BCBA07E41EB9136A00152465 /* Auth0.plist */; };
 		BCBA07E81EB9187A00152465 /* Auth0.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCBA07E61EB9187A00152465 /* Auth0.framework */; };
 		BCBA07E91EB9187A00152465 /* Lock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCBA07E71EB9187A00152465 /* Lock.framework */; };
+		BCFC0B8F1EC4E5090082A581 /* UserToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFC0B8E1EC4E5090082A581 /* UserToken.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,12 +45,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		BC08A0431EAD10D1006E23D8 /* MainAreaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainAreaViewController.swift; sourceTree = "<group>"; };
-		BC08A0481EAD3368006E23D8 /* UserDayFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDayFormViewController.swift; sourceTree = "<group>"; };
+		BC08A0481EAD3368006E23D8 /* DayFormVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayFormVC.swift; sourceTree = "<group>"; };
 		BC17D5581EA68BFA0015FD52 /* Eureka.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Eureka.framework; path = Carthage/Build/iOS/Eureka.framework; sourceTree = "<group>"; };
+		BC4FF9C01EC9BBC90062CC77 /* ScrollableGraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollableGraphView.swift; sourceTree = "<group>"; };
+		BC4FF9C21EC9E22C0062CC77 /* Chameleon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Chameleon.framework; path = Carthage/Build/iOS/Chameleon.framework; sourceTree = "<group>"; };
+		BC4FF9C61ECB49470062CC77 /* SettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		BC764F681EC7591B00258E11 /* Charts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Charts.framework; path = Carthage/Build/iOS/Charts.framework; sourceTree = "<group>"; };
+		BC764F6A1EC7823800258E11 /* JourneyVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JourneyVC.swift; sourceTree = "<group>"; };
 		BC8B3D821EA50AAE000BC305 /* broccoli.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = broccoli.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC8B3D851EA50AAE000BC305 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BC8B3D871EA50AAE000BC305 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		BC8B3D871EA50AAE000BC305 /* GuardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuardVC.swift; sourceTree = "<group>"; };
 		BC8B3D8C1EA50AAE000BC305 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BC8B3D8E1EA50AAE000BC305 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC8B3D911EA50AAE000BC305 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -61,6 +69,7 @@
 		BCBA07E41EB9136A00152465 /* Auth0.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Auth0.plist; sourceTree = "<group>"; };
 		BCBA07E61EB9187A00152465 /* Auth0.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Auth0.framework; path = Carthage/Build/iOS/Auth0.framework; sourceTree = "<group>"; };
 		BCBA07E71EB9187A00152465 /* Lock.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Lock.framework; path = Carthage/Build/iOS/Lock.framework; sourceTree = "<group>"; };
+		BCFC0B8E1EC4E5090082A581 /* UserToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserToken.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC4FF9C31EC9E22C0062CC77 /* Chameleon.framework in Frameworks */,
 				BCBA07E81EB9187A00152465 /* Auth0.framework in Frameworks */,
 				BCBA07E91EB9187A00152465 /* Lock.framework in Frameworks */,
 				BC08A0471EAD1474006E23D8 /* Eureka.framework in Frameworks */,
@@ -92,6 +102,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BC4FF9C81ECB4D620062CC77 /* home */ = {
+			isa = PBXGroup;
+			children = (
+				BC764F6A1EC7823800258E11 /* JourneyVC.swift */,
+				BC08A0481EAD3368006E23D8 /* DayFormVC.swift */,
+				BC4FF9C61ECB49470062CC77 /* SettingsVC.swift */,
+			);
+			name = home;
+			sourceTree = "<group>";
+		};
+		BC4FF9C91ECB4DD20062CC77 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				BC4FF9C01EC9BBC90062CC77 /* ScrollableGraphView.swift */,
+			);
+			name = libs;
+			sourceTree = "<group>";
+		};
+		BC4FF9CA1ECB4DE90062CC77 /* auth */ = {
+			isa = PBXGroup;
+			children = (
+				BCFC0B8E1EC4E5090082A581 /* UserToken.swift */,
+				BC8B3D871EA50AAE000BC305 /* GuardVC.swift */,
+			);
+			name = auth;
+			sourceTree = "<group>";
+		};
 		BC8B3D791EA50AAE000BC305 = {
 			isa = PBXGroup;
 			children = (
@@ -116,14 +153,14 @@
 		BC8B3D841EA50AAE000BC305 /* broccoli */ = {
 			isa = PBXGroup;
 			children = (
+				BC4FF9C91ECB4DD20062CC77 /* libs */,
+				BC4FF9CA1ECB4DE90062CC77 /* auth */,
+				BC4FF9C81ECB4D620062CC77 /* home */,
 				BC8B3D851EA50AAE000BC305 /* AppDelegate.swift */,
-				BC8B3D871EA50AAE000BC305 /* LoginViewController.swift */,
 				BC8B3D8B1EA50AAE000BC305 /* Main.storyboard */,
-				BC8B3D8E1EA50AAE000BC305 /* Assets.xcassets */,
 				BC8B3D901EA50AAE000BC305 /* LaunchScreen.storyboard */,
 				BC8B3D931EA50AAE000BC305 /* Info.plist */,
-				BC08A0431EAD10D1006E23D8 /* MainAreaViewController.swift */,
-				BC08A0481EAD3368006E23D8 /* UserDayFormViewController.swift */,
+				BC8B3D8E1EA50AAE000BC305 /* Assets.xcassets */,
 				BCBA07E41EB9136A00152465 /* Auth0.plist */,
 			);
 			path = broccoli;
@@ -150,6 +187,8 @@
 		BC8B3DB51EA522CB000BC305 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BC4FF9C21EC9E22C0062CC77 /* Chameleon.framework */,
+				BC764F681EC7591B00258E11 /* Charts.framework */,
 				BCBA07E61EB9187A00152465 /* Auth0.framework */,
 				BCBA07E71EB9187A00152465 /* Lock.framework */,
 				BC17D5581EA68BFA0015FD52 /* Eureka.framework */,
@@ -304,6 +343,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Eureka.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Lock.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Auth0.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Chameleon.framework",
 			);
 			name = "Run Script";
 			outputPaths = (
@@ -320,9 +360,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC8B3D861EA50AAE000BC305 /* AppDelegate.swift in Sources */,
-				BC08A0491EAD3368006E23D8 /* UserDayFormViewController.swift in Sources */,
-				BC08A0451EAD10D1006E23D8 /* MainAreaViewController.swift in Sources */,
-				BC8B3D881EA50AAE000BC305 /* LoginViewController.swift in Sources */,
+				BC08A0491EAD3368006E23D8 /* DayFormVC.swift in Sources */,
+				BC4FF9C71ECB49470062CC77 /* SettingsVC.swift in Sources */,
+				BCFC0B8F1EC4E5090082A581 /* UserToken.swift in Sources */,
+				BC4FF9C11EC9BBC90062CC77 /* ScrollableGraphView.swift in Sources */,
+				BC764F6B1EC7823800258E11 /* JourneyVC.swift in Sources */,
+				BC8B3D881EA50AAE000BC305 /* GuardVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
