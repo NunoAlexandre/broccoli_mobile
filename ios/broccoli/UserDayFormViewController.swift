@@ -42,7 +42,7 @@ class UserDayFormViewController: FormViewController {
                                                  "level" : self.form.values()["level"] as! String,
                                                  "note" : self.form.values()["note"] as! String]]
                     
-                    let headers = ["Authorization": " Bearer \(UserDefaults.standard.value(forKey: "idToken")!)" ]
+                    let headers = ["Authorization": " Bearer \(UserToken().peek())" ]
                     
                     Alamofire.request("https://nabroccoli.herokuapp.com/api/days", method: .post, parameters: userDay,
                                       encoding: JSONEncoding.default, headers: headers)
@@ -51,9 +51,8 @@ class UserDayFormViewController: FormViewController {
                             if let status = response.response?.statusCode {
                                 switch(status) {
                                 case 201:
-                                    let alert = UIAlertController(title: "Saved!",
-                                                                  message: "well done, broccoli :)",
-                                                                  preferredStyle: .alert)
+                                    let alert = UIAlertController(title: "Saved!", message: "well done, broccoli :)",
+                                                            preferredStyle: .alert)
                                     alert.addAction(UIAlertAction(title: "Yay", style: .default, handler: { (action) -> Void in }))
                                     self.present(alert, animated: true, completion: nil)
                                 case 422:

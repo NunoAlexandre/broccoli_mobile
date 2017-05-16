@@ -17,6 +17,9 @@ class UserToken {
         UserDefaults.standard.set(token, forKey: key)
     }
     
+    func peek() -> String {
+        return UserDefaults.standard.value(forKey: key) as! String
+    }
     
     func isMissing() -> Bool {
         return UserDefaults.standard.value(forKey: key) == nil

@@ -44,7 +44,7 @@
             </objects>
             <point key="canvasLocation" x="1745.625" y="-321.12676056338029"/>
         </scene>
-        <!--Item 2-->
+        <!--Broccoli-->
         <scene sceneID="oiZ-fx-4zj">
             <objects>
                 <viewController id="FRR-6U-Yki" customClass="UserDayFormViewController" customModule="broccoli" customModuleProvider="target" sceneMemberID="viewController">
@@ -53,17 +53,18 @@
                         <viewControllerLayoutGuide type="bottom" id="zme-Dd-lzJ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="BOg-Df-Gue">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="pf0-IQ-68z"/>
+                    <tabBarItem key="tabBarItem" systemItem="bookmarks" id="pf0-IQ-68z"/>
+                    <navigationItem key="navigationItem" title="Broccoli" id="pNK-gZ-BVV"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rlm-WA-uZy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3401" y="1039"/>
         </scene>
-        <!--Item 1-->
+        <!--Broccoli-->
         <scene sceneID="u1b-3u-Eb5">
             <objects>
                 <viewController id="weS-yK-4P3" customClass="MyVC" customModule="broccoli" customModuleProvider="target" sceneMemberID="viewController">
@@ -72,11 +73,29 @@
                         <viewControllerLayoutGuide type="bottom" id="hmf-M1-o6J"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="fZ0-vH-Ucu">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qG9-IK-t05">
+                                <rect key="frame" x="0.0" y="20" width="320" height="479"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qG9-IK-t05" firstAttribute="top" secondItem="H2N-2P-4R1" secondAttribute="bottom" id="4S0-Mf-xyt"/>
+                            <constraint firstItem="qG9-IK-t05" firstAttribute="leading" secondItem="fZ0-vH-Ucu" secondAttribute="leading" id="SHE-Xr-vM4"/>
+                            <constraint firstAttribute="bottom" secondItem="qG9-IK-t05" secondAttribute="bottom" constant="20" symbolic="YES" id="ZEc-mv-5dG"/>
+                            <constraint firstAttribute="trailing" secondItem="qG9-IK-t05" secondAttribute="trailing" id="bnN-Bt-XuH"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="Vb7-4n-1Mb"/>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <tabBarItem key="tabBarItem" systemItem="history" id="Vb7-4n-1Mb" userLabel="Journey"/>
+                    <navigationItem key="navigationItem" title="Broccoli" id="ASO-6b-Avw"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="chartView" destination="qG9-IK-t05" id="8XL-X5-HIb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VgF-20-ewz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -85,8 +104,10 @@
         <!--Tab Bar Controller-->
         <scene sceneID="nzY-fF-GLb">
             <objects>
-                <tabBarController id="t9f-TY-3Hz" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="VTX-g6-Mr8">
+                <tabBarController modalPresentationStyle="currentContext" id="t9f-TY-3Hz" sceneMemberID="viewController">
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" id="VTX-g6-Mr8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
