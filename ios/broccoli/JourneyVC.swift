@@ -20,16 +20,9 @@ class JourneyVC : UIViewController {
     
     override open func loadView() {
         super.loadView()
-        
+    
         graph = Graph.new(frame: chartView.frame)
-        
-        let loadingView = DGElasticPullToRefreshLoadingViewCircle()
-        loadingView.tintColor = UIColor.flatGreenColorDark()
-        self.containerView.dg_addPullToRefreshWithActionHandler({ [weak self] () -> Void in
-            self?.fetchGraphData(graph: (self?.graph)!)
-        }, loadingView: loadingView)
-        self.containerView.dg_setPullToRefreshFillColor(UIColor.flatWhite())
-        self.containerView.dg_setPullToRefreshBackgroundColor(UIColor.flatWhiteColorDark())
+        containerView.plugPullToRefresh { self.fetchGraphData(graph: self.graph)}
     }
     
     override open func viewDidLoad()
