@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,31 +22,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nFm-6n-lJm">
-                                <rect key="frame" x="101" y="305" width="119" height="74"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="broccoli_512" translatesAutoresizingMaskIntoConstraints="NO" id="NEE-xU-4vq">
+                                <rect key="frame" x="0.0" y="175" width="320" height="150"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="74" id="mUn-0o-Cof"/>
+                                    <constraint firstAttribute="height" constant="150" id="4nd-sW-ppi"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="GillSans-BoldItalic" family="Gill Sans" pointSize="30"/>
-                                <state key="normal" title="Let's go!">
-                                    <color key="titleColor" red="0.043080717329999997" green="0.5228818059" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Broccoli" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vmB-wt-7o7">
+                                <rect key="frame" x="84" y="91" width="153" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="c90-TQ-c8g"/>
+                                </constraints>
+                                <color key="textColor" red="1" green="0.98662787679999997" blue="0.84043037890000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="48"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nFm-6n-lJm">
+                                <rect key="frame" x="86" y="446" width="149" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74" id="txk-hz-h5w"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                <state key="normal" title="Get Started">
+                                    <color key="titleColor" red="0.57182973623275757" green="0.62796163558959961" blue="0.26642921566963196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="showLock:" destination="9pv-A4-QxB" eventType="touchUpInside" id="KEz-Hw-rQS"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="broccoli_512" translatesAutoresizingMaskIntoConstraints="NO" id="NEE-xU-4vq">
-                                <rect key="frame" x="0.0" y="144" width="320" height="150"/>
-                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.77604550120000004" green="0.82911193370000003" blue="0.37433615329999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="NEE-xU-4vq" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="27z-JK-NzT"/>
-                            <constraint firstItem="NEE-xU-4vq" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="124" id="Nfr-8B-UgR"/>
-                            <constraint firstItem="nFm-6n-lJm" firstAttribute="top" secondItem="NEE-xU-4vq" secondAttribute="bottom" constant="11" id="RSz-Xj-Ixa"/>
-                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="nFm-6n-lJm" secondAttribute="bottom" constant="189" id="iAe-BM-a6B"/>
-                            <constraint firstItem="NEE-xU-4vq" firstAttribute="centerX" secondItem="nFm-6n-lJm" secondAttribute="centerX" id="iqC-nz-qX2"/>
-                            <constraint firstAttribute="trailing" secondItem="NEE-xU-4vq" secondAttribute="trailing" id="kBc-Kn-JGq"/>
+                            <constraint firstItem="NEE-xU-4vq" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="11X-74-lks"/>
+                            <constraint firstAttribute="trailing" secondItem="NEE-xU-4vq" secondAttribute="trailing" id="12l-xT-fUa"/>
+                            <constraint firstItem="vmB-wt-7o7" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="68" id="3db-Yi-vxp"/>
+                            <constraint firstItem="vmB-wt-7o7" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="71" id="9HJ-4z-WHp"/>
+                            <constraint firstItem="NEE-xU-4vq" firstAttribute="top" secondItem="vmB-wt-7o7" secondAttribute="bottom" constant="24" id="KEG-Wl-dqD"/>
+                            <constraint firstItem="nFm-6n-lJm" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="70" id="RwR-Wa-q0K"/>
+                            <constraint firstItem="vmB-wt-7o7" firstAttribute="centerX" secondItem="NEE-xU-4vq" secondAttribute="centerX" id="d6Y-AK-VsQ"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="nFm-6n-lJm" secondAttribute="bottom" constant="48" id="j9Q-Ae-y1b"/>
+                            <constraint firstItem="NEE-xU-4vq" firstAttribute="centerX" secondItem="nFm-6n-lJm" secondAttribute="centerX" id="sMq-iP-WrJ"/>
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
