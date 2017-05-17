@@ -15,14 +15,14 @@ class DayFormVC : FormViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        form +++ Section()
+        form +++ Section("Your day")
             <<< DateRow("day") { row in
-                row.title = "On the..."
+                row.title = "Day"
                 row.add(rule: RuleRequired())
                 row.value = Date()
             }
             <<< ActionSheetRow<String>("level") {
-                $0.title = "My day was a..."
+                $0.title = "Level"
                 $0.selectorTitle = "Pick a number"
                 $0.options = ["one","two","three", "five", "eight", "twenty_one"]
                 $0.add(rule: RuleRequired())
@@ -40,7 +40,7 @@ class DayFormVC : FormViewController {
                     styled.dateFormat = "yyyy-MM-dd"
                     let userDay = ["user_day" : ["day" : styled.string(from: (self.form.values()["day"] as! Date)),
                                                  "level" : self.form.values()["level"] as! String,
-                                                 "note" : self.form.values()["note"] as! String]]
+                                                 "note" : self.form.values()["note"] as? String]]
                     
                     let headers = ["Authorization": " Bearer \(UserToken().peek())" ]
                     
