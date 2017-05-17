@@ -19,9 +19,11 @@ class GuardVC : UIViewController {
             .classic()
             .withStyle {
                 $0.title = "Broccoli"
-                $0.headerBlur = .extraLight
+                $0.headerColor = UIColor.broccoliGreen()
                 $0.logo = LazyImage(name: "broccoli")
-                $0.primaryColor = UIColor.flatGreenColorDark()
+                $0.backgroundColor = UIColor.broccoliGreen()
+                $0.primaryColor = UIColor.broccoliGreen()
+                $0.titleColor = UIColor.broccoliYellow()
             }
             .onAuth {
                 if UserToken(token: $0.idToken!).isPresent() {
