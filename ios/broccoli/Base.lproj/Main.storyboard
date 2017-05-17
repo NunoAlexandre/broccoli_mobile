@@ -68,6 +68,7 @@
                     <navigationItem key="navigationItem" id="DpG-Oz-WgP"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="getStartedButton" destination="nFm-6n-lJm" id="SVI-z3-2k2"/>
                         <segue destination="t9f-TY-3Hz" kind="show" identifier="OnSuccessfulLogin" id="fTc-Ya-cDC"/>
                     </connections>
                 </viewController>
