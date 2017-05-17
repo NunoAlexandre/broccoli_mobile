@@ -25,7 +25,8 @@
 		BCBA07E81EB9187A00152465 /* Auth0.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCBA07E61EB9187A00152465 /* Auth0.framework */; };
 		BCBA07E91EB9187A00152465 /* Lock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCBA07E71EB9187A00152465 /* Lock.framework */; };
 		BCCF115A1ECB716300F6450E /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCF11591ECB716300F6450E /* Graph.swift */; };
-		BCF8B8121ECB963B00126CCA /* DefaultNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF8B8111ECB963B00126CCA /* DefaultNavigationBar.swift */; };
+		BCF8B8121ECB963B00126CCA /* BroccoliNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF8B8111ECB963B00126CCA /* BroccoliNavigationController.swift */; };
+		BCF8B8141ECC370A00126CCA /* ESTabBarController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCF8B8131ECC370A00126CCA /* ESTabBarController.framework */; };
 		BCFC0B8F1EC4E5090082A581 /* UserToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFC0B8E1EC4E5090082A581 /* UserToken.swift */; };
 /* End PBXBuildFile section */
 
@@ -72,7 +73,8 @@
 		BCBA07E61EB9187A00152465 /* Auth0.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Auth0.framework; path = Carthage/Build/iOS/Auth0.framework; sourceTree = "<group>"; };
 		BCBA07E71EB9187A00152465 /* Lock.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Lock.framework; path = Carthage/Build/iOS/Lock.framework; sourceTree = "<group>"; };
 		BCCF11591ECB716300F6450E /* Graph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
-		BCF8B8111ECB963B00126CCA /* DefaultNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultNavigationBar.swift; sourceTree = "<group>"; };
+		BCF8B8111ECB963B00126CCA /* BroccoliNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BroccoliNavigationController.swift; sourceTree = "<group>"; };
+		BCF8B8131ECC370A00126CCA /* ESTabBarController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ESTabBarController.framework; path = Carthage/Build/iOS/ESTabBarController.framework; sourceTree = "<group>"; };
 		BCFC0B8E1EC4E5090082A581 /* UserToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserToken.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCF8B8141ECC370A00126CCA /* ESTabBarController.framework in Frameworks */,
 				BC4FF9C31EC9E22C0062CC77 /* Chameleon.framework in Frameworks */,
 				BCBA07E81EB9187A00152465 /* Auth0.framework in Frameworks */,
 				BCBA07E91EB9187A00152465 /* Lock.framework in Frameworks */,
@@ -109,7 +112,7 @@
 		BC4FAB831ECB8CCB000EA05D /* ui */ = {
 			isa = PBXGroup;
 			children = (
-				BCF8B8111ECB963B00126CCA /* DefaultNavigationBar.swift */,
+				BCF8B8111ECB963B00126CCA /* BroccoliNavigationController.swift */,
 			);
 			name = ui;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 		BC8B3DB51EA522CB000BC305 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BCF8B8131ECC370A00126CCA /* ESTabBarController.framework */,
 				BC4FF9C21EC9E22C0062CC77 /* Chameleon.framework */,
 				BC764F681EC7591B00258E11 /* Charts.framework */,
 				BCBA07E61EB9187A00152465 /* Auth0.framework */,
@@ -366,6 +370,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Lock.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Auth0.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Chameleon.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ESTabBarController.framework",
 			);
 			name = "Run Script";
 			outputPaths = (
@@ -388,7 +393,7 @@
 				BCFC0B8F1EC4E5090082A581 /* UserToken.swift in Sources */,
 				BC4FF9C11EC9BBC90062CC77 /* ScrollableGraphView.swift in Sources */,
 				BC764F6B1EC7823800258E11 /* JourneyVC.swift in Sources */,
-				BCF8B8121ECB963B00126CCA /* DefaultNavigationBar.swift in Sources */,
+				BCF8B8121ECB963B00126CCA /* BroccoliNavigationController.swift in Sources */,
 				BC8B3D881EA50AAE000BC305 /* GuardVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

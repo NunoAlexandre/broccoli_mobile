@@ -58,7 +58,7 @@
             </objects>
             <point key="canvasLocation" x="1082" y="-321"/>
         </scene>
-        <!--Broccoli-->
+        <!--Day FormVC-->
         <scene sceneID="oiZ-fx-4zj">
             <objects>
                 <viewController id="FRR-6U-Yki" customClass="DayFormVC" customModule="broccoli" customModuleProvider="target" sceneMemberID="viewController">
@@ -71,13 +71,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Broccoli" id="pNK-gZ-BVV"/>
+                    <navigationItem key="navigationItem" id="pNK-gZ-BVV"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rlm-WA-uZy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4612.5" y="-528.16901408450701"/>
         </scene>
-        <!--Broccoli-->
+        <!--SettingsVC-->
         <scene sceneID="Srj-jL-aVe">
             <objects>
                 <viewController id="HSh-HQ-4JJ" customClass="SettingsVC" customModule="broccoli" customModuleProvider="target" sceneMemberID="viewController">
@@ -90,7 +90,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Broccoli" id="HU8-fa-VIC"/>
+                    <navigationItem key="navigationItem" id="HU8-fa-VIC"/>
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="presentation" identifier="onLogout" modalPresentationStyle="overCurrentContext" id="v3M-71-Jvf"/>
                     </connections>
@@ -99,7 +99,7 @@
             </objects>
             <point key="canvasLocation" x="4612.5" y="445.77464788732397"/>
         </scene>
-        <!--Broccoli-->
+        <!--JourneyVC-->
         <scene sceneID="u1b-3u-Eb5">
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="weS-yK-4P3" customClass="JourneyVC" customModule="broccoli" customModuleProvider="target" sceneMemberID="viewController">
@@ -125,7 +125,7 @@
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
-                    <navigationItem key="navigationItem" title="Broccoli" id="ASO-6b-Avw"/>
+                    <navigationItem key="navigationItem" id="ASO-6b-Avw"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <connections>
                         <outlet property="chartView" destination="qG9-IK-t05" id="8XL-X5-HIb"/>
@@ -154,10 +154,10 @@
             </objects>
             <point key="canvasLocation" x="2694" y="-321"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Broccoli Navigation Controller-->
         <scene sceneID="Ds6-N8-98G">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="T5u-P8-jfh" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="T5u-P8-jfh" customClass="BroccoliNavigationController" customModule="broccoli" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" systemItem="history" id="Vb7-4n-1Mb" userLabel="Journey"/>
                     <toolbarItems/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
@@ -179,10 +179,10 @@
             </objects>
             <point key="canvasLocation" x="3510" y="-1403.8732394366198"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Broccoli Navigation Controller-->
         <scene sceneID="ht8-Zh-klE">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8b3-rO-7xp" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8b3-rO-7xp" customClass="BroccoliNavigationController" customModule="broccoli" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" systemItem="bookmarks" id="pf0-IQ-68z"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="l7z-9B-gJx">
@@ -203,10 +203,10 @@
             </objects>
             <point key="canvasLocation" x="3615" y="-528.16901408450701"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Broccoli Navigation Controller-->
         <scene sceneID="7fQ-xa-wtC">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="k0d-Om-iyD" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="k0d-Om-iyD" customClass="BroccoliNavigationController" customModule="broccoli" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" systemItem="more" id="dHj-EM-KXs"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="Mii-OV-iwk">
