@@ -15,10 +15,12 @@ class Graph {
         let graph = ScrollableGraphView(frame: frame)
         
         graph.backgroundFillColor = UIColor.flatWhite()
-        graph.rangeMax = 21
+        graph.rangeMax = 23
         graph.lineWidth = 1
         graph.lineColor = UIColor.white
         graph.lineStyle = .smooth
+        graph.leftmostPointPadding = 40
+        graph.rightmostPointPadding = 40
         
         graph.shouldFill = true
         graph.fillType = ScrollableGraphViewFillType.gradient
