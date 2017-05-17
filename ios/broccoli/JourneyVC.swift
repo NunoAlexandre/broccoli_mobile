@@ -18,6 +18,7 @@ class JourneyVC : UIViewController {
     override open func viewDidLoad()
     {
         super.viewDidLoad()
+        
         setData(graph: Graph.new(frame: chartView.frame))
     }
     

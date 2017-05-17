@@ -32,8 +32,8 @@ class DayFormVC : FormViewController {
                 row.add(rule: RuleMaxLength(maxLength: 400))
             }
             <<< ButtonRow() { row in
-                row.title = "Save"
-                row.cell.height = {90}
+                    row.title = "Save"
+                    row.cell.height = {90}
                 }
                 .onCellSelection {  cell, row in
                     let styled = DateFormatter()
