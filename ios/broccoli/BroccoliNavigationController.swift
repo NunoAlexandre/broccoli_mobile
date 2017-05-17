@@ -17,8 +17,8 @@ class BroccoliNavigationController: UINavigationController {
         self.navigationBar.topItem?.title = "Broccoli"
         self.navigationBar.barTintColor = UIColor.flatWhite()
         self.navigationBar.titleTextAttributes = [
-            NSForegroundColorAttributeName : UIColor.flatGreenColorDark(),
-            NSFontAttributeName: UIFont.systemFont(ofSize: 21.0)]
+            NSForegroundColorAttributeName : UIColor.broccoliGreen(),
+            NSFontAttributeName: UIFont(name: "American Typewriter", size: 19.0)!]
     }
     
 }

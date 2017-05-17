@@ -19,15 +19,15 @@ class Graph {
         graph.lineWidth = 1
         graph.lineColor = UIColor.white
         graph.lineStyle = .smooth
-        graph.leftmostPointPadding = 40
-        graph.rightmostPointPadding = 40
+        graph.leftmostPointPadding = 80
+        graph.rightmostPointPadding = 80
         
         graph.shouldFill = true
         graph.fillType = ScrollableGraphViewFillType.gradient
-        graph.fillColor = UIColor.flatGreen()
+        graph.fillColor = UIColor.broccoliGreen()
         graph.fillGradientType = .linear
-        graph.fillGradientStartColor = UIColor.flatGreen()
-        graph.fillGradientEndColor = UIColor.flatForestGreen()
+        graph.fillGradientStartColor = UIColor.broccoliGreenLighter().withAlphaComponent(0.45)
+        graph.fillGradientEndColor = UIColor.broccoliGreen()
         
         graph.dataPointSpacing = 80
         graph.dataPointSize = 3
