@@ -20,7 +20,6 @@ class JourneyVC : UIViewController {
     
     override open func loadView() {
         super.loadView()
-    
         graph = Graph.new(frame: chartView.frame)
         containerView.plugPullToRefresh { self.fetchGraphData(graph: self.graph)}
     }
