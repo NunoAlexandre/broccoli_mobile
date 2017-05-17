@@ -11,27 +11,49 @@ import UIKit
 import Chameleon
 import Alamofire
 import Lock
+import DGElasticPullToRefresh
 
 class JourneyVC : UIViewController {
     @IBOutlet weak var chartView: UIView!
+    @IBOutlet weak var containerView: UIScrollView!
+    var graph : ScrollableGraphView!
+    
+    override open func loadView() {
+        super.loadView()
+        
+        graph = Graph.new(frame: chartView.frame)
+        
+        let loadingView = DGElasticPullToRefreshLoadingViewCircle()
+        loadingView.tintColor = UIColor.flatGreenColorDark()
+        self.containerView.dg_addPullToRefreshWithActionHandler({ [weak self] () -> Void in
+            self?.fetchGraphData(graph: (self?.graph)!)
+        }, loadingView: loadingView)
+        self.containerView.dg_setPullToRefreshFillColor(UIColor.flatWhite())
+        self.containerView.dg_setPullToRefreshBackgroundColor(UIColor.flatWhiteColorDark())
+    }
     
     override open func viewDidLoad()
     {
         super.viewDidLoad()
-        
-        setData(graph: Graph.new(frame: chartView.frame))
+        fetchGraphData(graph: Graph.new(frame: chartView.frame))
     }
     
-    func setData(graph : ScrollableGraphView) {
+    func fetchGraphData(graph : ScrollableGraphView) {
         let headers = ["Authorization": " Bearer \(UserToken().peek())" ]
         
         Alamofire.request("https://nabroccoli.herokuapp.com/api/days", method: .get, encoding: JSONEncoding.default, headers: headers).responseJSON { response in
                 if let jsonDict = response.result.value as? [String:Any],
                     let data = jsonDict["data"] as? [[String:Any]] {
                     graph.set(data: self.levels(data), withLabels: self.labels(data))
-                    self.chartView.addSubview(graph)
+                    self.reloadGraphView(graph)
+                    self.containerView.dg_stopLoading()
                 }
         }
+    }
+    
+    func reloadGraphView(_ graph: ScrollableGraphView) {
+        self.chartView.subviews.forEach{$0.removeFromSuperview()}
+        self.chartView.addSubview(graph)
     }
     
     func levels(_ data: [[String:Any]]) -> [Double] {

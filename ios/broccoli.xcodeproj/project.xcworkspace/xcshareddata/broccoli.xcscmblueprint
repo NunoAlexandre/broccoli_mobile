@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "12E1D7F687E92F8F255DD6E04D6B2B8325C38A11",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "CA22995E16ADB940ED328330E7D37E4BEB09C583" : 9223372036854775807,
+    "12E1D7F687E92F8F255DD6E04D6B2B8325C38A11" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "FA815A99-A1AD-4C91-A516-698E4388727C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "CA22995E16ADB940ED328330E7D37E4BEB09C583" : "..\/DGElasticPullToRefresh",
+    "12E1D7F687E92F8F255DD6E04D6B2B8325C38A11" : "mobile\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "broccoli",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ios\/broccoli.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/NunoAlexandre\/broccoli_mobile.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "12E1D7F687E92F8F255DD6E04D6B2B8325C38A11"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/NunoAlexandre\/DGElasticPullToRefresh.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "CA22995E16ADB940ED328330E7D37E4BEB09C583"
+    }
+  ]
+}
