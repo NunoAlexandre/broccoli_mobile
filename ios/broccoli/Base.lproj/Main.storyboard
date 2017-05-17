@@ -23,7 +23,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="broccoli" translatesAutoresizingMaskIntoConstraints="NO" id="gu5-8N-U89">
-                                <rect key="frame" x="75" y="103" width="170" height="197"/>
+                                <rect key="frame" x="75" y="103" width="170" height="61"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nFm-6n-lJm">
                                 <rect key="frame" x="81" y="345" width="159" height="74"/>
@@ -229,6 +229,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="broccoli" width="175" height="197"/>
+        <image name="broccoli" width="61" height="61"/>
     </resources>
 </document>
