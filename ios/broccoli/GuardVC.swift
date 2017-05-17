@@ -19,7 +19,7 @@ class GuardVC : UIViewController {
             .classic()
             .withStyle {
                 $0.title = "Broccoli"
-                $0.headerColor = UIColor.broccoliGreen()
+                $0.headerColor = UIColor.broccoliGreenLighter()
                 $0.logo = LazyImage(name: "broccoli")
                 $0.backgroundColor = UIColor.broccoliGreen()
                 $0.primaryColor = UIColor.broccoliGreen()

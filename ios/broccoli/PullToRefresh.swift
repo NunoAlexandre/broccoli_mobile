@@ -14,9 +14,9 @@ extension UIScrollView {
     
     func plugPullToRefresh(onPull : @escaping () -> Void) {
         let loadingView = DGElasticPullToRefreshLoadingViewCircle()
-        loadingView.tintColor = UIColor.flatGreenColorDark()
+        loadingView.tintColor = UIColor.white
         self.dg_addPullToRefreshWithActionHandler(onPull, loadingView: loadingView)
-        self.dg_setPullToRefreshFillColor(UIColor.flatWhite())
-        self.dg_setPullToRefreshBackgroundColor(UIColor.flatWhiteColorDark())
+        self.dg_setPullToRefreshFillColor(UIColor.broccoliGreen().withAlphaComponent(0.6))
+        self.dg_setPullToRefreshBackgroundColor(UIColor.broccoliGreenLighter())
     }
 }

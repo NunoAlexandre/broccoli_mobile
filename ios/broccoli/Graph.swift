@@ -30,7 +30,7 @@ class Graph {
         graph.fillGradientEndColor = UIColor.broccoliGreen()
         
         graph.dataPointSpacing = 80
-        graph.dataPointSize = 3
+        graph.dataPointSize = 4
         graph.dataPointFillColor = UIColor.white
         
         graph.referenceLineLabelFont = UIFont.boldSystemFont(ofSize: 8)
