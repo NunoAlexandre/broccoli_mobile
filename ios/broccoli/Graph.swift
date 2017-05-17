@@ -25,7 +25,7 @@ class Graph {
         graph.fillColor = UIColor.flatGreen()
         graph.fillGradientType = .linear
         graph.fillGradientStartColor = UIColor.flatGreen()
-        graph.fillGradientEndColor = UIColor.flatGreen()
+        graph.fillGradientEndColor = UIColor.flatForestGreen()
         
         graph.dataPointSpacing = 80
         graph.dataPointSize = 3
