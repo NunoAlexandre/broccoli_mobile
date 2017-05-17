@@ -53,14 +53,14 @@
                         </subviews>
                         <color key="backgroundColor" red="0.77604550120000004" green="0.82911193370000003" blue="0.37433615329999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="nFm-6n-lJm" secondAttribute="bottom" constant="48" id="0i1-j7-kKd"/>
                             <constraint firstItem="NEE-xU-4vq" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="11X-74-lks"/>
                             <constraint firstAttribute="trailing" secondItem="NEE-xU-4vq" secondAttribute="trailing" id="12l-xT-fUa"/>
                             <constraint firstItem="vmB-wt-7o7" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="68" id="3db-Yi-vxp"/>
-                            <constraint firstItem="vmB-wt-7o7" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="71" id="9HJ-4z-WHp"/>
+                            <constraint firstItem="vmB-wt-7o7" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="71" id="IEu-4Q-JFv"/>
                             <constraint firstItem="NEE-xU-4vq" firstAttribute="top" secondItem="vmB-wt-7o7" secondAttribute="bottom" constant="24" id="KEG-Wl-dqD"/>
                             <constraint firstItem="nFm-6n-lJm" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="70" id="RwR-Wa-q0K"/>
                             <constraint firstItem="vmB-wt-7o7" firstAttribute="centerX" secondItem="NEE-xU-4vq" secondAttribute="centerX" id="d6Y-AK-VsQ"/>
-                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="nFm-6n-lJm" secondAttribute="bottom" constant="48" id="j9Q-Ae-y1b"/>
                             <constraint firstItem="NEE-xU-4vq" firstAttribute="centerX" secondItem="nFm-6n-lJm" secondAttribute="centerX" id="sMq-iP-WrJ"/>
                         </constraints>
                     </view>

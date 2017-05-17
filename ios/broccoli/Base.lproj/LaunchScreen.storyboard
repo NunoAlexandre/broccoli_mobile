@@ -18,17 +18,17 @@
                         <viewControllerLayoutGuide type="top" id="M09-R7-whc"/>
                         <viewControllerLayoutGuide type="bottom" id="WPi-HC-INH"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="DZD-CH-af2">
+                    <view key="view" contentMode="scaleToFill" id="kEQ-HS-9qS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="broccoli_512" translatesAutoresizingMaskIntoConstraints="NO" id="xZB-TY-NnB">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="broccoli_512" translatesAutoresizingMaskIntoConstraints="NO" id="ZNh-hg-HcZ">
                                 <rect key="frame" x="0.0" y="175" width="320" height="150"/>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Broccoli" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TYV-Su-CIZ">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Broccoli" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QB0-GI-slj">
                                 <rect key="frame" x="84" y="91" width="153" height="60"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="cbU-59-coU"/>
+                                    <constraint firstAttribute="height" constant="60" id="gtA-Ti-qR4"/>
                                 </constraints>
                                 <color key="textColor" red="1" green="0.98662787679999997" blue="0.84043037890000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="48"/>
@@ -37,13 +37,13 @@
                         </subviews>
                         <color key="backgroundColor" red="0.77604550120000004" green="0.82911193370000003" blue="0.37433615329999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="WPi-HC-INH" firstAttribute="top" secondItem="xZB-TY-NnB" secondAttribute="bottom" constant="243" id="ETe-ow-U2d"/>
-                            <constraint firstAttribute="trailing" secondItem="xZB-TY-NnB" secondAttribute="trailing" id="R7z-ZR-PBm"/>
-                            <constraint firstItem="TYV-Su-CIZ" firstAttribute="top" secondItem="M09-R7-whc" secondAttribute="bottom" constant="71" id="euN-S5-CeX"/>
-                            <constraint firstItem="TYV-Su-CIZ" firstAttribute="centerX" secondItem="xZB-TY-NnB" secondAttribute="centerX" id="k3o-Jw-gcf"/>
-                            <constraint firstItem="xZB-TY-NnB" firstAttribute="top" secondItem="TYV-Su-CIZ" secondAttribute="bottom" constant="24" id="pEN-EU-dQR"/>
-                            <constraint firstItem="xZB-TY-NnB" firstAttribute="leading" secondItem="DZD-CH-af2" secondAttribute="leading" id="rKV-E4-g2F"/>
-                            <constraint firstItem="TYV-Su-CIZ" firstAttribute="leading" secondItem="DZD-CH-af2" secondAttribute="leadingMargin" constant="68" id="s8r-CS-DHS"/>
+                            <constraint firstItem="ZNh-hg-HcZ" firstAttribute="top" secondItem="QB0-GI-slj" secondAttribute="bottom" constant="24" id="3ht-ih-RXe"/>
+                            <constraint firstItem="ZNh-hg-HcZ" firstAttribute="leading" secondItem="kEQ-HS-9qS" secondAttribute="leading" id="YKK-G3-Loj"/>
+                            <constraint firstItem="QB0-GI-slj" firstAttribute="leading" secondItem="kEQ-HS-9qS" secondAttribute="leadingMargin" constant="68" id="fo9-QN-Oxe"/>
+                            <constraint firstItem="QB0-GI-slj" firstAttribute="centerX" secondItem="ZNh-hg-HcZ" secondAttribute="centerX" id="h7m-uF-FmN"/>
+                            <constraint firstItem="QB0-GI-slj" firstAttribute="top" secondItem="M09-R7-whc" secondAttribute="bottom" constant="71" id="kZ9-ih-jHo"/>
+                            <constraint firstItem="WPi-HC-INH" firstAttribute="top" secondItem="ZNh-hg-HcZ" secondAttribute="bottom" constant="243" id="la9-gG-Ecb"/>
+                            <constraint firstAttribute="trailing" secondItem="ZNh-hg-HcZ" secondAttribute="trailing" id="qg1-eg-pYJ"/>
                         </constraints>
                     </view>
                 </viewController>
