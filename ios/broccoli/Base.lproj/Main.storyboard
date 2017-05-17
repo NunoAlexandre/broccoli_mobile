@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -23,7 +22,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nFm-6n-lJm">
-                                <rect key="frame" x="81" y="345" width="119" height="74"/>
+                                <rect key="frame" x="101" y="305" width="119" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74" id="mUn-0o-Cof"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="GillSans-BoldItalic" family="Gill Sans" pointSize="30"/>
                                 <state key="normal" title="Let's go!">
                                     <color key="titleColor" red="0.043080717329999997" green="0.5228818059" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -32,12 +34,18 @@
                                     <action selector="showLock:" destination="9pv-A4-QxB" eventType="touchUpInside" id="KEz-Hw-rQS"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="broccoli_512" translatesAutoresizingMaskIntoConstraints="NO" id="NEE-xU-4vq">
+                                <rect key="frame" x="0.0" y="144" width="320" height="150"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="nFm-6n-lJm" secondAttribute="bottom" constant="149" id="5Qy-1f-HF6"/>
-                            <constraint firstItem="nFm-6n-lJm" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="325" id="5rg-14-8ZZ"/>
-                            <constraint firstItem="nFm-6n-lJm" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="65" id="6Ow-dy-qjv"/>
+                            <constraint firstItem="NEE-xU-4vq" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="27z-JK-NzT"/>
+                            <constraint firstItem="NEE-xU-4vq" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="124" id="Nfr-8B-UgR"/>
+                            <constraint firstItem="nFm-6n-lJm" firstAttribute="top" secondItem="NEE-xU-4vq" secondAttribute="bottom" constant="11" id="RSz-Xj-Ixa"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="nFm-6n-lJm" secondAttribute="bottom" constant="189" id="iAe-BM-a6B"/>
+                            <constraint firstItem="NEE-xU-4vq" firstAttribute="centerX" secondItem="nFm-6n-lJm" secondAttribute="centerX" id="iqC-nz-qX2"/>
+                            <constraint firstAttribute="trailing" secondItem="NEE-xU-4vq" secondAttribute="trailing" id="kBc-Kn-JGq"/>
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
@@ -85,7 +93,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="HU8-fa-VIC"/>
                     <connections>
-                        <segue destination="9pv-A4-QxB" kind="presentation" identifier="onLogout" modalPresentationStyle="overCurrentContext" id="v3M-71-Jvf"/>
+                        <segue destination="9pv-A4-QxB" kind="presentation" identifier="onLogout" modalPresentationStyle="overFullScreen" id="v3M-71-Jvf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kbZ-QW-H0Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -235,4 +243,7 @@
             <point key="canvasLocation" x="3615" y="445.77464788732397"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="broccoli_512" width="256" height="256"/>
+    </resources>
 </document>
