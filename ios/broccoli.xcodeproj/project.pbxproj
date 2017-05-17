@@ -28,6 +28,7 @@
 		BCF8B8121ECB963B00126CCA /* BroccoliNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF8B8111ECB963B00126CCA /* BroccoliNavigationController.swift */; };
 		BCF8B8141ECC370A00126CCA /* ESTabBarController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCF8B8131ECC370A00126CCA /* ESTabBarController.framework */; };
 		BCF957921ECC5C5A00D268F1 /* DGElasticPullToRefresh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCF957911ECC5C5A00D268F1 /* DGElasticPullToRefresh.framework */; };
+		BCF957951ECC746200D268F1 /* PullToRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF957941ECC746200D268F1 /* PullToRefresh.swift */; };
 		BCFC0B8F1EC4E5090082A581 /* UserToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFC0B8E1EC4E5090082A581 /* UserToken.swift */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +78,7 @@
 		BCF8B8111ECB963B00126CCA /* BroccoliNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BroccoliNavigationController.swift; sourceTree = "<group>"; };
 		BCF8B8131ECC370A00126CCA /* ESTabBarController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ESTabBarController.framework; path = Carthage/Build/iOS/ESTabBarController.framework; sourceTree = "<group>"; };
 		BCF957911ECC5C5A00D268F1 /* DGElasticPullToRefresh.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DGElasticPullToRefresh.framework; path = ../../../DGElasticPullToRefresh/Carthage/Build/iOS/DGElasticPullToRefresh.framework; sourceTree = "<group>"; };
+		BCF957941ECC746200D268F1 /* PullToRefresh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PullToRefresh.swift; sourceTree = "<group>"; };
 		BCFC0B8E1EC4E5090082A581 /* UserToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserToken.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -116,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				BCF8B8111ECB963B00126CCA /* BroccoliNavigationController.swift */,
+				BCF957941ECC746200D268F1 /* PullToRefresh.swift */,
 			);
 			name = ui;
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 		BC8B3D841EA50AAE000BC305 /* broccoli */ = {
 			isa = PBXGroup;
 			children = (
+				BCF957931ECC73EC00D268F1 /* api */,
 				BC4FAB831ECB8CCB000EA05D /* ui */,
 				BC4FF9C91ECB4DD20062CC77 /* libs */,
 				BC4FF9CA1ECB4DE90062CC77 /* auth */,
@@ -225,6 +229,13 @@
 				BCCF11591ECB716300F6450E /* Graph.swift */,
 			);
 			name = Journey;
+			sourceTree = "<group>";
+		};
+		BCF957931ECC73EC00D268F1 /* api */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = api;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -394,6 +405,7 @@
 				BCCF115A1ECB716300F6450E /* Graph.swift in Sources */,
 				BC8B3D861EA50AAE000BC305 /* AppDelegate.swift in Sources */,
 				BC08A0491EAD3368006E23D8 /* DayFormVC.swift in Sources */,
+				BCF957951ECC746200D268F1 /* PullToRefresh.swift in Sources */,
 				BC4FF9C71ECB49470062CC77 /* SettingsVC.swift in Sources */,
 				BCFC0B8F1EC4E5090082A581 /* UserToken.swift in Sources */,
 				BC4FF9C11EC9BBC90062CC77 /* ScrollableGraphView.swift in Sources */,
