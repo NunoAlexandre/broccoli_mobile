@@ -13,21 +13,21 @@ import Alamofire
 import Lock
 import DGElasticPullToRefresh
 
-class JourneyVC : UIViewController {
+class JourneyVC : UIViewController, PointSelectedProtocol {
     @IBOutlet weak var chartView: UIView!
     @IBOutlet weak var containerView: UIScrollView!
     var graph : ScrollableGraphView!
     
     override open func loadView() {
         super.loadView()
-        graph = Graph.new(frame: chartView.frame)
+        graph = Graph.new(frame: chartView.frame, delegate: self)
         containerView.plugPullToRefresh { self.fetchGraphData(graph: self.graph)}
     }
     
     override open func viewDidLoad()
     {
         super.viewDidLoad()
-        fetchGraphData(graph: Graph.new(frame: chartView.frame))
+        fetchGraphData(graph: graph)
     }
     
     func fetchGraphData(graph : ScrollableGraphView) {
@@ -53,11 +53,15 @@ class JourneyVC : UIViewController {
     }
     
     func labels(_ data: [[String:Any]]) -> [String] {
-        return data.flatMap { $0["day"] as? String! }
+        return data.flatMap { ($0["day"] as? String!) }
     }
     
     
     func levelAsNum(value : String) -> Double {
         return Double(["one" : 1, "two" : 2,"three" : 3, "five" : 5, "eight" : 8, "twenty_one" : 21][value]!)
+    }
+    
+    func pointWasSelectedAt(index:Int, label: String, value: Double, location: CGPoint) {
+        AZDialogViewController(title: "\(label) :: \(Int(value))" , message: "Some message goes here - what shall it be? Well, it depends on the user!").aLaBroccoli().show(in: self)
     }
 }
