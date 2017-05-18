@@ -13,6 +13,11 @@
 		BC4FF9C31EC9E22C0062CC77 /* Chameleon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC4FF9C21EC9E22C0062CC77 /* Chameleon.framework */; };
 		BC4FF9C71ECB49470062CC77 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4FF9C61ECB49470062CC77 /* SettingsVC.swift */; };
 		BC764F6B1EC7823800258E11 /* JourneyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC764F6A1EC7823800258E11 /* JourneyVC.swift */; };
+		BC76A7891ECE14CA00844B09 /* AZDialogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC76A7881ECE14CA00844B09 /* AZDialogViewController.swift */; };
+		BC76A78B1ECE1A2D00844B09 /* Popup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC76A78A1ECE1A2D00844B09 /* Popup.swift */; };
+		BC76A78E1ECE207E00844B09 /* Journey.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC76A78D1ECE207E00844B09 /* Journey.swift */; };
+		BC76A7901ECE211F00844B09 /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC76A78F1ECE211F00844B09 /* Step.swift */; };
+		BC76A7921ECE27EA00844B09 /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC76A7911ECE27EA00844B09 /* Level.swift */; };
 		BC8B3D861EA50AAE000BC305 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8B3D851EA50AAE000BC305 /* AppDelegate.swift */; };
 		BC8B3D881EA50AAE000BC305 /* GuardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8B3D871EA50AAE000BC305 /* GuardVC.swift */; };
 		BC8B3D8D1EA50AAE000BC305 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC8B3D8B1EA50AAE000BC305 /* Main.storyboard */; settings = {ASSET_TAGS = (home, ); }; };
@@ -58,6 +63,12 @@
 		BC4FF9C61ECB49470062CC77 /* SettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		BC764F681EC7591B00258E11 /* Charts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Charts.framework; path = Carthage/Build/iOS/Charts.framework; sourceTree = "<group>"; };
 		BC764F6A1EC7823800258E11 /* JourneyVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JourneyVC.swift; sourceTree = "<group>"; };
+		BC76A7861ECE10AD00844B09 /* Presentr.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Presentr.framework; path = Carthage/Build/iOS/Presentr.framework; sourceTree = "<group>"; };
+		BC76A7881ECE14CA00844B09 /* AZDialogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AZDialogViewController.swift; sourceTree = "<group>"; };
+		BC76A78A1ECE1A2D00844B09 /* Popup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Popup.swift; sourceTree = "<group>"; };
+		BC76A78D1ECE207E00844B09 /* Journey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Journey.swift; sourceTree = "<group>"; };
+		BC76A78F1ECE211F00844B09 /* Step.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Step.swift; sourceTree = "<group>"; };
+		BC76A7911ECE27EA00844B09 /* Level.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
 		BC8B3D821EA50AAE000BC305 /* broccoli.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = broccoli.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC8B3D851EA50AAE000BC305 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC8B3D871EA50AAE000BC305 /* GuardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuardVC.swift; sourceTree = "<group>"; };
@@ -122,6 +133,7 @@
 				BCF8B8111ECB963B00126CCA /* BroccoliNavigationController.swift */,
 				BCF957941ECC746200D268F1 /* PullToRefresh.swift */,
 				BC9D36621ECCC896003EF321 /* BroccoliColors.swift */,
+				BC76A78A1ECE1A2D00844B09 /* Popup.swift */,
 			);
 			name = ui;
 			sourceTree = "<group>";
@@ -140,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				BC4FF9C01EC9BBC90062CC77 /* ScrollableGraphView.swift */,
+				BC76A7881ECE14CA00844B09 /* AZDialogViewController.swift */,
 			);
 			name = libs;
 			sourceTree = "<group>";
@@ -151,6 +164,16 @@
 				BC8B3D871EA50AAE000BC305 /* GuardVC.swift */,
 			);
 			name = auth;
+			sourceTree = "<group>";
+		};
+		BC76A78C1ECE204700844B09 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				BC76A78D1ECE207E00844B09 /* Journey.swift */,
+				BC76A78F1ECE211F00844B09 /* Step.swift */,
+				BC76A7911ECE27EA00844B09 /* Level.swift */,
+			);
+			name = model;
 			sourceTree = "<group>";
 		};
 		BC8B3D791EA50AAE000BC305 = {
@@ -177,6 +200,7 @@
 		BC8B3D841EA50AAE000BC305 /* broccoli */ = {
 			isa = PBXGroup;
 			children = (
+				BC76A78C1ECE204700844B09 /* model */,
 				BCF957931ECC73EC00D268F1 /* api */,
 				BC4FAB831ECB8CCB000EA05D /* ui */,
 				BC4FF9C91ECB4DD20062CC77 /* libs */,
@@ -213,6 +237,7 @@
 		BC8B3DB51EA522CB000BC305 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BC76A7861ECE10AD00844B09 /* Presentr.framework */,
 				BCF957911ECC5C5A00D268F1 /* DGElasticPullToRefresh.framework */,
 				BCF8B8131ECC370A00126CCA /* ESTabBarController.framework */,
 				BC4FF9C21EC9E22C0062CC77 /* Chameleon.framework */,
@@ -405,16 +430,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC76A78E1ECE207E00844B09 /* Journey.swift in Sources */,
 				BCCF115A1ECB716300F6450E /* Graph.swift in Sources */,
+				BC76A7901ECE211F00844B09 /* Step.swift in Sources */,
+				BC76A78B1ECE1A2D00844B09 /* Popup.swift in Sources */,
 				BC8B3D861EA50AAE000BC305 /* AppDelegate.swift in Sources */,
 				BC08A0491EAD3368006E23D8 /* DayFormVC.swift in Sources */,
 				BCF957951ECC746200D268F1 /* PullToRefresh.swift in Sources */,
 				BC4FF9C71ECB49470062CC77 /* SettingsVC.swift in Sources */,
 				BCFC0B8F1EC4E5090082A581 /* UserToken.swift in Sources */,
+				BC76A7891ECE14CA00844B09 /* AZDialogViewController.swift in Sources */,
 				BC4FF9C11EC9BBC90062CC77 /* ScrollableGraphView.swift in Sources */,
 				BC9D36631ECCC896003EF321 /* BroccoliColors.swift in Sources */,
 				BC764F6B1EC7823800258E11 /* JourneyVC.swift in Sources */,
 				BCF8B8121ECB963B00126CCA /* BroccoliNavigationController.swift in Sources */,
+				BC76A7921ECE27EA00844B09 /* Level.swift in Sources */,
 				BC8B3D881EA50AAE000BC305 /* GuardVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

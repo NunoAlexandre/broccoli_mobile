@@ -11,7 +11,7 @@ import UIKit
 
 class Graph {
     
-    static func new(frame: CGRect) -> ScrollableGraphView {
+    static func new(frame: CGRect, delegate : PointSelectedProtocol) -> ScrollableGraphView {
         let graph = ScrollableGraphView(frame: frame)
         
         graph.backgroundFillColor = UIColor.flatWhite()
@@ -37,6 +37,8 @@ class Graph {
         graph.referenceLineColor = UIColor.white.withAlphaComponent(0.2)
         graph.referenceLineLabelColor = UIColor.black
         graph.dataPointLabelColor = UIColor.white.withAlphaComponent(0.5)
+        
+        graph.pointSelectedDelegate = delegate
         
         return graph
     }
