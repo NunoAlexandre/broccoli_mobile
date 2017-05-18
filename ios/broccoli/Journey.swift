@@ -21,8 +21,12 @@ class Journey {
         return steps.map{$0.day}
     }
     
-    func levels() -> [String] {
-        return steps.map{$0.level}
+    func levels() -> [Double] {
+        return steps.map{$0.level.value}
+    }
+    
+    func step(atIndex i: Int) -> Step {
+        return steps[i]
     }
     
     

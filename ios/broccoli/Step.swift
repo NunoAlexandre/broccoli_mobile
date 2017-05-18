@@ -11,14 +11,17 @@ import Foundation
 
 class Step {
     let day : String
-    let level : String
+    let level : Level
     let note : String
 
     init(day: String, level: String, note: String) {
         self.day = day
-        self.level = level
+        self.level = Level(level)
         self.note = note
     }
     
+    private func asNum(value : String) -> Double {
+        return Double(["one" : 1, "two" : 2,"three" : 3, "five" : 5, "eight" : 8, "twenty_one" : 21][value]!)
+    }
     
 }
