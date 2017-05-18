@@ -57,18 +57,28 @@ class JourneyVC : UIViewController, ChartViewDelegate {
         ds1.mode = .cubicBezier
         ds1.drawFilledEnabled = true
         ds1.fillColor = UIColor.broccoliGreen()
+        
         data.addDataSet(ds1)
         
-        let lineChartView = LineChartView(frame: self.view.frame)
+        let lineChartView = LineChartView(frame: self.chartView.frame)
+        
+        
+        lineChartView.highlightPerDragEnabled = false
+        lineChartView.highlightPerTapEnabled = true
+        lineChartView.maxHighlightDistance = 30
         
         lineChartView.backgroundColor = UIColor.flatWhite()
         
         
+        lineChartView.drawMarkers = false
         
         
-        
-        
+        lineChartView.doubleTapToZoomEnabled = false
         lineChartView.data = data
+        lineChartView.legend.enabled = false
+        lineChartView.chartDescription?.enabled = false
+        
+        lineChartView.leftAxis.labelPosition = .insideChart
         
         lineChartView.drawGridBackgroundEnabled = false
         lineChartView.drawBordersEnabled = false
@@ -78,7 +88,8 @@ class JourneyVC : UIViewController, ChartViewDelegate {
         lineChartView.rightAxis.drawGridLinesEnabled = false
         lineChartView.rightAxis.enabled = false
         lineChartView.xAxis.labelPosition = .bottom
-        lineChartView.extraBottomOffset = 40
+        lineChartView.minOffset = 0
+        lineChartView.setViewPortOffsets(left: 0, top: 20, right: 0, bottom: 0)
         lineChartView.xAxis.drawGridLinesEnabled = false
         lineChartView.rightAxis.drawAxisLineEnabled = false
 
