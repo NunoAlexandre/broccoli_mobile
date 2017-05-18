@@ -1,1 +1,2 @@
-github "NunoAlexandre/DGElasticPullToRefresh"
+
+github "danielgindi/Charts" ~> 3.0.2

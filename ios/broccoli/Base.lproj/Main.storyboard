@@ -263,4 +263,5 @@
     <resources>
         <image name="broccoli_512" width="256" height="256"/>
     </resources>
+    <color key="tintColor" red="0.53331065180000004" green="0.69949918990000004" blue="0.27481162549999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

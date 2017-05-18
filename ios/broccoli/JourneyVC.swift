@@ -12,8 +12,9 @@ import Chameleon
 import Alamofire
 import Lock
 import DGElasticPullToRefresh
+import Charts
 
-class JourneyVC : UIViewController {
+class JourneyVC : UIViewController, ChartViewDelegate {
     @IBOutlet weak var chartView: UIView!
     @IBOutlet weak var containerView: UIScrollView!
     var graph : ScrollableGraphView!
@@ -28,6 +29,10 @@ class JourneyVC : UIViewController {
     {
         super.viewDidLoad()
         fetchGraphData(graph: Graph.new(frame: chartView.frame))
+        
+//         Do any additional setup after loading the view.
+        
+
     }
     
     func fetchGraphData(graph : ScrollableGraphView) {
@@ -38,18 +43,73 @@ class JourneyVC : UIViewController {
                     let data = jsonDict["data"] as? [[String:Any]] {
                     graph.set(data: self.levels(data), withLabels: self.labels(data))
                     self.reloadGraphView(graph)
+                    self.tempFillChart(json: data)
                     self.containerView.dg_stopLoading()
                 }
         }
     }
     
-    func reloadGraphView(_ graph: ScrollableGraphView) {
+    func tempFillChart(json: [[String:Any]]) {
+        let data = LineChartData()
+        let ds1 = asEntries(json)
+        ds1.colors = [UIColor.broccoliGreenLighter()]
+        ds1.fillAlpha = 1.0
+        ds1.mode = .cubicBezier
+        ds1.drawFilledEnabled = true
+        ds1.fillColor = UIColor.broccoliGreen()
+        data.addDataSet(ds1)
+        
+        let lineChartView = LineChartView(frame: self.view.frame)
+        
+        lineChartView.backgroundColor = UIColor.flatWhite()
+        
+        
+        
+        
+        
+        
+        lineChartView.data = data
+        
+        lineChartView.drawGridBackgroundEnabled = false
+        lineChartView.drawBordersEnabled = false
+        
+        lineChartView.leftAxis.drawAxisLineEnabled = false
+        lineChartView.leftAxis.drawGridLinesEnabled = false
+        lineChartView.rightAxis.drawGridLinesEnabled = false
+        lineChartView.rightAxis.enabled = false
+        lineChartView.xAxis.labelPosition = .bottom
+        lineChartView.extraBottomOffset = 40
+        lineChartView.xAxis.drawGridLinesEnabled = false
+        lineChartView.rightAxis.drawAxisLineEnabled = false
+
+        lineChartView.drawGridBackgroundEnabled = false
+        lineChartView.gridBackgroundColor = NSUIColor.white
+        lineChartView.noDataText = "Niente!"
+        lineChartView.chartDescription?.text = "Linechart Demo"
+        lineChartView.setVisibleXRangeMaximum(4)
+        lineChartView.animate(yAxisDuration: 2, easingOption: .easeInCubic)
+        
+        lineChartView.delegate = self
+        
         self.chartView.subviews.forEach{$0.removeFromSuperview()}
-        self.chartView.addSubview(graph)
+
+        self.chartView.addSubview(lineChartView)
+    }
+    
+    func reloadGraphView(_ graph: ScrollableGraphView) {
+//        self.chartView.subviews.forEach{$0.removeFromSuperview()}
+//        self.chartView.addSubview(graph)
     }
     
     func levels(_ data: [[String:Any]]) -> [Double] {
-        return data.flatMap { self.levelAsNum(value: ($0["level"] as? String)!) }
+        return data.flatMap { self.levelAsNum(($0["level"] as? String)!) }
+    }
+    
+    func asEntries(_ data: [[String:Any]]) -> LineChartDataSet {
+        return LineChartDataSet(values: data.enumerated().map { i, values in
+            return ChartDataEntry(x: Double(i), y: levelAsNum((values["level"] as? String)!),
+                                  data: ["note": values["note"] as? String] as AnyObject)},
+                                label: "Hello!")
     }
     
     func labels(_ data: [[String:Any]]) -> [String] {
@@ -57,7 +117,13 @@ class JourneyVC : UIViewController {
     }
     
     
-    func levelAsNum(value : String) -> Double {
+    func levelAsNum(_ value : String) -> Double {
         return Double(["one" : 1, "two" : 2,"three" : 3, "five" : 5, "eight" : 8, "twenty_one" : 21][value]!)
+    }
+    
+    
+    
+    func chartValueSelected(_ chartView: ChartViewBase, entry: ChartDataEntry, highlight: Highlight) {
+        print("Hello there! ?\(entry.data)")
     }
 }

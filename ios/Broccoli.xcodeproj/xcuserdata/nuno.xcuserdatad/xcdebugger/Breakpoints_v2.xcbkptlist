@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "broccoli/JourneyVC.swift"
-            timestampString = "516711835.034435"
+            timestampString = "516794015.732651"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "19"
-            endingLineNumber = "19"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
             landmarkName = "JourneyVC"
             landmarkType = "3">
          </BreakpointContent>

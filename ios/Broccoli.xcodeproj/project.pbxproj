@@ -26,6 +26,7 @@
 		BCBA07E81EB9187A00152465 /* Auth0.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCBA07E61EB9187A00152465 /* Auth0.framework */; };
 		BCBA07E91EB9187A00152465 /* Lock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCBA07E71EB9187A00152465 /* Lock.framework */; };
 		BCCF115A1ECB716300F6450E /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCF11591ECB716300F6450E /* Graph.swift */; };
+		BCED7B911ECD7FDC00020F09 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC764F681EC7591B00258E11 /* Charts.framework */; };
 		BCF8B8121ECB963B00126CCA /* BroccoliNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF8B8111ECB963B00126CCA /* BroccoliNavigationController.swift */; };
 		BCF8B8141ECC370A00126CCA /* ESTabBarController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCF8B8131ECC370A00126CCA /* ESTabBarController.framework */; };
 		BCF957921ECC5C5A00D268F1 /* DGElasticPullToRefresh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCF957911ECC5C5A00D268F1 /* DGElasticPullToRefresh.framework */; };
@@ -89,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCED7B911ECD7FDC00020F09 /* Charts.framework in Frameworks */,
 				BCF957921ECC5C5A00D268F1 /* DGElasticPullToRefresh.framework in Frameworks */,
 				BCF8B8141ECC370A00126CCA /* ESTabBarController.framework in Frameworks */,
 				BC4FF9C31EC9E22C0062CC77 /* Chameleon.framework in Frameworks */,
@@ -328,7 +330,7 @@
 					};
 				};
 			};
-			buildConfigurationList = BC8B3D7D1EA50AAE000BC305 /* Build configuration list for PBXProject "broccoli" */;
+			buildConfigurationList = BC8B3D7D1EA50AAE000BC305 /* Build configuration list for PBXProject "Broccoli" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -390,6 +392,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Chameleon.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/ESTabBarController.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/DGElasticPullToRefresh.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Charts.framework",
 			);
 			name = "Run Script";
 			outputPaths = (
@@ -656,7 +659,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BC8B3D7D1EA50AAE000BC305 /* Build configuration list for PBXProject "broccoli" */ = {
+		BC8B3D7D1EA50AAE000BC305 /* Build configuration list for PBXProject "Broccoli" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BC8B3DAA1EA50AAE000BC305 /* Debug */,
