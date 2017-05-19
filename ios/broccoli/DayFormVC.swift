@@ -23,14 +23,15 @@ class DayFormVC : FormViewController {
             }
             <<< ActionSheetRow<String>("level") {
                 $0.title = "Level"
-                $0.selectorTitle = "Pick a number"
-                $0.options = ["one","two","three", "five", "eight", "twenty_one"]
+                $0.selectorTitle = "The higher, the better your day was. "
+                $0.options = ["twenty_one", "eight", "five", "three", "two", "one"]
                 $0.add(rule: RuleRequired())
             }
             <<< TextAreaRow("note") { row in
                 row.title = "Note"
                 row.add(rule: RuleMaxLength(maxLength: 400))
             }
+            
             <<< ButtonRow() { row in
                     row.title = "Save"
                     row.cell.height = {90}
@@ -39,7 +40,7 @@ class DayFormVC : FormViewController {
                     let styled = DateFormatter()
                     styled.dateFormat = "yyyy-MM-dd"
                     let userDay = ["user_day" : ["day" : styled.string(from: (self.form.values()["day"] as! Date)),
-                                                 "level" : self.form.values()["level"] as! String,
+                                                 "level" : self.form.values()["level"] as? String,
                                                  "note" : self.form.values()["note"] as? String]]
                     
                     let headers = ["Authorization": " Bearer \(UserToken().peek())" ]
