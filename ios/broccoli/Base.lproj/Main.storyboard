@@ -175,6 +175,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.53331065180000004" green="0.69949918990000004" blue="0.27481162549999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.90823972225189209" green="0.92638683319091797" blue="0.9317171573638916" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="selectedImageTintColor" red="0.53331065180000004" green="0.69949918990000004" blue="0.27481162549999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="T5u-P8-jfh" kind="relationship" relationship="viewControllers" id="nb6-28-icA"/>
@@ -186,11 +189,11 @@
             </objects>
             <point key="canvasLocation" x="2694" y="-321"/>
         </scene>
-        <!--Broccoli Navigation Controller-->
+        <!--Journey-->
         <scene sceneID="Ds6-N8-98G">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="T5u-P8-jfh" customClass="BroccoliNavigationController" customModule="broccoli" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="history" id="Vb7-4n-1Mb" userLabel="Journey"/>
+                    <tabBarItem key="tabBarItem" title="Journey" image="travel" selectedImage="travel" id="Vb7-4n-1Mb" userLabel="Journey"/>
                     <toolbarItems/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="2lg-uw-3ek">
@@ -211,11 +214,11 @@
             </objects>
             <point key="canvasLocation" x="3510" y="-1403.8732394366198"/>
         </scene>
-        <!--Broccoli Navigation Controller-->
+        <!--Add Day-->
         <scene sceneID="ht8-Zh-klE">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8b3-rO-7xp" customClass="BroccoliNavigationController" customModule="broccoli" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="bookmarks" id="pf0-IQ-68z"/>
+                    <tabBarItem key="tabBarItem" title="Add Day" image="pen" selectedImage="pen" id="pf0-IQ-68z"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="l7z-9B-gJx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -239,7 +242,7 @@
         <scene sceneID="7fQ-xa-wtC">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="k0d-Om-iyD" customClass="BroccoliNavigationController" customModule="broccoli" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="more" id="dHj-EM-KXs"/>
+                    <tabBarItem key="tabBarItem" selectedImage="more" systemItem="more" id="dHj-EM-KXs"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="Mii-OV-iwk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -262,5 +265,9 @@
     </scenes>
     <resources>
         <image name="broccoli_512" width="256" height="256"/>
+        <image name="more" width="29" height="29"/>
+        <image name="pen" width="29" height="29"/>
+        <image name="travel" width="29" height="29"/>
     </resources>
+    <color key="tintColor" red="0.66535713279999997" green="0.79207822350000001" blue="0.52729221849999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
