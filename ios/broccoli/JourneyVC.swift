@@ -14,6 +14,7 @@ import Lock
 import DGElasticPullToRefresh
 
 class JourneyVC : UIViewController, PointSelectedProtocol {
+    @IBOutlet weak var noDataView: UIView!
     @IBOutlet weak var chartView: UIView!
     @IBOutlet weak var containerView: UIScrollView!
     var graph : ScrollableGraphView!
@@ -36,17 +37,21 @@ class JourneyVC : UIViewController, PointSelectedProtocol {
         
         Alamofire.request("https://nabroccoli.herokuapp.com/api/days", method: .get, encoding: JSONEncoding.default, headers: headers).responseJSON { response in
                 if let jsonDict = response.result.value as? [String:Any], let data = jsonDict["data"] as? [[String:Any]] {
-                    self.journey = Journey(data: data)
-                    graph.set(data: self.journey.levels(), withLabels: self.journey.days())
-                    self.reloadGraphView()
+                    self.updateView(withJourney: Journey(data: data))
                     self.containerView.dg_stopLoading()
                 }
         }
     }
     
-    func reloadGraphView() {
-        self.chartView.subviews.forEach{$0.removeFromSuperview()}
-        self.chartView.addSubview(graph)
+    func updateView(withJourney journey: Journey) {
+        self.journey = journey
+        self.noDataView.isHidden = journey.hasStarted()
+        chartView.isHidden = journey.isEmpty()
+        if journey.hasStarted() {
+            graph.set(data: self.journey.levels(), withLabels: self.journey.days())
+            self.chartView.subviews.forEach{$0.removeFromSuperview()}
+            self.chartView.addSubview(graph)
+        }
     }
 
     
