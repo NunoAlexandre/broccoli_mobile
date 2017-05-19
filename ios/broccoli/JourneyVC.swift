@@ -38,19 +38,20 @@ class JourneyVC : UIViewController, PointSelectedProtocol {
                 if let jsonDict = response.result.value as? [String:Any], let data = jsonDict["data"] as? [[String:Any]] {
                     self.journey = Journey(data: data)
                     graph.set(data: self.journey.levels(), withLabels: self.journey.days())
-                    self.reloadGraphView(graph)
+                    self.reloadGraphView()
                     self.containerView.dg_stopLoading()
                 }
         }
     }
     
-    func reloadGraphView(_ graph: ScrollableGraphView) {
+    func reloadGraphView() {
         self.chartView.subviews.forEach{$0.removeFromSuperview()}
         self.chartView.addSubview(graph)
     }
 
     
     func pointWasSelectedAt(index:Int, label: String, value: Double, location: CGPoint) {
-        AZDialogViewController(title: "\(label) :: \(Int(value))" , message: journey.step(atIndex: index).note).aLaBroccoli().show(in: self)
+        AZDialogViewController(title: "\(label) :: \(Int(value))" ,
+            message: journey.step(atIndex: index).note).aLaBroccoli().show(in: self)
     }
 }
