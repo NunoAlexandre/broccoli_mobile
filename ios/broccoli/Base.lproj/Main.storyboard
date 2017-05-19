@@ -132,27 +132,69 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OeP-3a-bbq">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="455"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qG9-IK-t05">
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o26-EU-2QD" userLabel="noDataView">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="455"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="broccoli_512" translatesAutoresizingMaskIntoConstraints="NO" id="cFU-Ss-icM">
+                                                <rect key="frame" x="57" y="118" width="204" height="86"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="86" id="TQn-lz-PEk"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w7r-4X-Y0W">
+                                                <rect key="frame" x="98" y="319" width="122" height="30"/>
+                                                <state key="normal" title="Add your first day"/>
+                                                <connections>
+                                                    <segue destination="FRR-6U-Yki" kind="show" id="Ijp-Qz-S6F"/>
+                                                </connections>
+                                            </button>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Welcome" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WS3-dd-odQ">
+                                                <rect key="frame" x="111" y="212" width="97" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="97" id="gTM-v8-AO9"/>
+                                                    <constraint firstAttribute="height" constant="30" id="z5O-Ly-DdR"/>
+                                                </constraints>
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="WS3-dd-odQ" firstAttribute="top" secondItem="cFU-Ss-icM" secondAttribute="bottom" constant="8" symbolic="YES" id="HHz-PM-eaH"/>
+                                            <constraint firstItem="WS3-dd-odQ" firstAttribute="centerX" secondItem="w7r-4X-Y0W" secondAttribute="centerX" id="Idr-tz-7SQ"/>
+                                            <constraint firstItem="w7r-4X-Y0W" firstAttribute="top" secondItem="WS3-dd-odQ" secondAttribute="bottom" constant="77" id="MUv-97-7fl"/>
+                                            <constraint firstItem="WS3-dd-odQ" firstAttribute="centerX" secondItem="o26-EU-2QD" secondAttribute="centerX" id="Ngx-Ci-Okc"/>
+                                            <constraint firstItem="WS3-dd-odQ" firstAttribute="centerY" secondItem="o26-EU-2QD" secondAttribute="centerY" id="Pkp-9B-qxj"/>
+                                            <constraint firstItem="cFU-Ss-icM" firstAttribute="leading" secondItem="o26-EU-2QD" secondAttribute="leading" constant="57" id="Zk1-ur-vCq"/>
+                                            <constraint firstItem="cFU-Ss-icM" firstAttribute="centerX" secondItem="WS3-dd-odQ" secondAttribute="centerX" id="e2Z-dz-B6L"/>
+                                        </constraints>
+                                    </view>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qG9-IK-t05" userLabel="chartView">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="455"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="qG9-IK-t05" firstAttribute="centerY" secondItem="OeP-3a-bbq" secondAttribute="centerY" id="6r4-9G-rvT"/>
-                                    <constraint firstItem="qG9-IK-t05" firstAttribute="centerX" secondItem="OeP-3a-bbq" secondAttribute="centerX" id="NvE-mT-XM2"/>
-                                    <constraint firstAttribute="bottom" secondItem="qG9-IK-t05" secondAttribute="bottom" id="Pbr-LM-H2n"/>
-                                    <constraint firstItem="qG9-IK-t05" firstAttribute="top" secondItem="OeP-3a-bbq" secondAttribute="top" id="abJ-cv-eCw"/>
-                                    <constraint firstItem="qG9-IK-t05" firstAttribute="leading" secondItem="OeP-3a-bbq" secondAttribute="leading" id="bQv-bL-Us8"/>
-                                    <constraint firstAttribute="trailing" secondItem="qG9-IK-t05" secondAttribute="trailing" id="who-Or-fk1"/>
+                                    <constraint firstItem="qG9-IK-t05" firstAttribute="leading" secondItem="OeP-3a-bbq" secondAttribute="leading" id="2Os-ED-D3J"/>
+                                    <constraint firstItem="o26-EU-2QD" firstAttribute="top" secondItem="OeP-3a-bbq" secondAttribute="top" id="Fbi-2n-gim"/>
+                                    <constraint firstItem="o26-EU-2QD" firstAttribute="leading" secondItem="qG9-IK-t05" secondAttribute="leading" id="Il8-7G-69u"/>
+                                    <constraint firstAttribute="bottom" secondItem="o26-EU-2QD" secondAttribute="bottom" id="QeE-UF-6C0"/>
+                                    <constraint firstAttribute="trailing" secondItem="o26-EU-2QD" secondAttribute="trailing" id="VsP-sy-fDR"/>
+                                    <constraint firstItem="qG9-IK-t05" firstAttribute="centerX" secondItem="OeP-3a-bbq" secondAttribute="centerX" id="ezi-YF-6qt"/>
+                                    <constraint firstItem="qG9-IK-t05" firstAttribute="top" secondItem="o26-EU-2QD" secondAttribute="top" id="h3Y-7C-nan"/>
+                                    <constraint firstItem="o26-EU-2QD" firstAttribute="bottom" secondItem="qG9-IK-t05" secondAttribute="bottom" id="phQ-Fa-kGc"/>
+                                    <constraint firstItem="o26-EU-2QD" firstAttribute="trailing" secondItem="qG9-IK-t05" secondAttribute="trailing" id="vfn-Qc-fbc"/>
+                                    <constraint firstItem="o26-EU-2QD" firstAttribute="centerY" secondItem="OeP-3a-bbq" secondAttribute="centerY" id="xGG-8S-ABt"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="OeP-3a-bbq" firstAttribute="leading" secondItem="fZ0-vH-Ucu" secondAttribute="leading" id="Am1-ls-KRW"/>
-                            <constraint firstItem="OeP-3a-bbq" firstAttribute="top" secondItem="H2N-2P-4R1" secondAttribute="bottom" id="ETz-0g-6VE"/>
-                            <constraint firstItem="OeP-3a-bbq" firstAttribute="bottom" secondItem="hmf-M1-o6J" secondAttribute="top" id="QAt-1c-TU6"/>
-                            <constraint firstAttribute="trailing" secondItem="OeP-3a-bbq" secondAttribute="trailing" id="UXg-Eu-S9X"/>
+                            <constraint firstAttribute="trailing" secondItem="OeP-3a-bbq" secondAttribute="trailing" id="UNr-MK-bSU"/>
+                            <constraint firstItem="OeP-3a-bbq" firstAttribute="leading" secondItem="fZ0-vH-Ucu" secondAttribute="leading" id="cuv-Qd-nqj"/>
+                            <constraint firstItem="OeP-3a-bbq" firstAttribute="top" secondItem="H2N-2P-4R1" secondAttribute="bottom" id="kkq-EH-8M7"/>
+                            <constraint firstItem="OeP-3a-bbq" firstAttribute="bottom" secondItem="hmf-M1-o6J" secondAttribute="top" id="syh-iI-oGG"/>
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
@@ -161,6 +203,7 @@
                     <connections>
                         <outlet property="chartView" destination="qG9-IK-t05" id="gAh-hx-5jm"/>
                         <outlet property="containerView" destination="OeP-3a-bbq" id="ZCl-2I-08p"/>
+                        <outlet property="noDataView" destination="qG9-IK-t05" id="i2F-B9-lV3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VgF-20-ewz" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -269,5 +312,8 @@
         <image name="pen" width="29" height="29"/>
         <image name="travel" width="29" height="29"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Ijp-Qz-S6F"/>
+    </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.66535713279999997" green="0.79207822350000001" blue="0.52729221849999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

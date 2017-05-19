@@ -9,7 +9,7 @@
 import Foundation
 
 class Journey {
-    let steps : [Step]
+    private let steps : [Step]
     
     init(data: [[String:Any]] ) {
         steps = data.flatMap {
@@ -28,6 +28,15 @@ class Journey {
     func step(atIndex i: Int) -> Step {
         return steps[i]
     }
+    
+    func hasStarted() -> Bool {
+        return !steps.isEmpty
+    }
+    
+    func isEmpty() -> Bool {
+        return steps.isEmpty
+    }
+
     
     
 }
