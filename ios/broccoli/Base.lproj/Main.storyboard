@@ -186,11 +186,11 @@
             </objects>
             <point key="canvasLocation" x="2694" y="-321"/>
         </scene>
-        <!--Broccoli Navigation Controller-->
+        <!--Journey-->
         <scene sceneID="Ds6-N8-98G">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="T5u-P8-jfh" customClass="BroccoliNavigationController" customModule="broccoli" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="history" id="Vb7-4n-1Mb" userLabel="Journey"/>
+                    <tabBarItem key="tabBarItem" title="Journey" image="broccoli" selectedImage="broccoli" id="Vb7-4n-1Mb" userLabel="Journey"/>
                     <toolbarItems/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="2lg-uw-3ek">
@@ -261,6 +261,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="broccoli" width="61" height="61"/>
         <image name="broccoli_512" width="256" height="256"/>
     </resources>
 </document>
