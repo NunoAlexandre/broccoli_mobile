@@ -38,6 +38,7 @@ class Graph {
         graph.referenceLineLabelColor = UIColor.black
         graph.dataPointLabelColor = UIColor.white.withAlphaComponent(0.5)
         
+        graph.direction = .rightToLeft
         graph.pointSelectedDelegate = delegate
         
         return graph
