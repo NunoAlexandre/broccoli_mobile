@@ -9,13 +9,12 @@
 import UIKit
 import Lock
 import Auth0
+import UserNotifications
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
     var window: UIWindow?
-
-
+    
     func applicationDidBecomeActive(_ application: UIApplication) {
         if let refreshToken = RefreshToken.peek() {
             Auth0.authentication().delegation(withParameters: ["refresh_token": refreshToken])
@@ -29,6 +28,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     }
                 }
         }
+    }
+    
+    func applicationDidFinishLaunching(_ application: UIApplication) {
+        UNUserNotificationCenter.current().removeAllPendingNotificationRequests()
+    }
+    
+    class func setupOnLogin() {
+        BroccoliNotifications(application: UIApplication.shared).setup()
     }
 
 }

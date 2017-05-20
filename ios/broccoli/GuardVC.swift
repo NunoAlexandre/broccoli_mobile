@@ -32,7 +32,6 @@ class GuardVC : UIViewController {
                 $0.titleColor = UIColor.broccoliYellow()
             }
             .onAuth {
-                print("refreshToken: \($0.refreshToken ?? "<none>")")
                 IdToken.save($0.idToken!)
                 RefreshToken.save($0.refreshToken!)
                 button.isHidden = true
@@ -51,6 +50,8 @@ class GuardVC : UIViewController {
     }
     
     func didSuceedToLogin() {
+        AppDelegate.setupOnLogin()
+
         DispatchQueue.main.async() {
             self.performSegue(withIdentifier: "OnSuccessfulLogin", sender: nil)
         }
