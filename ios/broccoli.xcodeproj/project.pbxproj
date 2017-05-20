@@ -36,7 +36,7 @@
 		BCF8B8141ECC370A00126CCA /* ESTabBarController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCF8B8131ECC370A00126CCA /* ESTabBarController.framework */; };
 		BCF957921ECC5C5A00D268F1 /* DGElasticPullToRefresh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCF957911ECC5C5A00D268F1 /* DGElasticPullToRefresh.framework */; };
 		BCF957951ECC746200D268F1 /* PullToRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF957941ECC746200D268F1 /* PullToRefresh.swift */; };
-		BCFC0B8F1EC4E5090082A581 /* UserToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFC0B8E1EC4E5090082A581 /* UserToken.swift */; };
+		BCFC0B8F1EC4E5090082A581 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFC0B8E1EC4E5090082A581 /* Token.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,7 +94,7 @@
 		BCF8B8131ECC370A00126CCA /* ESTabBarController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ESTabBarController.framework; path = Carthage/Build/iOS/ESTabBarController.framework; sourceTree = "<group>"; };
 		BCF957911ECC5C5A00D268F1 /* DGElasticPullToRefresh.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DGElasticPullToRefresh.framework; path = ../../../DGElasticPullToRefresh/Carthage/Build/iOS/DGElasticPullToRefresh.framework; sourceTree = "<group>"; };
 		BCF957941ECC746200D268F1 /* PullToRefresh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PullToRefresh.swift; sourceTree = "<group>"; };
-		BCFC0B8E1EC4E5090082A581 /* UserToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserToken.swift; sourceTree = "<group>"; };
+		BCFC0B8E1EC4E5090082A581 /* Token.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,7 +163,7 @@
 		BC4FF9CA1ECB4DE90062CC77 /* auth */ = {
 			isa = PBXGroup;
 			children = (
-				BCFC0B8E1EC4E5090082A581 /* UserToken.swift */,
+				BCFC0B8E1EC4E5090082A581 /* Token.swift */,
 				BC8B3D871EA50AAE000BC305 /* GuardVC.swift */,
 			);
 			name = auth;
@@ -441,7 +441,7 @@
 				BC08A0491EAD3368006E23D8 /* DayFormVC.swift in Sources */,
 				BCF957951ECC746200D268F1 /* PullToRefresh.swift in Sources */,
 				BC4FF9C71ECB49470062CC77 /* SettingsVC.swift in Sources */,
-				BCFC0B8F1EC4E5090082A581 /* UserToken.swift in Sources */,
+				BCFC0B8F1EC4E5090082A581 /* Token.swift in Sources */,
 				BC76A7891ECE14CA00844B09 /* AZDialogViewController.swift in Sources */,
 				BC4FF9C11EC9BBC90062CC77 /* ScrollableGraphView.swift in Sources */,
 				BC9D36631ECCC896003EF321 /* BroccoliColors.swift in Sources */,

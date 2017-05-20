@@ -18,6 +18,11 @@ class GuardVC : UIViewController {
     @IBAction func showLock(_ button: UIButton) {
         Lock
             .classic()
+            .withOptions{
+                $0.closable = true
+                $0.scope = "openid offline_access"
+                $0.parameters = ["device": UIDevice.current.name]
+            }
             .withStyle {
                 $0.title = "Broccoli"
                 $0.headerColor = UIColor.broccoliGreenLighter()
@@ -27,21 +32,22 @@ class GuardVC : UIViewController {
                 $0.titleColor = UIColor.broccoliYellow()
             }
             .onAuth {
-                if UserToken(token: $0.idToken!).isPresent() {
-                    button.isHidden = true
-                    self.didSuceedToLogin()
-                }
+                print("refreshToken: \($0.refreshToken ?? "<none>")")
+                IdToken.save($0.idToken!)
+                RefreshToken.save($0.refreshToken!)
+                button.isHidden = true
+                self.didSuceedToLogin()
             }
             .present(from: self)
     }
     
     override func viewDidLoad() {
-        if UserToken().isPresent() { didSuceedToLogin() }
+        if IdToken.isPresent() { didSuceedToLogin() }
     }
     
     
     override func viewWillAppear(_ animated: Bool) {
-        getStartedButton.isHidden = UserToken().isPresent()
+        getStartedButton.isHidden = IdToken.isPresent()
     }
     
     func didSuceedToLogin() {
@@ -49,6 +55,5 @@ class GuardVC : UIViewController {
             self.performSegue(withIdentifier: "OnSuccessfulLogin", sender: nil)
         }
     }
-
 }
 

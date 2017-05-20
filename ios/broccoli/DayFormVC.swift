@@ -44,7 +44,7 @@ class DayFormVC : FormViewController {
                                                  "level" : self.form.values()["level"] as? String,
                                                  "note" : self.form.values()["note"] as? String]]
                     
-                    let headers = ["Authorization": " Bearer \(UserToken().peek())" ]
+                    let headers = ["Authorization": " Bearer \(IdToken.peek())" ]
                     
                     Alamofire.request("https://nabroccoli.herokuapp.com/api/days", method: .post, parameters: userDay,
                                       encoding: JSONEncoding.default, headers: headers)
