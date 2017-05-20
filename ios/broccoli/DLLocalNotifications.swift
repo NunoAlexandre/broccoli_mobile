@@ -257,7 +257,6 @@ public class DLNotification {
     var region:CLRegion?
     
     public init (identifier:String, alertTitle:String, alertBody: String, date: Date?, repeats: Repeats ) {
-        
         self.alertBody = alertBody
         self.alertTitle = alertTitle
         self.fireDate = date
