@@ -26,14 +26,13 @@ class JourneyVC : UIViewController, PointSelectedProtocol {
         containerView.plugPullToRefresh { self.fetchGraphData(graph: self.graph)}
     }
     
-    override open func viewDidLoad()
-    {
+    override open func viewDidLoad() {
         super.viewDidLoad()
         fetchGraphData(graph: graph)
     }
     
     func fetchGraphData(graph : ScrollableGraphView) {
-        let headers = ["Authorization": " Bearer \(UserToken().peek())" ]
+        let headers = ["Authorization": " Bearer \(UserToken().peek())"]
         
         Alamofire.request("https://nabroccoli.herokuapp.com/api/days", method: .get, encoding: JSONEncoding.default, headers: headers).responseJSON { response in
                 if let jsonDict = response.result.value as? [String:Any], let data = jsonDict["data"] as? [[String:Any]] {
