@@ -32,7 +32,7 @@ class JourneyVC : UIViewController, PointSelectedProtocol {
     }
     
     func fetchGraphData(graph : ScrollableGraphView) {
-        let headers = ["Authorization": " Bearer \(UserToken().peek())"]
+        let headers = ["Authorization": " Bearer \(IdToken.peek())"]
         
         Alamofire.request("https://nabroccoli.herokuapp.com/api/days", method: .get, encoding: JSONEncoding.default, headers: headers).responseJSON { response in
                 if let status = response.response?.statusCode {
