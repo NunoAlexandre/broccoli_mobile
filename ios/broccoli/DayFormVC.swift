@@ -19,6 +19,7 @@ class DayFormVC : FormViewController {
             <<< DateRow("day") { row in
                 row.title = "Day"
                 row.add(rule: RuleRequired())
+                row.maximumDate = Date()
                 row.value = Date()
             }
             <<< ActionSheetRow<String>("level") {
