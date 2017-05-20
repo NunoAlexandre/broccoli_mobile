@@ -20,11 +20,6 @@ class SettingsVC: FormViewController {
                     row.title = "Logout"
                     row.cell.height = {65}
                 }
-                .onCellSelection { _,_ in  self.doLogout() }
-    }
-    
-    func doLogout() {
-        UserToken().remove()
-        self.performSegue(withIdentifier: "onLogout", sender: nil)
+                .onCellSelection { _,_ in  self.performLogout() }
     }
 }

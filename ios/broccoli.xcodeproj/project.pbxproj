@@ -26,6 +26,7 @@
 		BC8B3D9D1EA50AAE000BC305 /* broccoliTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8B3D9C1EA50AAE000BC305 /* broccoliTests.swift */; };
 		BC8B3DA81EA50AAE000BC305 /* broccoliUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8B3DA71EA50AAE000BC305 /* broccoliUITests.swift */; };
 		BC8B3DB71EA522CB000BC305 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC8B3DB61EA522CB000BC305 /* Alamofire.framework */; };
+		BC93B73D1ED058FB005EDC5A /* Logout.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC93B73C1ED058FB005EDC5A /* Logout.swift */; };
 		BC9D36631ECCC896003EF321 /* BroccoliColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9D36621ECCC896003EF321 /* BroccoliColors.swift */; };
 		BCBA07E51EB9136A00152465 /* Auth0.plist in Resources */ = {isa = PBXBuildFile; fileRef = BCBA07E41EB9136A00152465 /* Auth0.plist */; };
 		BCBA07E81EB9187A00152465 /* Auth0.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCBA07E61EB9187A00152465 /* Auth0.framework */; };
@@ -83,6 +84,7 @@
 		BC8B3DA71EA50AAE000BC305 /* broccoliUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = broccoliUITests.swift; sourceTree = "<group>"; };
 		BC8B3DA91EA50AAE000BC305 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC8B3DB61EA522CB000BC305 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		BC93B73C1ED058FB005EDC5A /* Logout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logout.swift; sourceTree = "<group>"; };
 		BC9D36621ECCC896003EF321 /* BroccoliColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BroccoliColors.swift; sourceTree = "<group>"; };
 		BCBA07E41EB9136A00152465 /* Auth0.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Auth0.plist; sourceTree = "<group>"; };
 		BCBA07E61EB9187A00152465 /* Auth0.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Auth0.framework; path = Carthage/Build/iOS/Auth0.framework; sourceTree = "<group>"; };
@@ -127,15 +129,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		BC4FAB831ECB8CCB000EA05D /* ui */ = {
+		BC4FAB831ECB8CCB000EA05D /* custom */ = {
 			isa = PBXGroup;
 			children = (
 				BCF8B8111ECB963B00126CCA /* BroccoliNavigationController.swift */,
 				BCF957941ECC746200D268F1 /* PullToRefresh.swift */,
 				BC9D36621ECCC896003EF321 /* BroccoliColors.swift */,
 				BC76A78A1ECE1A2D00844B09 /* Popup.swift */,
+				BC93B73C1ED058FB005EDC5A /* Logout.swift */,
 			);
-			name = ui;
+			name = custom;
 			sourceTree = "<group>";
 		};
 		BC4FF9C81ECB4D620062CC77 /* home */ = {
@@ -202,7 +205,7 @@
 			children = (
 				BC76A78C1ECE204700844B09 /* model */,
 				BCF957931ECC73EC00D268F1 /* api */,
-				BC4FAB831ECB8CCB000EA05D /* ui */,
+				BC4FAB831ECB8CCB000EA05D /* custom */,
 				BC4FF9C91ECB4DD20062CC77 /* libs */,
 				BC4FF9CA1ECB4DE90062CC77 /* auth */,
 				BC4FF9C81ECB4D620062CC77 /* home */,
@@ -443,6 +446,7 @@
 				BC4FF9C11EC9BBC90062CC77 /* ScrollableGraphView.swift in Sources */,
 				BC9D36631ECCC896003EF321 /* BroccoliColors.swift in Sources */,
 				BC764F6B1EC7823800258E11 /* JourneyVC.swift in Sources */,
+				BC93B73D1ED058FB005EDC5A /* Logout.swift in Sources */,
 				BCF8B8121ECB963B00126CCA /* BroccoliNavigationController.swift in Sources */,
 				BC76A7921ECE27EA00844B09 /* Level.swift in Sources */,
 				BC8B3D881EA50AAE000BC305 /* GuardVC.swift in Sources */,

@@ -49,7 +49,6 @@ class DayFormVC : FormViewController {
                     Alamofire.request("https://nabroccoli.herokuapp.com/api/days", method: .post, parameters: userDay,
                                       encoding: JSONEncoding.default, headers: headers)
                         .responseJSON { response in
-                            print(response)
                             if let status = response.response?.statusCode {
                                 switch(status) {
                                 case 201:
@@ -64,11 +63,7 @@ class DayFormVC : FormViewController {
                                     alert.addAction(UIAlertAction(title: "Oke", style: .default, handler: { (action) -> Void in }))
                                     self.present(alert, animated: true, completion: nil)
                                 case 401:
-                                    let alert = UIAlertController(title: "Ups!",
-                                                                  message: "A login a week keeps the hacker asleep!",
-                                                                  preferredStyle: .alert)
-                                    alert.addAction(UIAlertAction(title: "Oke", style: .default, handler: { (action) -> Void in }))
-                                    self.present(alert, animated: true, completion: nil)
+                                    self.performExplainedLogout()
                                 default:
                                     print("error with response status: \(status)")
                                 }
