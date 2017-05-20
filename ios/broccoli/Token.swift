@@ -40,8 +40,8 @@ class RefreshToken {
         UserDefaults.standard.set(token, forKey: self.key)
     }
     
-    class func peek() -> String {
-        return UserDefaults.standard.value(forKey: self.key) as! String
+    class func peek() -> String? {
+        return UserDefaults.standard.value(forKey: self.key) as? String
     }
     
     class func isPresent() -> Bool {
