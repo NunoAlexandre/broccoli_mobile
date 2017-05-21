@@ -13,6 +13,7 @@ extension UIViewController {
     
     func performLogout() {
         IdToken.remove()
+        RefreshToken.remove()
         let guardVC = UIStoryboard.main().instantiateInitialViewController()!
         self.present(guardVC, animated: true, completion: nil)
     }
