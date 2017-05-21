@@ -13,11 +13,11 @@ class AddDayNotification {
     
     
     init(notifyAt : Date) {
-       notification = DLNotification(identifier: "addDayNotification",
-                                          alertTitle: "Hi Broccoli!",
-                                          alertBody: "Don't forget to add your day :)",
-                                          date: notifyAt,
-                                          repeats: .Daily)
+       notification = DLNotification( identifier: "addDayNotification",
+                                  alertTitle: "Hi Broccoli!",
+                                  alertBody: "Don't forget to add your day :)",
+                                  date: notifyAt,
+                                  repeats: .Daily)
     }
     
     func schedule() {
@@ -25,6 +25,6 @@ class AddDayNotification {
     }
     
     class func defaultDate() -> Date {
-        return Calendar.current.startOfDay(for: Date()).addingTimeInterval(-60*3)
+        return Calendar.current.startOfDay(for: Date()).addingTimeInterval(-10800)
     }
 }
