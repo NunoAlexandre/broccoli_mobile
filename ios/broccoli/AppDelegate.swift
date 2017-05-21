@@ -23,8 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                         case .success(let credentials):
                             IdToken.save(credentials["id_token"] as! String)
                         case .failure(_):
-                            IdToken.remove()
-                            RefreshToken.remove()
+                            break
                     }
                 }
         }
@@ -35,6 +34,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     class func setupOnLogin() {
+        UNUserNotificationCenter.current().removeAllPendingNotificationRequests()
         BroccoliNotifications(application: UIApplication.shared).setup()
     }
 
