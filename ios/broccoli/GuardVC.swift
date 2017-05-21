@@ -51,9 +51,8 @@ class GuardVC : UIViewController {
     
     func didSuceedToLogin() {
         AppDelegate.setupOnLogin()
-
         DispatchQueue.main.async() {
-            self.performSegue(withIdentifier: "OnSuccessfulLogin", sender: nil)
+            self.performSegue(withIdentifier: "onSuccessfulLogin", sender: nil)
         }
     }
 }
