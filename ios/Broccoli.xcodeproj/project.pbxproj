@@ -10,6 +10,8 @@
 		BC08A0471EAD1474006E23D8 /* Eureka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC17D5581EA68BFA0015FD52 /* Eureka.framework */; };
 		BC08A0491EAD3368006E23D8 /* DayFormVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC08A0481EAD3368006E23D8 /* DayFormVC.swift */; };
 		BC0E73DC1ED31EAB009BC0E3 /* BroccoliAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0E73DB1ED31EAB009BC0E3 /* BroccoliAPI.swift */; };
+		BC0E73DE1ED32A1A009BC0E3 /* SimpleAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0E73DD1ED32A1A009BC0E3 /* SimpleAlert.swift */; };
+		BC0E73E01ED331AE009BC0E3 /* Feedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0E73DF1ED331AE009BC0E3 /* Feedback.swift */; };
 		BC4FF9C11EC9BBC90062CC77 /* ScrollableGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4FF9C01EC9BBC90062CC77 /* ScrollableGraphView.swift */; };
 		BC4FF9C31EC9E22C0062CC77 /* Chameleon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC4FF9C21EC9E22C0062CC77 /* Chameleon.framework */; };
 		BC4FF9C71ECB49470062CC77 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4FF9C61ECB49470062CC77 /* SettingsVC.swift */; };
@@ -63,6 +65,8 @@
 /* Begin PBXFileReference section */
 		BC08A0481EAD3368006E23D8 /* DayFormVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayFormVC.swift; sourceTree = "<group>"; };
 		BC0E73DB1ED31EAB009BC0E3 /* BroccoliAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BroccoliAPI.swift; sourceTree = "<group>"; };
+		BC0E73DD1ED32A1A009BC0E3 /* SimpleAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleAlert.swift; sourceTree = "<group>"; };
+		BC0E73DF1ED331AE009BC0E3 /* Feedback.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Feedback.swift; sourceTree = "<group>"; };
 		BC17D5581EA68BFA0015FD52 /* Eureka.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Eureka.framework; path = Carthage/Build/iOS/Eureka.framework; sourceTree = "<group>"; };
 		BC4FF9C01EC9BBC90062CC77 /* ScrollableGraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollableGraphView.swift; sourceTree = "<group>"; };
 		BC4FF9C21EC9E22C0062CC77 /* Chameleon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Chameleon.framework; path = Carthage/Build/iOS/Chameleon.framework; sourceTree = "<group>"; };
@@ -145,6 +149,8 @@
 				BC9D36621ECCC896003EF321 /* BroccoliColors.swift */,
 				BC76A78A1ECE1A2D00844B09 /* Popup.swift */,
 				BC93B73C1ED058FB005EDC5A /* Logout.swift */,
+				BC0E73DD1ED32A1A009BC0E3 /* SimpleAlert.swift */,
+				BC0E73DF1ED331AE009BC0E3 /* Feedback.swift */,
 			);
 			name = custom;
 			sourceTree = "<group>";
@@ -469,11 +475,13 @@
 				BC9D36631ECCC896003EF321 /* BroccoliColors.swift in Sources */,
 				BC764F6B1EC7823800258E11 /* JourneyVC.swift in Sources */,
 				BC93B73D1ED058FB005EDC5A /* Logout.swift in Sources */,
+				BC0E73DE1ED32A1A009BC0E3 /* SimpleAlert.swift in Sources */,
 				BCF8B8121ECB963B00126CCA /* BroccoliNavigationController.swift in Sources */,
 				BC76A7921ECE27EA00844B09 /* Level.swift in Sources */,
 				BC93B7411ED09D8E005EDC5A /* DLLocalNotifications.swift in Sources */,
 				BC8B3D881EA50AAE000BC305 /* GuardVC.swift in Sources */,
 				BC93B7441ED0A55E005EDC5A /* BroccoliNotifications.swift in Sources */,
+				BC0E73E01ED331AE009BC0E3 /* Feedback.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
