@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		BC08A0471EAD1474006E23D8 /* Eureka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC17D5581EA68BFA0015FD52 /* Eureka.framework */; };
 		BC08A0491EAD3368006E23D8 /* DayFormVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC08A0481EAD3368006E23D8 /* DayFormVC.swift */; };
+		BC0E73DC1ED31EAB009BC0E3 /* BroccoliAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0E73DB1ED31EAB009BC0E3 /* BroccoliAPI.swift */; };
 		BC4FF9C11EC9BBC90062CC77 /* ScrollableGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4FF9C01EC9BBC90062CC77 /* ScrollableGraphView.swift */; };
 		BC4FF9C31EC9E22C0062CC77 /* Chameleon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC4FF9C21EC9E22C0062CC77 /* Chameleon.framework */; };
 		BC4FF9C71ECB49470062CC77 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4FF9C61ECB49470062CC77 /* SettingsVC.swift */; };
@@ -61,6 +62,7 @@
 
 /* Begin PBXFileReference section */
 		BC08A0481EAD3368006E23D8 /* DayFormVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayFormVC.swift; sourceTree = "<group>"; };
+		BC0E73DB1ED31EAB009BC0E3 /* BroccoliAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BroccoliAPI.swift; sourceTree = "<group>"; };
 		BC17D5581EA68BFA0015FD52 /* Eureka.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Eureka.framework; path = Carthage/Build/iOS/Eureka.framework; sourceTree = "<group>"; };
 		BC4FF9C01EC9BBC90062CC77 /* ScrollableGraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollableGraphView.swift; sourceTree = "<group>"; };
 		BC4FF9C21EC9E22C0062CC77 /* Chameleon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Chameleon.framework; path = Carthage/Build/iOS/Chameleon.framework; sourceTree = "<group>"; };
@@ -282,6 +284,7 @@
 		BCF957931ECC73EC00D268F1 /* api */ = {
 			isa = PBXGroup;
 			children = (
+				BC0E73DB1ED31EAB009BC0E3 /* BroccoliAPI.swift */,
 			);
 			name = api;
 			sourceTree = "<group>";
@@ -451,6 +454,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC76A78E1ECE207E00844B09 /* Journey.swift in Sources */,
+				BC0E73DC1ED31EAB009BC0E3 /* BroccoliAPI.swift in Sources */,
 				BCCF115A1ECB716300F6450E /* Graph.swift in Sources */,
 				BC76A7901ECE211F00844B09 /* Step.swift in Sources */,
 				BC76A78B1ECE1A2D00844B09 /* Popup.swift in Sources */,
