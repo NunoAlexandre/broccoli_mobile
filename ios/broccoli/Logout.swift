@@ -24,7 +24,12 @@ extension UIViewController {
                                    preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Ok", style: .default,
                                    handler: { _ in self.performLogout() }))
-        self.present(alert, animated: true, completion: nil)
+        self.present(alert)
+    }
+    
+    func present(_ vc : UIViewController) -> Void {
+        self.present(vc, animated: true, completion: nil)
+
     }
 }
 
