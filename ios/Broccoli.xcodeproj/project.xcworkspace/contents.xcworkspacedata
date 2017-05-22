@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:broccoli.xcodeproj">
+      location = "self:/Users/nuno/projectos/broccoli/mobile/ios/Broccoli.xcodeproj">
    </FileRef>
 </Workspace>

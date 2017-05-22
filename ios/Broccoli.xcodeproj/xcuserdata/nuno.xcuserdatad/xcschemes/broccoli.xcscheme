@@ -17,7 +17,7 @@
                BlueprintIdentifier = "BC8B3D811EA50AAE000BC305"
                BuildableName = "broccoli.app"
                BlueprintName = "broccoli"
-               ReferencedContainer = "container:broccoli.xcodeproj">
+               ReferencedContainer = "container:Broccoli.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
                BlueprintIdentifier = "BC8B3D971EA50AAE000BC305"
                BuildableName = "broccoliTests.xctest"
                BlueprintName = "broccoliTests"
-               ReferencedContainer = "container:broccoli.xcodeproj">
+               ReferencedContainer = "container:Broccoli.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -45,7 +45,7 @@
                BlueprintIdentifier = "BC8B3DA21EA50AAE000BC305"
                BuildableName = "broccoliUITests.xctest"
                BlueprintName = "broccoliUITests"
-               ReferencedContainer = "container:broccoli.xcodeproj">
+               ReferencedContainer = "container:Broccoli.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,7 +55,7 @@
             BlueprintIdentifier = "BC8B3D811EA50AAE000BC305"
             BuildableName = "broccoli.app"
             BlueprintName = "broccoli"
-            ReferencedContainer = "container:broccoli.xcodeproj">
+            ReferencedContainer = "container:Broccoli.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -78,7 +78,7 @@
             BlueprintIdentifier = "BC8B3D811EA50AAE000BC305"
             BuildableName = "broccoli.app"
             BlueprintName = "broccoli"
-            ReferencedContainer = "container:broccoli.xcodeproj">
+            ReferencedContainer = "container:Broccoli.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -97,7 +97,7 @@
             BlueprintIdentifier = "BC8B3D811EA50AAE000BC305"
             BuildableName = "broccoli.app"
             BlueprintName = "broccoli"
-            ReferencedContainer = "container:broccoli.xcodeproj">
+            ReferencedContainer = "container:Broccoli.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

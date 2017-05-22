@@ -373,7 +373,7 @@
 					};
 				};
 			};
-			buildConfigurationList = BC8B3D7D1EA50AAE000BC305 /* Build configuration list for PBXProject "broccoli" */;
+			buildConfigurationList = BC8B3D7D1EA50AAE000BC305 /* Build configuration list for PBXProject "Broccoli" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -663,7 +663,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.nunoalexandre.broccoliTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/broccoli.app/broccoli";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Broccoli.temp_caseinsensitive_rename.app/Broccoli.temp_caseinsensitive_rename";
 			};
 			name = Debug;
 		};
@@ -677,7 +677,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.nunoalexandre.broccoliTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/broccoli.app/broccoli";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Broccoli.temp_caseinsensitive_rename.app/Broccoli.temp_caseinsensitive_rename";
 			};
 			name = Release;
 		};
@@ -710,7 +710,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BC8B3D7D1EA50AAE000BC305 /* Build configuration list for PBXProject "broccoli" */ = {
+		BC8B3D7D1EA50AAE000BC305 /* Build configuration list for PBXProject "Broccoli" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BC8B3DAA1EA50AAE000BC305 /* Debug */,
