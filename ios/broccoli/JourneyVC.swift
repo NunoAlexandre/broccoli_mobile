@@ -32,23 +32,9 @@ class JourneyVC : UIViewController, PointSelectedProtocol {
     }
     
     func fetchGraphData(graph : ScrollableGraphView) {
-        let headers = ["Authorization": " Bearer \(IdToken.peek())"]
-        
-        Alamofire.request("https://nabroccoli.herokuapp.com/api/days", method: .get, encoding: JSONEncoding.default, headers: headers).responseJSON { response in
-                if let status = response.response?.statusCode {
-                    switch(status) {
-                        case 200:
-                            if let jsonDict = response.result.value as? [String:Any], let data = jsonDict["data"] as? [[String:Any]] {
-                                self.updateView(withJourney: Journey(data: data))
-                                self.containerView.dg_stopLoading()
-                            }
-                        case 401:
-                            self.performExplainedLogout()
-                        default:
-                            print("error with response status: \(status)")
-                        }
-                    }
-            }
+        BroccoliAPI().journey(onSuccess: {data in
+            self.updateView(withJourney: Journey(data: data))
+            self.containerView.dg_stopLoading()}, onUnauthorized: self.performExplainedLogout)
         }
     
     func updateView(withJourney journey: Journey) {

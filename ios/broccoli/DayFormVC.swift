@@ -32,7 +32,6 @@ class DayFormVC : FormViewController {
                 row.title = "Note"
                 row.add(rule: RuleMaxLength(maxLength: 400))
             }
-            
             <<< ButtonRow() { row in
                     row.title = "Save"
                     row.cell.height = {90}
