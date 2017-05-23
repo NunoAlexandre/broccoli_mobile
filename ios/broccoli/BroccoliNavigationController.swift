@@ -1,11 +1,3 @@
-//
-//  DefaultNavigationBar.swift
-//  broccoli
-//
-//  Created by Nuno on 16/05/2017.
-//  Copyright © 2017 nunoalexandre. All rights reserved.
-//
-
 import Foundation
 import UIKit
 

@@ -44,17 +44,16 @@ class BroccoliAPI {
     }
     
     private func doGet(_ urn : String) -> DataRequest {
-        return Alamofire.request(apiURL+urn, method: .get,
+        return request(apiURL+urn, method: .get,
                                  encoding: JSONEncoding.default, headers: headers())
     }
     
     private func doPost(_ urn : String, params : Parameters) -> DataRequest {
-        return Alamofire.request(apiURL+urn, method: .post, parameters: params,
+        return request(apiURL+urn, method: .post, parameters: params,
                                  encoding: JSONEncoding.default, headers: headers())
 
     }
 
-    
 }
 
 extension DataResponse {

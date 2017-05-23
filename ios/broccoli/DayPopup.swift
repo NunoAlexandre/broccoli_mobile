@@ -1,17 +1,10 @@
-//
-//  Popup.swift
-//  broccoli
-//
-//  Created by Nuno on 18/05/2017.
-//  Copyright © 2017 nunoalexandre. All rights reserved.
-//
-
 import Foundation
 import UIKit
 
 extension AZDialogViewController {
     
-    func aLaBroccoli() -> AZDialogViewController {
+    convenience init(day : Day) {
+        self.init(title: "\(day.day) :: \(day.level.value)", message: day.note)
         self.dismissDirection = .top
         self.dismissWithOutsideTouch = true
         self.showSeparator = true
@@ -20,6 +13,5 @@ extension AZDialogViewController {
             imageView.contentMode = .scaleAspectFit
             return true
         }
-        return self
     }
 }

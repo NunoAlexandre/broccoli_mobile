@@ -1,11 +1,3 @@
-//
-//  BroccoliColors.swift
-//  broccoli
-//
-//  Created by Nuno on 17/05/2017.
-//  Copyright © 2017 nunoalexandre. All rights reserved.
-//
-
 import Foundation
 import UIKit
 

@@ -1,38 +1,24 @@
-//
-//  Logout.swift
-//  broccoli
-//
-//  Created by Nuno on 20/05/2017.
-//  Copyright © 2017 nunoalexandre. All rights reserved.
-//
-
 import Foundation
 import UIKit
 
 extension UIViewController {
     
-    func performLogout() {
-        IdToken.remove()
-        RefreshToken.remove()
-        let guardVC = UIStoryboard.main().instantiateInitialViewController()!
-        self.present(guardVC, animated: true, completion: nil)
+    func present(_ vc : UIViewController) -> Void {
+        self.present(vc, animated: true, completion: nil)
     }
     
     func performExplainedLogout() {
-        let alert = UIAlertController(title: "Ups!",
-                                   message: "The time has come: you need to login again!",
-                                   preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Ok", style: .default,
-                                   handler: { _ in self.performLogout() }))
-        self.present(alert)
+        self.present(Feedback.loginRequired(handler: {_ in self.performLogout()}))
     }
     
-    func present(_ vc : UIViewController) -> Void {
-        self.present(vc, animated: true, completion: nil)
-
+    func performLogout() {
+        IdToken.remove()
+        RefreshToken.remove()
+        self.present(UIStoryboard.main().guardVC())
     }
 }
 
 extension UIStoryboard {
     class func main() -> UIStoryboard { return UIStoryboard(name: "Main", bundle: nil) }
+    func guardVC() -> UIViewController { return instantiateInitialViewController()! }
 }

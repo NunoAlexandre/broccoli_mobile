@@ -1,15 +1,7 @@
-//
-//  Step.swift
-//  broccoli
-//
-//  Created by Nuno on 18/05/2017.
-//  Copyright © 2017 nunoalexandre. All rights reserved.
-//
-
 import Foundation
 
 
-class Step {
+class Day {
     let day : String
     let level : Level
     let note : String

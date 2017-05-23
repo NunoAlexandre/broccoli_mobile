@@ -1,11 +1,3 @@
-//
-//  SettingsViewController.swift
-//  broccoli
-//
-//  Created by Nuno on 16/05/2017.
-//  Copyright © 2017 nunoalexandre. All rights reserved.
-//
-
 import Foundation
 import UIKit
 import Eureka
@@ -16,9 +8,9 @@ class SettingsVC: FormViewController {
         super.viewDidLoad()
         
         form +++ Section("Device")
-            <<< ButtonRow() { row in
-                    row.title = "Logout"
-                    row.cell.height = {65}
+            <<< ButtonRow() {
+                    $0.title = "Logout"
+                    $0.cell.height = {65}
                 }
                 .onCellSelection { _,_ in  self.performLogout() }
     }
