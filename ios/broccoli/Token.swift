@@ -1,11 +1,4 @@
-//
-//  UserToken.swift
-//  broccoli
-//
-//  Created by Nuno on 11/05/2017.
-//  Copyright © 2017 nunoalexandre. All rights reserved.
 //  TODO: I want later on to use auth0/SimpleKeychain and to DRY this
-
 import Foundation
 
 class IdToken {

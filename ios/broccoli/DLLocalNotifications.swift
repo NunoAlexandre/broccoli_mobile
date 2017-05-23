@@ -73,15 +73,11 @@ public class DLNotificationScheduler{
     
     
     public func scheduleNotification ( notification: DLNotification) -> String? {
-        
-        
         if notification.scheduled {
             return nil
         }
         else {
             var trigger: UNNotificationTrigger
-            
-            
             
             if (notification.region != nil) {
                 trigger = UNLocationNotificationTrigger(region: notification.region!, repeats: false)
@@ -89,13 +85,11 @@ public class DLNotificationScheduler{
                     trigger = UNTimeIntervalNotificationTrigger.init(timeInterval: (TimeInterval(3600)), repeats: false)
                     
                 }
-                
-            } else{
+            } else {
                 
                 trigger = UNCalendarNotificationTrigger(dateMatching: convertToNotificationDateComponent(notification: notification, repeatInterval: notification.repeatInterval), repeats: notification.repeats)
                 if (notification.repeatInterval == .Hourly) {
                     trigger = UNTimeIntervalNotificationTrigger.init(timeInterval: (TimeInterval(3600)), repeats: false)
-                    
                 }
                 
             }
@@ -119,15 +113,9 @@ public class DLNotificationScheduler{
             center.add(notification.localNotificationRequest!, withCompletionHandler: {(error) in print ("completed") } )
             
             notification.scheduled = true
-            
-            
-            
         }
         
         return notification.identifier
-        
-        
-        
     }
     
     // You have to manually keep in mind ios 64 notification limit
@@ -142,7 +130,7 @@ public class DLNotificationScheduler{
         
         // Create multiple Notifications
         
-        self.scheduleNotification(notification: notification)
+        _ = self.scheduleNotification(notification: notification)
         let intervalDifference = Int( toDate.timeIntervalSince(fromDate) / interval )
         
         var nextDate = fromDate
@@ -150,16 +138,16 @@ public class DLNotificationScheduler{
         for i in 0..<intervalDifference {
             
             // Next notification Date
-            
             nextDate = nextDate.addingTimeInterval(interval)
             
             // create notification
-            
             let identifier = identifier + String(i + 1)
             
-            let notification = DLNotification(identifier: identifier, alertTitle: alertTitle, alertBody: alertBody, date: nextDate, repeats: repeats)
+            let notification = DLNotification(identifier: identifier, alertTitle: alertTitle,
+                                              alertBody: alertBody, date: nextDate,
+                                              repeats: repeats)
             notification.category = category
-            self.scheduleNotification(notification: notification)
+            _ = self.scheduleNotification(notification: notification)
         }
         
         

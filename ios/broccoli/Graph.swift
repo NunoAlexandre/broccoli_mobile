@@ -1,48 +1,30 @@
-//
-//  Graph.swift
-//  broccoli
-//
-//  Created by Nuno on 16/05/2017.
-//  Copyright © 2017 nunoalexandre. All rights reserved.
-//
-
 import Foundation
 import UIKit
+import Chameleon
 
-class Graph {
+extension ScrollableGraphView {
     
-    static func new(frame: CGRect, delegate : PointSelectedProtocol) -> ScrollableGraphView {
-        let graph = ScrollableGraphView(frame: frame)
-        
-        graph.backgroundFillColor = UIColor.flatWhite()
-        graph.rangeMax = 23
-        graph.lineWidth = 1
-        graph.lineColor = UIColor.white
-        graph.lineStyle = .smooth
-        graph.leftmostPointPadding = 80
-        graph.rightmostPointPadding = 80
-        
-        graph.shouldFill = true
-        graph.fillType = ScrollableGraphViewFillType.gradient
-        graph.fillColor = UIColor.broccoliGreen()
-        graph.fillGradientType = .linear
-        graph.fillGradientStartColor = UIColor.broccoliGreenLighter().withAlphaComponent(0.45)
-        graph.fillGradientEndColor = UIColor.broccoliGreen()
-        
-        graph.dataPointSpacing = 80
-        graph.dataPointSize = 4
-        graph.dataPointFillColor = UIColor.white
-        
-        graph.referenceLineLabelFont = UIFont.boldSystemFont(ofSize: 8)
-        graph.referenceLineColor = UIColor.white.withAlphaComponent(0.2)
-        graph.referenceLineLabelColor = UIColor.black
-        graph.dataPointLabelColor = UIColor.white.withAlphaComponent(0.5)
-        
-        graph.direction = .rightToLeft
-        graph.pointSelectedDelegate = delegate
-        
-        return graph
+    convenience init(frame: CGRect, delegate : PointSelectedProtocol) {
+        self.init(frame: frame)
+        backgroundFillColor = UIColor.flatWhite()
+        rangeMax = 23
+        lineWidth = 1
+        lineColor = UIColor.white
+        lineStyle = .smooth
+        leftmostPointPadding = 80
+        rightmostPointPadding = 80
+        shouldFill = true
+        fillType = .gradient
+        fillGradientStartColor = UIColor.broccoliGreenLighter().withAlphaComponent(0.45)
+        fillGradientEndColor = UIColor.broccoliGreen()
+        dataPointSpacing = 80
+        dataPointSize = 4
+        dataPointFillColor = UIColor.white
+        referenceLineLabelFont = UIFont.boldSystemFont(ofSize: 8)
+        referenceLineColor = UIColor.white.withAlphaComponent(0.2)
+        referenceLineLabelColor = UIColor.black
+        dataPointLabelColor = UIColor.white.withAlphaComponent(0.5)
+        direction = .rightToLeft
+        pointSelectedDelegate = delegate
     }
-
 }
-

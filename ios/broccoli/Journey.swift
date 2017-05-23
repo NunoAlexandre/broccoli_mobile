@@ -1,42 +1,31 @@
-//
-//  Journey.swift
-//  broccoli
-//
-//  Created by Nuno on 18/05/2017.
-//  Copyright © 2017 nunoalexandre. All rights reserved.
-//
-
 import Foundation
 
 class Journey {
-    private let steps : [Step]
+    private let daysList : [Day]
     
     init(data: [[String:Any]] ) {
-        steps = data.flatMap {
-            Step(day: ($0["day"] as? String)!, level: ($0["level"] as? String)!, note: ($0["note"] as? String)!)
+        daysList = data.flatMap {
+            Day(day: ($0["day"] as? String)!, level: ($0["level"] as? String)!, note: ($0["note"] as? String)!)
         }
     }
     
     func days() -> [String] {
-        return steps.map{$0.day}
+        return daysList.map{$0.day}
     }
     
     func levels() -> [Double] {
-        return steps.map{$0.level.value}
+        return daysList.map{Double($0.level.value)}
     }
     
-    func step(atIndex i: Int) -> Step {
-        return steps[i]
+    func day(atIndex i: Int) -> Day {
+        return daysList[i]
     }
     
     func hasStarted() -> Bool {
-        return !steps.isEmpty
+        return !daysList.isEmpty
     }
     
     func isEmpty() -> Bool {
-        return steps.isEmpty
+        return daysList.isEmpty
     }
-
-    
-    
 }

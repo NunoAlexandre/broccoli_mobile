@@ -1,11 +1,3 @@
-//
-//  FirstViewController.swift
-//  broccoli
-//
-//  Created by Nuno on 17/04/2017.
-//  Copyright © 2017 nunoalexandre. All rights reserved.
-//
-
 import UIKit
 import Alamofire
 import Eureka
@@ -18,7 +10,7 @@ class GuardVC : UIViewController {
     @IBAction func showLock(_ button: UIButton) {
         Lock
             .classic()
-            .withOptions{
+            .withOptions {
                 $0.closable = true
                 $0.scope = "openid offline_access"
                 $0.parameters = ["device": UIDevice.current.name]
@@ -43,7 +35,6 @@ class GuardVC : UIViewController {
     override func viewDidLoad() {
         if IdToken.isPresent() { didSuceedToLogin() }
     }
-    
     
     override func viewWillAppear(_ animated: Bool) {
         getStartedButton.isHidden = IdToken.isPresent()

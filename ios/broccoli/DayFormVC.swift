@@ -28,11 +28,11 @@ class DayFormVC : FormViewController {
                     $0.title = "Save"
                     $0.cell.height = {90}
                 }
-                .onCellSelection {  cell, row in
-                        BroccoliAPI().saveDay(self.userDay(from: self.form),
-                                          onSuccess: {self.present(Feedback.dayAdded())},
-                                          onDuplicateDay: {self.present(Feedback.duplicatedDay())},
-                                          onUnauthorized: self.performExplainedLogout)
+                .onCellSelection { _, _ in
+                    BroccoliAPI().saveDay(self.userDay(from: self.form),
+                      onSuccess: {self.present(Feedback.dayAdded())},
+                      onDuplicateDay: {self.present(Feedback.duplicatedDay())},
+                      onUnauthorized: self.performExplainedLogout)
                 }
     }
     

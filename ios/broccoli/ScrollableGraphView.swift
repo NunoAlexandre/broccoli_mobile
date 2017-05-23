@@ -1658,7 +1658,8 @@ private class DataPointDrawingLayer: ScrollableGraphViewDrawingLayer {
     }
     
     private func createCircleDataPoint(centre: CGPoint) -> UIBezierPath {
-        return UIBezierPath(arcCenter: centre, radius: dataPointSize, startAngle: 0, endAngle: CGFloat(2.0 * M_PI), clockwise: true)
+        return UIBezierPath(arcCenter: centre, radius: dataPointSize, startAngle: 0,
+                            endAngle: CGFloat(2.0 * .pi), clockwise: true)
     }
     
     private func createSquareDataPoint(centre: CGPoint) -> UIBezierPath {
@@ -2179,6 +2180,6 @@ private struct Easings {
     
     static let easeOutElastic = { (t: Double) -> Double in
         var p = 0.3;
-        return pow(2,-10*t) * sin((t-p/4)*(2*M_PI)/p) + 1;
+        return pow(2,-10*t) * sin((t-p/4)*(2 * .pi)/p) + 1;
     }
 }

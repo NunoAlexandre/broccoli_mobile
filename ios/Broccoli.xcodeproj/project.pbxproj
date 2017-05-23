@@ -17,9 +17,9 @@
 		BC4FF9C71ECB49470062CC77 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4FF9C61ECB49470062CC77 /* SettingsVC.swift */; };
 		BC764F6B1EC7823800258E11 /* JourneyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC764F6A1EC7823800258E11 /* JourneyVC.swift */; };
 		BC76A7891ECE14CA00844B09 /* AZDialogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC76A7881ECE14CA00844B09 /* AZDialogViewController.swift */; };
-		BC76A78B1ECE1A2D00844B09 /* Popup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC76A78A1ECE1A2D00844B09 /* Popup.swift */; };
+		BC76A78B1ECE1A2D00844B09 /* DayPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC76A78A1ECE1A2D00844B09 /* DayPopup.swift */; };
 		BC76A78E1ECE207E00844B09 /* Journey.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC76A78D1ECE207E00844B09 /* Journey.swift */; };
-		BC76A7901ECE211F00844B09 /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC76A78F1ECE211F00844B09 /* Step.swift */; };
+		BC76A7901ECE211F00844B09 /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC76A78F1ECE211F00844B09 /* Day.swift */; };
 		BC76A7921ECE27EA00844B09 /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC76A7911ECE27EA00844B09 /* Level.swift */; };
 		BC8B3D861EA50AAE000BC305 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8B3D851EA50AAE000BC305 /* AppDelegate.swift */; };
 		BC8B3D881EA50AAE000BC305 /* GuardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8B3D871EA50AAE000BC305 /* GuardVC.swift */; };
@@ -75,9 +75,9 @@
 		BC764F6A1EC7823800258E11 /* JourneyVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JourneyVC.swift; sourceTree = "<group>"; };
 		BC76A7861ECE10AD00844B09 /* Presentr.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Presentr.framework; path = Carthage/Build/iOS/Presentr.framework; sourceTree = "<group>"; };
 		BC76A7881ECE14CA00844B09 /* AZDialogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AZDialogViewController.swift; sourceTree = "<group>"; };
-		BC76A78A1ECE1A2D00844B09 /* Popup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Popup.swift; sourceTree = "<group>"; };
+		BC76A78A1ECE1A2D00844B09 /* DayPopup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayPopup.swift; sourceTree = "<group>"; };
 		BC76A78D1ECE207E00844B09 /* Journey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Journey.swift; sourceTree = "<group>"; };
-		BC76A78F1ECE211F00844B09 /* Step.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Step.swift; sourceTree = "<group>"; };
+		BC76A78F1ECE211F00844B09 /* Day.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
 		BC76A7911ECE27EA00844B09 /* Level.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
 		BC8B3D821EA50AAE000BC305 /* broccoli.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = broccoli.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC8B3D851EA50AAE000BC305 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -147,7 +147,7 @@
 				BCF8B8111ECB963B00126CCA /* BroccoliNavigationController.swift */,
 				BCF957941ECC746200D268F1 /* PullToRefresh.swift */,
 				BC9D36621ECCC896003EF321 /* BroccoliColors.swift */,
-				BC76A78A1ECE1A2D00844B09 /* Popup.swift */,
+				BC76A78A1ECE1A2D00844B09 /* DayPopup.swift */,
 				BC93B73C1ED058FB005EDC5A /* Logout.swift */,
 				BC0E73DD1ED32A1A009BC0E3 /* SimpleAlert.swift */,
 				BC0E73DF1ED331AE009BC0E3 /* Feedback.swift */,
@@ -188,7 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				BC76A78D1ECE207E00844B09 /* Journey.swift */,
-				BC76A78F1ECE211F00844B09 /* Step.swift */,
+				BC76A78F1ECE211F00844B09 /* Day.swift */,
 				BC76A7911ECE27EA00844B09 /* Level.swift */,
 			);
 			name = model;
@@ -462,8 +462,8 @@
 				BC76A78E1ECE207E00844B09 /* Journey.swift in Sources */,
 				BC0E73DC1ED31EAB009BC0E3 /* BroccoliAPI.swift in Sources */,
 				BCCF115A1ECB716300F6450E /* Graph.swift in Sources */,
-				BC76A7901ECE211F00844B09 /* Step.swift in Sources */,
-				BC76A78B1ECE1A2D00844B09 /* Popup.swift in Sources */,
+				BC76A7901ECE211F00844B09 /* Day.swift in Sources */,
+				BC76A78B1ECE1A2D00844B09 /* DayPopup.swift in Sources */,
 				BC8B3D861EA50AAE000BC305 /* AppDelegate.swift in Sources */,
 				BC08A0491EAD3368006E23D8 /* DayFormVC.swift in Sources */,
 				BCF957951ECC746200D268F1 /* PullToRefresh.swift in Sources */,
