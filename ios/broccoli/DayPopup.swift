@@ -4,7 +4,7 @@ import UIKit
 extension AZDialogViewController {
     
     convenience init(day : Day) {
-        self.init(title: "\(day.day) :: \(day.level.value)", message: day.note)
+        self.init(title: "\(day.day) :: \(day.level)", message: day.note)
         self.dismissDirection = .top
         self.dismissWithOutsideTouch = true
         self.showSeparator = true

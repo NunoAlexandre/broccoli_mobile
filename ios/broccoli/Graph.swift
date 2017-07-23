@@ -7,7 +7,7 @@ extension ScrollableGraphView {
     convenience init(frame: CGRect, delegate : PointSelectedProtocol) {
         self.init(frame: frame)
         backgroundFillColor = UIColor.flatWhite()
-        rangeMax = 23
+        rangeMax = 7
         lineWidth = 1
         lineColor = UIColor.white
         lineStyle = .smooth
