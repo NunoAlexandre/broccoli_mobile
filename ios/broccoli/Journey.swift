@@ -5,7 +5,7 @@ class Journey {
     
     init(data: [[String:Any]] ) {
         daysList = data.flatMap {
-            Day(day: ($0["day"] as? String)!, level: ($0["level"] as? String)!, note: ($0["note"] as? String)!)
+            Day(day: ($0["day"] as? String)!, level: ($0["level"] as? Int)!, note: ($0["note"] as? String)!)
         }
     }
     
@@ -14,7 +14,7 @@ class Journey {
     }
     
     func levels() -> [Double] {
-        return daysList.map{Double($0.level.value)}
+        return daysList.map{Double($0.level)}
     }
     
     func day(atIndex i: Int) -> Day {

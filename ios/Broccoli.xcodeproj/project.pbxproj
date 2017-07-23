@@ -20,7 +20,6 @@
 		BC76A78B1ECE1A2D00844B09 /* DayPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC76A78A1ECE1A2D00844B09 /* DayPopup.swift */; };
 		BC76A78E1ECE207E00844B09 /* Journey.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC76A78D1ECE207E00844B09 /* Journey.swift */; };
 		BC76A7901ECE211F00844B09 /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC76A78F1ECE211F00844B09 /* Day.swift */; };
-		BC76A7921ECE27EA00844B09 /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC76A7911ECE27EA00844B09 /* Level.swift */; };
 		BC8B3D861EA50AAE000BC305 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8B3D851EA50AAE000BC305 /* AppDelegate.swift */; };
 		BC8B3D881EA50AAE000BC305 /* GuardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8B3D871EA50AAE000BC305 /* GuardVC.swift */; };
 		BC8B3D8D1EA50AAE000BC305 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC8B3D8B1EA50AAE000BC305 /* Main.storyboard */; settings = {ASSET_TAGS = (home, ); }; };
@@ -78,7 +77,6 @@
 		BC76A78A1ECE1A2D00844B09 /* DayPopup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayPopup.swift; sourceTree = "<group>"; };
 		BC76A78D1ECE207E00844B09 /* Journey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Journey.swift; sourceTree = "<group>"; };
 		BC76A78F1ECE211F00844B09 /* Day.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
-		BC76A7911ECE27EA00844B09 /* Level.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
 		BC8B3D821EA50AAE000BC305 /* broccoli.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = broccoli.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC8B3D851EA50AAE000BC305 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC8B3D871EA50AAE000BC305 /* GuardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuardVC.swift; sourceTree = "<group>"; };
@@ -189,7 +187,6 @@
 			children = (
 				BC76A78D1ECE207E00844B09 /* Journey.swift */,
 				BC76A78F1ECE211F00844B09 /* Day.swift */,
-				BC76A7911ECE27EA00844B09 /* Level.swift */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -477,7 +474,6 @@
 				BC93B73D1ED058FB005EDC5A /* Logout.swift in Sources */,
 				BC0E73DE1ED32A1A009BC0E3 /* SimpleAlert.swift in Sources */,
 				BCF8B8121ECB963B00126CCA /* BroccoliNavigationController.swift in Sources */,
-				BC76A7921ECE27EA00844B09 /* Level.swift in Sources */,
 				BC93B7411ED09D8E005EDC5A /* DLLocalNotifications.swift in Sources */,
 				BC8B3D881EA50AAE000BC305 /* GuardVC.swift in Sources */,
 				BC93B7441ED0A55E005EDC5A /* BroccoliNotifications.swift in Sources */,

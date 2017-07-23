@@ -17,7 +17,7 @@ class DayFormVC : FormViewController {
             <<< ActionSheetRow<String>("level") {
                 $0.title = "Level"
                 $0.selectorTitle = "The higher, the better your day was. "
-                $0.options = ["twenty_one", "eight", "five", "three", "two", "one"]
+                $0.options = ["7","6","5","4","3","2","1"]
                 $0.add(rule: RuleRequired())
             }
             <<< TextAreaRow("note") {
