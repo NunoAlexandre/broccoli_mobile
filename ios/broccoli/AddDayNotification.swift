@@ -15,7 +15,7 @@ class AddDayNotification {
     init(notifyAt : Date) {
        notification = DLNotification( identifier: "addDayNotification",
                                   alertTitle: "Hi Broccoli!",
-                                  alertBody: "Don't forget to add your day :)",
+                                  alertBody: "How was your day?",
                                   date: notifyAt,
                                   repeats: .Daily)
     }
