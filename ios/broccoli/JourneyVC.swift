@@ -8,10 +8,12 @@ class JourneyVC : UIViewController, PointSelectedProtocol {
     @IBOutlet weak var containerView: UIScrollView!
     private var graph : ScrollableGraphView!
     private var journey : Journey!
+
     
     override open func loadView() {
         super.loadView()
         graph = ScrollableGraphView(frame: chartView.frame, delegate: self)
+        JourneyCache.map { self.updateView(withJourney: $0) }
         containerView.onPull(self.loadJourneyGraphData)
     }
     
@@ -22,10 +24,14 @@ class JourneyVC : UIViewController, PointSelectedProtocol {
     
     func loadJourneyGraphData() {
         BroccoliAPI().journey(
-            onSuccess: {
-                self.updateView(withJourney: Journey(data: $0))
-                self.containerView.dg_stopLoading()},
-            onUnauthorized: self.performExplainedLogout)
+            onSuccess: { fetchedData in
+                let journey = Journey(data: fetchedData)
+                self.updateView(withJourney: journey)
+                JourneyCache.save(fetchedData)
+                self.containerView.dg_stopLoading()
+            },
+            onUnauthorized: self.performExplainedLogout
+        )
     }
     
     func updateView(withJourney journey: Journey) {
