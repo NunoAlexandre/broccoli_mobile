@@ -8,12 +8,14 @@ class JourneyVC : UIViewController, PointSelectedProtocol {
     @IBOutlet weak var containerView: UIScrollView!
     private var graph : ScrollableGraphView!
     private var journey : Journey!
-    private let cache = NSCache<NSString, Journey>()
 
     
     override open func loadView() {
         super.loadView()
         graph = ScrollableGraphView(frame: chartView.frame, delegate: self)
+        if let cachedJourneyData = UserDefaults.standard.value(forKey: "broccoliJourney") {
+            self.updateView(withJourney: Journey(data: cachedJourneyData as! [[String : Any]]))
+        }
         containerView.onPull(self.loadJourneyGraphData)
     }
     
@@ -23,23 +25,15 @@ class JourneyVC : UIViewController, PointSelectedProtocol {
     }
     
     func loadJourneyGraphData() {
-        if let cachedJourney = self.cache.object(forKey: "broccoliJourney") {
-            self.updateView(withJourney: cachedJourney)
-            self.containerView.dg_stopLoading()
-            print("cachedJourney found")
-        }
-        else {
-            BroccoliAPI().journey(
-                onSuccess: {
-                    let journey: Journey = Journey(data: $0)
-                    self.updateView(withJourney: journey)
-                    self.containerView.dg_stopLoading()
-                    self.cache.setObject(Journey(data: $0), forKey: "broccoliJourney")
-                },
-                onUnauthorized: self.performExplainedLogout
-            )
-
-        }
+        BroccoliAPI().journey(
+            onSuccess: { fetchedData in
+                let journey = Journey(data: fetchedData)
+                self.updateView(withJourney: journey)
+                UserDefaults.standard.set(fetchedData, forKey: "broccoliJourney")
+                self.containerView.dg_stopLoading()
+            },
+            onUnauthorized: self.performExplainedLogout
+        )
     }
     
     func updateView(withJourney journey: Journey) {
