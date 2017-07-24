@@ -13,9 +13,7 @@ class JourneyVC : UIViewController, PointSelectedProtocol {
     override open func loadView() {
         super.loadView()
         graph = ScrollableGraphView(frame: chartView.frame, delegate: self)
-        if let cachedJourneyData = UserDefaults.standard.value(forKey: "broccoliJourney") {
-            self.updateView(withJourney: Journey(data: cachedJourneyData as! [[String : Any]]))
-        }
+        JourneyCache.map { self.updateView(withJourney: $0) }
         containerView.onPull(self.loadJourneyGraphData)
     }
     
@@ -29,7 +27,7 @@ class JourneyVC : UIViewController, PointSelectedProtocol {
             onSuccess: { fetchedData in
                 let journey = Journey(data: fetchedData)
                 self.updateView(withJourney: journey)
-                UserDefaults.standard.set(fetchedData, forKey: "broccoliJourney")
+                JourneyCache.save(fetchedData)
                 self.containerView.dg_stopLoading()
             },
             onUnauthorized: self.performExplainedLogout
