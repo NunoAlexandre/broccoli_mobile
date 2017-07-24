@@ -12,6 +12,7 @@
 		BC0E73DC1ED31EAB009BC0E3 /* BroccoliAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0E73DB1ED31EAB009BC0E3 /* BroccoliAPI.swift */; };
 		BC0E73DE1ED32A1A009BC0E3 /* SimpleAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0E73DD1ED32A1A009BC0E3 /* SimpleAlert.swift */; };
 		BC0E73E01ED331AE009BC0E3 /* Feedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0E73DF1ED331AE009BC0E3 /* Feedback.swift */; };
+		BC0E74301F25CFB3001EFEB0 /* AwesomeCache.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC0E742F1F25CFB3001EFEB0 /* AwesomeCache.framework */; };
 		BC4FF9C11EC9BBC90062CC77 /* ScrollableGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4FF9C01EC9BBC90062CC77 /* ScrollableGraphView.swift */; };
 		BC4FF9C31EC9E22C0062CC77 /* Chameleon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC4FF9C21EC9E22C0062CC77 /* Chameleon.framework */; };
 		BC4FF9C71ECB49470062CC77 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4FF9C61ECB49470062CC77 /* SettingsVC.swift */; };
@@ -66,6 +67,7 @@
 		BC0E73DB1ED31EAB009BC0E3 /* BroccoliAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BroccoliAPI.swift; sourceTree = "<group>"; };
 		BC0E73DD1ED32A1A009BC0E3 /* SimpleAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleAlert.swift; sourceTree = "<group>"; };
 		BC0E73DF1ED331AE009BC0E3 /* Feedback.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Feedback.swift; sourceTree = "<group>"; };
+		BC0E742F1F25CFB3001EFEB0 /* AwesomeCache.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AwesomeCache.framework; path = Carthage/Build/iOS/AwesomeCache.framework; sourceTree = "<group>"; };
 		BC17D5581EA68BFA0015FD52 /* Eureka.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Eureka.framework; path = Carthage/Build/iOS/Eureka.framework; sourceTree = "<group>"; };
 		BC4FF9C01EC9BBC90062CC77 /* ScrollableGraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollableGraphView.swift; sourceTree = "<group>"; };
 		BC4FF9C21EC9E22C0062CC77 /* Chameleon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Chameleon.framework; path = Carthage/Build/iOS/Chameleon.framework; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC0E74301F25CFB3001EFEB0 /* AwesomeCache.framework in Frameworks */,
 				BCF957921ECC5C5A00D268F1 /* DGElasticPullToRefresh.framework in Frameworks */,
 				BCF8B8141ECC370A00126CCA /* ESTabBarController.framework in Frameworks */,
 				BC4FF9C31EC9E22C0062CC77 /* Chameleon.framework in Frameworks */,
@@ -253,6 +256,7 @@
 		BC8B3DB51EA522CB000BC305 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BC0E742F1F25CFB3001EFEB0 /* AwesomeCache.framework */,
 				BC76A7861ECE10AD00844B09 /* Presentr.framework */,
 				BCF957911ECC5C5A00D268F1 /* DGElasticPullToRefresh.framework */,
 				BCF8B8131ECC370A00126CCA /* ESTabBarController.framework */,
@@ -441,6 +445,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Chameleon.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/ESTabBarController.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/DGElasticPullToRefresh.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/AwesomeCache.framework",
 			);
 			name = "Run Script";
 			outputPaths = (
