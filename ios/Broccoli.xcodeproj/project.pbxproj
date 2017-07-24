@@ -445,7 +445,6 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Chameleon.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/ESTabBarController.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/DGElasticPullToRefresh.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/AwesomeCache.framework",
 			);
 			name = "Run Script";
 			outputPaths = (
