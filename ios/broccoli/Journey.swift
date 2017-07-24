@@ -28,4 +28,8 @@ class Journey {
     func isEmpty() -> Bool {
         return daysList.isEmpty
     }
+    
+    func average() -> Int {
+        return daysList.map{$0.level}.reduce(0, +) / daysList.count
+    }
 }
