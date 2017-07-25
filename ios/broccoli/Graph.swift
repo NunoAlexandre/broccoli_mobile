@@ -5,7 +5,7 @@ import Chameleon
 extension ScrollableGraphView {
     
     convenience init(frame: CGRect, delegate : PointSelectedProtocol) {
-        self.init(frame: frame)
+        self.init(frame: frame.offsetBy(dx: 0, dy: -70))
         backgroundFillColor = UIColor.flatWhite()
         rangeMax = 7
         lineWidth = 1

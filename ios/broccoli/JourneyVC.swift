@@ -9,10 +9,12 @@ class JourneyVC : UIViewController, PointSelectedProtocol {
     @IBOutlet weak var containerView: UIScrollView!
     private var graph : ScrollableGraphView!
     private var journey : Journey!
+    @IBOutlet weak var avgField: UITextField!
 
     
     override open func loadView() {
         super.loadView()
+        avgField.text = "N/A"
         graph = ScrollableGraphView(frame: chartView.frame, delegate: self)
         JourneyCache.map { self.updateView(withJourney: $0) }
         containerView.onPull(self.loadJourneyGraphData)
@@ -42,9 +44,10 @@ class JourneyVC : UIViewController, PointSelectedProtocol {
             graph.set(data: self.journey.levels(), withLabels: self.journey.days())
             self.chartView.subviews.forEach{$0.removeFromSuperview()}
             self.chartView.addSubview(graph)
-            print("The average is \(JourneyStats(journey).average())")
+            self.avgField.text = String(JourneyStats(journey).average())
         }
     }
+    
     
     
     
