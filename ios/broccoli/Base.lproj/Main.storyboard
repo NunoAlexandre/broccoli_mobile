@@ -180,28 +180,25 @@
                                                 <color key="textColor" red="0.42655369639396667" green="0.47584608197212219" blue="0.48026475310325623" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" text="N/A" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MMv-Kc-ukX" userLabel="avgValue">
-                                                <rect key="frame" x="23" y="16" width="50" height="22"/>
-                                                <accessibility key="accessibilityConfiguration">
-                                                    <accessibilityTraits key="traits" notEnabled="YES"/>
-                                                </accessibility>
-                                                <color key="textColor" red="0.59489071369171143" green="0.74986636638641357" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DPP-6B-0Aq">
+                                                <rect key="frame" x="27" y="8" width="42" height="27"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                                <color key="textColor" red="0.77604550120000004" green="0.82911193370000003" blue="0.37433615329999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" red="0.90823972225189209" green="0.92638683319091797" blue="0.9317171573638916" alpha="1" colorSpace="calibratedRGB"/>
                                         <accessibility key="accessibilityConfiguration">
                                             <accessibilityTraits key="traits" header="YES"/>
                                         </accessibility>
                                         <constraints>
-                                            <constraint firstItem="UZr-NZ-NAN" firstAttribute="top" secondItem="MMv-Kc-ukX" secondAttribute="bottom" constant="1" id="2ja-yi-PUy"/>
+                                            <constraint firstItem="DPP-6B-0Aq" firstAttribute="centerX" secondItem="UZr-NZ-NAN" secondAttribute="centerX" id="94e-EB-l7m"/>
                                             <constraint firstAttribute="height" constant="70" id="Ba7-gx-jfY"/>
+                                            <constraint firstItem="DPP-6B-0Aq" firstAttribute="top" secondItem="No8-fA-X74" secondAttribute="topMargin" id="Dvy-gN-ex3"/>
                                             <constraint firstItem="UZr-NZ-NAN" firstAttribute="leading" secondItem="No8-fA-X74" secondAttribute="leading" constant="37" id="FYv-lU-IRP"/>
                                             <constraint firstAttribute="bottom" secondItem="UZr-NZ-NAN" secondAttribute="bottom" constant="22" id="K87-FH-YON"/>
-                                            <constraint firstItem="MMv-Kc-ukX" firstAttribute="leading" secondItem="No8-fA-X74" secondAttribute="leading" constant="23" id="KQ9-vD-DkF"/>
-                                            <constraint firstItem="MMv-Kc-ukX" firstAttribute="top" secondItem="No8-fA-X74" secondAttribute="top" constant="16" id="pXL-KX-8ZI"/>
-                                            <constraint firstItem="MMv-Kc-ukX" firstAttribute="centerX" secondItem="UZr-NZ-NAN" secondAttribute="centerX" id="rnW-eR-LfL"/>
+                                            <constraint firstItem="UZr-NZ-NAN" firstAttribute="top" secondItem="DPP-6B-0Aq" secondAttribute="bottom" constant="4" id="SoJ-2D-s9N"/>
+                                            <constraint firstItem="DPP-6B-0Aq" firstAttribute="leading" secondItem="No8-fA-X74" secondAttribute="leading" constant="27" id="m7b-Sj-e5V"/>
                                         </constraints>
                                     </view>
                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qG9-IK-t05" userLabel="chartView">
@@ -238,7 +235,7 @@
                     <navigationItem key="navigationItem" id="ASO-6b-Avw"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <connections>
-                        <outlet property="avgField" destination="MMv-Kc-ukX" id="apE-mF-bgs"/>
+                        <outlet property="avgField" destination="DPP-6B-0Aq" id="uW5-xo-sWM"/>
                         <outlet property="chartView" destination="qG9-IK-t05" id="gAh-hx-5jm"/>
                         <outlet property="containerView" destination="OeP-3a-bbq" id="ZCl-2I-08p"/>
                         <outlet property="noDataView" destination="qG9-IK-t05" id="i2F-B9-lV3"/>
