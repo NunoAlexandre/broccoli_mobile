@@ -1,3 +1,4 @@
 ios/Carthage/
 assets
 ios/Broccoli.xcodeproj/project.xcworkspace/xcuserdata/nuno.xcuserdatad/UserInterfaceState.xcuserstate
+Cartfile.resolved
