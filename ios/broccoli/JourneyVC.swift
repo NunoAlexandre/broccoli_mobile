@@ -9,7 +9,7 @@ class JourneyVC : UIViewController, PointSelectedProtocol {
     @IBOutlet weak var containerView: UIScrollView!
     private var graph : ScrollableGraphView!
     private var journey : Journey!
-    @IBOutlet weak var avgField: UITextField!
+    @IBOutlet weak var avgField: UILabel!
 
     
     override open func loadView() {
