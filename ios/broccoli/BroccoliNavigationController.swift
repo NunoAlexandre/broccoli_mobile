@@ -7,6 +7,7 @@ class BroccoliNavigationController: UINavigationController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationBar.topItem?.title = "Broccoli"
+        self.hidesNavigationBarHairline = true
         self.navigationBar.barTintColor = UIColor.flatWhite()
         self.navigationBar.titleTextAttributes = [
             NSForegroundColorAttributeName : UIColor.broccoliGreen(),
