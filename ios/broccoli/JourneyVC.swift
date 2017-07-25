@@ -2,6 +2,7 @@ import Foundation
 import UIKit
 import DGElasticPullToRefresh
 
+
 class JourneyVC : UIViewController, PointSelectedProtocol {
     @IBOutlet weak var noDataView: UIView!
     @IBOutlet weak var chartView: UIView!
@@ -25,8 +26,7 @@ class JourneyVC : UIViewController, PointSelectedProtocol {
     func loadJourneyGraphData() {
         BroccoliAPI().journey(
             onSuccess: { fetchedData in
-                let journey = Journey(data: fetchedData)
-                self.updateView(withJourney: journey)
+                self.updateView(withJourney: Journey(data: fetchedData))
                 JourneyCache.save(fetchedData)
                 self.containerView.dg_stopLoading()
             },
@@ -42,8 +42,11 @@ class JourneyVC : UIViewController, PointSelectedProtocol {
             graph.set(data: self.journey.levels(), withLabels: self.journey.days())
             self.chartView.subviews.forEach{$0.removeFromSuperview()}
             self.chartView.addSubview(graph)
+            print("The average is \(JourneyStats(journey).average())")
         }
     }
+    
+    
     
     func pointWasSelectedAt(index:Int, label: String, value: Double, location: CGPoint) {
         AZDialogViewController(day: journey.day(atIndex: index)).show(in: self)
