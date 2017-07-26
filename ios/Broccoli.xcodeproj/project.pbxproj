@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC00FEF11F271C0B0049E073 /* SigmaSwiftStatistics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC00FEF01F271C0B0049E073 /* SigmaSwiftStatistics.framework */; };
+		BC00FEF31F271D2E0049E073 /* JourneyStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC00FEF21F271D2E0049E073 /* JourneyStats.swift */; };
 		BC08A0471EAD1474006E23D8 /* Eureka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC17D5581EA68BFA0015FD52 /* Eureka.framework */; };
 		BC08A0491EAD3368006E23D8 /* DayFormVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC08A0481EAD3368006E23D8 /* DayFormVC.swift */; };
 		BC0E73DC1ED31EAB009BC0E3 /* BroccoliAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0E73DB1ED31EAB009BC0E3 /* BroccoliAPI.swift */; };
 		BC0E73DE1ED32A1A009BC0E3 /* SimpleAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0E73DD1ED32A1A009BC0E3 /* SimpleAlert.swift */; };
 		BC0E73E01ED331AE009BC0E3 /* Feedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0E73DF1ED331AE009BC0E3 /* Feedback.swift */; };
-		BC0E74351F25DDB8001EFEB0 /* CachedJourney.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0E74341F25DDB8001EFEB0 /* CachedJourney.swift */; };
+		BC0E74351F25DDB8001EFEB0 /* JourneyCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0E74341F25DDB8001EFEB0 /* JourneyCache.swift */; };
 		BC4FF9C11EC9BBC90062CC77 /* ScrollableGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4FF9C01EC9BBC90062CC77 /* ScrollableGraphView.swift */; };
 		BC4FF9C31EC9E22C0062CC77 /* Chameleon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC4FF9C21EC9E22C0062CC77 /* Chameleon.framework */; };
 		BC4FF9C71ECB49470062CC77 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4FF9C61ECB49470062CC77 /* SettingsVC.swift */; };
@@ -63,12 +65,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BC00FEF01F271C0B0049E073 /* SigmaSwiftStatistics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SigmaSwiftStatistics.framework; path = Carthage/Build/iOS/SigmaSwiftStatistics.framework; sourceTree = "<group>"; };
+		BC00FEF21F271D2E0049E073 /* JourneyStats.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JourneyStats.swift; sourceTree = "<group>"; };
 		BC08A0481EAD3368006E23D8 /* DayFormVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayFormVC.swift; sourceTree = "<group>"; };
 		BC0E73DB1ED31EAB009BC0E3 /* BroccoliAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BroccoliAPI.swift; sourceTree = "<group>"; };
 		BC0E73DD1ED32A1A009BC0E3 /* SimpleAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleAlert.swift; sourceTree = "<group>"; };
 		BC0E73DF1ED331AE009BC0E3 /* Feedback.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Feedback.swift; sourceTree = "<group>"; };
 		BC0E742F1F25CFB3001EFEB0 /* AwesomeCache.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AwesomeCache.framework; path = Carthage/Build/iOS/AwesomeCache.framework; sourceTree = "<group>"; };
-		BC0E74341F25DDB8001EFEB0 /* CachedJourney.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CachedJourney.swift; sourceTree = "<group>"; };
+		BC0E74341F25DDB8001EFEB0 /* JourneyCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JourneyCache.swift; sourceTree = "<group>"; };
 		BC17D5581EA68BFA0015FD52 /* Eureka.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Eureka.framework; path = Carthage/Build/iOS/Eureka.framework; sourceTree = "<group>"; };
 		BC4FF9C01EC9BBC90062CC77 /* ScrollableGraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollableGraphView.swift; sourceTree = "<group>"; };
 		BC4FF9C21EC9E22C0062CC77 /* Chameleon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Chameleon.framework; path = Carthage/Build/iOS/Chameleon.framework; sourceTree = "<group>"; };
@@ -115,6 +119,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC00FEF11F271C0B0049E073 /* SigmaSwiftStatistics.framework in Frameworks */,
 				BCF957921ECC5C5A00D268F1 /* DGElasticPullToRefresh.framework in Frameworks */,
 				BCF8B8141ECC370A00126CCA /* ESTabBarController.framework in Frameworks */,
 				BC4FF9C31EC9E22C0062CC77 /* Chameleon.framework in Frameworks */,
@@ -197,7 +202,8 @@
 			children = (
 				BC76A78D1ECE207E00844B09 /* Journey.swift */,
 				BC76A78F1ECE211F00844B09 /* Day.swift */,
-				BC0E74341F25DDB8001EFEB0 /* CachedJourney.swift */,
+				BC0E74341F25DDB8001EFEB0 /* JourneyCache.swift */,
+				BC00FEF21F271D2E0049E073 /* JourneyStats.swift */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -265,6 +271,7 @@
 		BC8B3DB51EA522CB000BC305 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BC00FEF01F271C0B0049E073 /* SigmaSwiftStatistics.framework */,
 				BC0E742F1F25CFB3001EFEB0 /* AwesomeCache.framework */,
 				BC76A7861ECE10AD00844B09 /* Presentr.framework */,
 				BCF957911ECC5C5A00D268F1 /* DGElasticPullToRefresh.framework */,
@@ -454,6 +461,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Chameleon.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/ESTabBarController.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/DGElasticPullToRefresh.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SigmaSwiftStatistics.framework",
 			);
 			name = "Run Script";
 			outputPaths = (
@@ -469,6 +477,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC00FEF31F271D2E0049E073 /* JourneyStats.swift in Sources */,
 				BC76A78E1ECE207E00844B09 /* Journey.swift in Sources */,
 				BC0E73DC1ED31EAB009BC0E3 /* BroccoliAPI.swift in Sources */,
 				BCCF115A1ECB716300F6450E /* Graph.swift in Sources */,
@@ -477,7 +486,7 @@
 				BC8B3D861EA50AAE000BC305 /* AppDelegate.swift in Sources */,
 				BC08A0491EAD3368006E23D8 /* DayFormVC.swift in Sources */,
 				BCF957951ECC746200D268F1 /* PullToRefresh.swift in Sources */,
-				BC0E74351F25DDB8001EFEB0 /* CachedJourney.swift in Sources */,
+				BC0E74351F25DDB8001EFEB0 /* JourneyCache.swift in Sources */,
 				BC4FF9C71ECB49470062CC77 /* SettingsVC.swift in Sources */,
 				BCFC0B8F1EC4E5090082A581 /* Token.swift in Sources */,
 				BC93B7461ED0A786005EDC5A /* AddDayNotification.swift in Sources */,

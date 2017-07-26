@@ -2,16 +2,20 @@ import Foundation
 import UIKit
 import DGElasticPullToRefresh
 
+
 class JourneyVC : UIViewController, PointSelectedProtocol {
     @IBOutlet weak var noDataView: UIView!
     @IBOutlet weak var chartView: UIView!
     @IBOutlet weak var containerView: UIScrollView!
     private var graph : ScrollableGraphView!
     private var journey : Journey!
+    @IBOutlet weak var avgField: UILabel!
+    @IBOutlet weak var medianField: UILabel!
 
     
     override open func loadView() {
         super.loadView()
+        avgField.text = "N/A"
         graph = ScrollableGraphView(frame: chartView.frame, delegate: self)
         JourneyCache.map { self.updateView(withJourney: $0) }
         containerView.onPull(self.loadJourneyGraphData)
@@ -25,8 +29,7 @@ class JourneyVC : UIViewController, PointSelectedProtocol {
     func loadJourneyGraphData() {
         BroccoliAPI().journey(
             onSuccess: { fetchedData in
-                let journey = Journey(data: fetchedData)
-                self.updateView(withJourney: journey)
+                self.updateView(withJourney: Journey(data: fetchedData))
                 JourneyCache.save(fetchedData)
                 self.containerView.dg_stopLoading()
             },
@@ -42,7 +45,13 @@ class JourneyVC : UIViewController, PointSelectedProtocol {
             graph.set(data: self.journey.levels(), withLabels: self.journey.days())
             self.chartView.subviews.forEach{$0.removeFromSuperview()}
             self.chartView.addSubview(graph)
+            self.display(journeyStatistics: JourneyStats(journey))
         }
+    }
+    
+    func display(journeyStatistics: JourneyStats) {
+        self.avgField.text = String(journeyStatistics.average())
+        self.medianField.text = String(journeyStatistics.median())
     }
     
     func pointWasSelectedAt(index:Int, label: String, value: Double, location: CGPoint) {

@@ -14,10 +14,10 @@ class DayFormVC : FormViewController {
                 $0.maximumDate = Date()
                 $0.value = Date()
             }
-            <<< ActionSheetRow<Int>("level") {
+            <<< ActionSheetRow<String>("level") {
                 $0.title = "Level"
                 $0.selectorTitle = "The higher, the better your day was. "
-                $0.options = [7,6,5,4,3,2,1]
+                $0.options = ["7","6","5","4","3","2","1"]
                 $0.add(rule: RuleRequired())
             }
             <<< TextAreaRow("note") {
@@ -36,16 +36,17 @@ class DayFormVC : FormViewController {
                 }
     }
     
-    private func asString(_ date : Date) -> String {
-        let styled = DateFormatter()
-        styled.dateFormat = "yyyy-MM-dd"
-        return styled.string(from: date)
-    }
     
     func userDay(from form: Form) -> Parameters {
         return ["user_day" : ["day" : self.asString(self.form.values()["day"] as! Date),
                           "level" : self.form.values()["level"] as? String,
                           "note" : self.form.values()["note"] as? String]]
+    }
+    
+    private func asString(_ date : Date) -> String {
+        let styled = DateFormatter()
+        styled.dateFormat = "yyyy-MM-dd"
+        return styled.string(from: date)
     }
     
 }
