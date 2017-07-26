@@ -10,6 +10,7 @@ class JourneyVC : UIViewController, PointSelectedProtocol {
     private var graph : ScrollableGraphView!
     private var journey : Journey!
     @IBOutlet weak var avgField: UILabel!
+    @IBOutlet weak var medianField: UILabel!
 
     
     override open func loadView() {
@@ -44,12 +45,14 @@ class JourneyVC : UIViewController, PointSelectedProtocol {
             graph.set(data: self.journey.levels(), withLabels: self.journey.days())
             self.chartView.subviews.forEach{$0.removeFromSuperview()}
             self.chartView.addSubview(graph)
-            self.avgField.text = String(JourneyStats(journey).average())
+            self.display(journeyStatistics: JourneyStats(journey))
         }
     }
     
-    
-    
+    func display(journeyStatistics: JourneyStats) {
+        self.avgField.text = String(journeyStatistics.average())
+        self.medianField.text = String(journeyStatistics.median())
+    }
     
     func pointWasSelectedAt(index:Int, label: String, value: Double, location: CGPoint) {
         AZDialogViewController(day: journey.day(atIndex: index)).show(in: self)

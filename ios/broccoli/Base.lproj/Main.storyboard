@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -170,20 +171,31 @@
                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="No8-fA-X74" userLabel="statsBar">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AVG" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UZr-NZ-NAN">
-                                                <rect key="frame" x="37" y="39" width="23" height="9"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DPP-6B-0Aq" userLabel="avgField">
+                                                <rect key="frame" x="80" y="8" width="44" height="27"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                                <color key="textColor" red="0.77604550120000004" green="0.82911193370000003" blue="0.37433615329999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ur1-LR-tHB" userLabel="medianField">
+                                                <rect key="frame" x="193" y="8" width="38" height="27"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                                <color key="textColor" red="0.77604550120000004" green="0.82911193370000003" blue="0.37433615329999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Median" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="drf-ZN-hyi">
+                                                <rect key="frame" x="196" y="39" width="33" height="9"/>
+                                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="7"/>
+                                                <color key="textColor" red="0.42655369640000002" green="0.475846082" blue="0.4802647531" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Average" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UZr-NZ-NAN">
+                                                <rect key="frame" x="86" y="39" width="32" height="9"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="23" id="Dnc-Fe-bhD"/>
-                                                    <constraint firstAttribute="height" constant="9" id="bVn-1a-XH5"/>
+                                                    <constraint firstAttribute="height" constant="9" id="bs6-p5-SUP"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" weight="black" pointSize="7"/>
                                                 <color key="textColor" red="0.42655369639396667" green="0.47584608197212219" blue="0.48026475310325623" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DPP-6B-0Aq">
-                                                <rect key="frame" x="27" y="8" width="42" height="27"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                                <color key="textColor" red="0.77604550120000004" green="0.82911193370000003" blue="0.37433615329999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -192,13 +204,19 @@
                                             <accessibilityTraits key="traits" header="YES"/>
                                         </accessibility>
                                         <constraints>
-                                            <constraint firstItem="DPP-6B-0Aq" firstAttribute="centerX" secondItem="UZr-NZ-NAN" secondAttribute="centerX" id="94e-EB-l7m"/>
+                                            <constraint firstItem="UZr-NZ-NAN" firstAttribute="top" secondItem="DPP-6B-0Aq" secondAttribute="bottom" constant="4" id="0b5-G6-fpv"/>
+                                            <constraint firstItem="ur1-LR-tHB" firstAttribute="centerX" secondItem="drf-ZN-hyi" secondAttribute="centerX" id="0cw-ia-ph6"/>
+                                            <constraint firstItem="DPP-6B-0Aq" firstAttribute="top" secondItem="No8-fA-X74" secondAttribute="topMargin" id="1NB-7K-WDA"/>
+                                            <constraint firstItem="DPP-6B-0Aq" firstAttribute="baseline" secondItem="ur1-LR-tHB" secondAttribute="baseline" id="4Oc-H1-SuQ"/>
                                             <constraint firstAttribute="height" constant="70" id="Ba7-gx-jfY"/>
-                                            <constraint firstItem="DPP-6B-0Aq" firstAttribute="top" secondItem="No8-fA-X74" secondAttribute="topMargin" id="Dvy-gN-ex3"/>
-                                            <constraint firstItem="UZr-NZ-NAN" firstAttribute="leading" secondItem="No8-fA-X74" secondAttribute="leading" constant="37" id="FYv-lU-IRP"/>
-                                            <constraint firstAttribute="bottom" secondItem="UZr-NZ-NAN" secondAttribute="bottom" constant="22" id="K87-FH-YON"/>
-                                            <constraint firstItem="UZr-NZ-NAN" firstAttribute="top" secondItem="DPP-6B-0Aq" secondAttribute="bottom" constant="4" id="SoJ-2D-s9N"/>
-                                            <constraint firstItem="DPP-6B-0Aq" firstAttribute="leading" secondItem="No8-fA-X74" secondAttribute="leading" constant="27" id="m7b-Sj-e5V"/>
+                                            <constraint firstItem="DPP-6B-0Aq" firstAttribute="centerX" secondItem="UZr-NZ-NAN" secondAttribute="centerX" id="CFy-Em-JMy"/>
+                                            <constraint firstAttribute="bottom" secondItem="UZr-NZ-NAN" secondAttribute="bottom" constant="22" id="DIO-Vm-HYT"/>
+                                            <constraint firstItem="drf-ZN-hyi" firstAttribute="baseline" secondItem="UZr-NZ-NAN" secondAttribute="baseline" id="EDe-AV-VJM"/>
+                                            <constraint firstItem="DPP-6B-0Aq" firstAttribute="firstBaseline" secondItem="ur1-LR-tHB" secondAttribute="firstBaseline" id="Imd-5d-TrC"/>
+                                            <constraint firstItem="ur1-LR-tHB" firstAttribute="leading" secondItem="DPP-6B-0Aq" secondAttribute="trailing" constant="69" id="NhR-Wu-YQH"/>
+                                            <constraint firstItem="UZr-NZ-NAN" firstAttribute="leading" secondItem="No8-fA-X74" secondAttribute="leading" constant="86" id="P3L-co-aaz"/>
+                                            <constraint firstItem="DPP-6B-0Aq" firstAttribute="leading" secondItem="No8-fA-X74" secondAttribute="leading" constant="80" id="mHE-vI-bAp"/>
+                                            <constraint firstItem="drf-ZN-hyi" firstAttribute="leading" secondItem="UZr-NZ-NAN" secondAttribute="trailing" constant="78" id="rXL-oY-ffi"/>
                                         </constraints>
                                     </view>
                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qG9-IK-t05" userLabel="chartView">
@@ -238,6 +256,7 @@
                         <outlet property="avgField" destination="DPP-6B-0Aq" id="uW5-xo-sWM"/>
                         <outlet property="chartView" destination="qG9-IK-t05" id="gAh-hx-5jm"/>
                         <outlet property="containerView" destination="OeP-3a-bbq" id="ZCl-2I-08p"/>
+                        <outlet property="medianField" destination="ur1-LR-tHB" id="IWO-qN-ntc"/>
                         <outlet property="noDataView" destination="qG9-IK-t05" id="i2F-B9-lV3"/>
                     </connections>
                 </viewController>
