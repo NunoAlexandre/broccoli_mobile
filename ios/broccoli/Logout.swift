@@ -14,6 +14,7 @@ extension UIViewController {
     func performLogout() {
         IdToken.remove()
         RefreshToken.remove()
+        JourneyCache.purge()
         self.present(UIStoryboard.main().guardVC())
     }
 }

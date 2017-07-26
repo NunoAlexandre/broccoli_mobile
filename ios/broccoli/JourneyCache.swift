@@ -20,4 +20,8 @@ class JourneyCache {
             journeyConsumer(Journey(data: cachedJourneyData as! [[String : Any]]))
         }
     }
+    
+    class func purge() {
+        UserDefaults.standard.removeObject(forKey: cacheKey)
+    }
 }
