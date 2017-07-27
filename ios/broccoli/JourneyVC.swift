@@ -9,6 +9,7 @@ class JourneyVC : UIViewController, PointSelectedProtocol {
     @IBOutlet weak var containerView: UIScrollView!
     private var graph : ScrollableGraphView!
     private var journey : Journey!
+    @IBOutlet weak var statsBarView: UIView!
     @IBOutlet weak var avgField: UILabel!
     @IBOutlet weak var medianField: UILabel!
 
@@ -39,7 +40,8 @@ class JourneyVC : UIViewController, PointSelectedProtocol {
     func updateView(withJourney journey: Journey) {
         self.journey = journey
         self.noDataView.isHidden = journey.hasStarted()
-        chartView.isHidden = journey.isEmpty()
+        self.chartView.isHidden = journey.isEmpty()
+        self.statsBarView.isHidden = journey.isEmpty()
         if journey.hasStarted() {
             graph.set(data: self.journey.levels(), withLabels: self.journey.days())
             self.chartView.subviews.forEach{$0.removeFromSuperview()}

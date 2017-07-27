@@ -258,6 +258,7 @@
                         <outlet property="containerView" destination="OeP-3a-bbq" id="ZCl-2I-08p"/>
                         <outlet property="medianField" destination="ur1-LR-tHB" id="IWO-qN-ntc"/>
                         <outlet property="noDataView" destination="qG9-IK-t05" id="i2F-B9-lV3"/>
+                        <outlet property="statsBarView" destination="No8-fA-X74" id="c5M-Vu-73V"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VgF-20-ewz" userLabel="First Responder" sceneMemberID="firstResponder"/>
