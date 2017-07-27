@@ -12,10 +12,11 @@ class JourneyVC : UIViewController, PointSelectedProtocol {
     @IBOutlet weak var statsBarView: UIView!
     @IBOutlet weak var avgField: UILabel!
     @IBOutlet weak var medianField: UILabel!
-
+    
     
     override open func loadView() {
         super.loadView()
+        containerView.isHidden = true
         graph = ScrollableGraphView(frame: chartView.frame, delegate: self)
         JourneyCache.map { self.updateView(withJourney: $0) }
         containerView.onPull(self.loadJourneyGraphData)
@@ -39,15 +40,20 @@ class JourneyVC : UIViewController, PointSelectedProtocol {
     
     func updateView(withJourney journey: Journey) {
         self.journey = journey
-        self.noDataView.isHidden = journey.hasStarted()
-        self.chartView.isHidden = journey.isEmpty()
-        self.statsBarView.isHidden = journey.isEmpty()
+        self.presentCorrectViews()
         if journey.hasStarted() {
             graph.set(data: self.journey.levels(), withLabels: self.journey.days())
             self.chartView.subviews.forEach{$0.removeFromSuperview()}
             self.chartView.addSubview(graph)
             self.display(journeyStatistics: JourneyStats(journey))
         }
+    }
+    
+    func presentCorrectViews() {
+        self.noDataView.isHidden = journey.hasStarted()
+        self.chartView.isHidden = journey.isEmpty()
+        self.statsBarView.isHidden = journey.isEmpty()
+        self.containerView.isHidden = false
     }
     
     func display(journeyStatistics: JourneyStats) {
