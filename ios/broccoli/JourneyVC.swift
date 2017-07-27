@@ -15,7 +15,6 @@ class JourneyVC : UIViewController, PointSelectedProtocol {
     
     override open func loadView() {
         super.loadView()
-        avgField.text = "N/A"
         graph = ScrollableGraphView(frame: chartView.frame, delegate: self)
         JourneyCache.map { self.updateView(withJourney: $0) }
         containerView.onPull(self.loadJourneyGraphData)
