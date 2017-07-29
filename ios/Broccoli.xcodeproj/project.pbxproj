@@ -18,6 +18,7 @@
 		BC4FF9C11EC9BBC90062CC77 /* ScrollableGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4FF9C01EC9BBC90062CC77 /* ScrollableGraphView.swift */; };
 		BC4FF9C31EC9E22C0062CC77 /* Chameleon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC4FF9C21EC9E22C0062CC77 /* Chameleon.framework */; };
 		BC4FF9C71ECB49470062CC77 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4FF9C61ECB49470062CC77 /* SettingsVC.swift */; };
+		BC624F141F2D22FA0080CA94 /* GroupBy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC624F131F2D22FA0080CA94 /* GroupBy.swift */; };
 		BC764F6B1EC7823800258E11 /* JourneyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC764F6A1EC7823800258E11 /* JourneyVC.swift */; };
 		BC76A7891ECE14CA00844B09 /* AZDialogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC76A7881ECE14CA00844B09 /* AZDialogViewController.swift */; };
 		BC76A78B1ECE1A2D00844B09 /* DayPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC76A78A1ECE1A2D00844B09 /* DayPopup.swift */; };
@@ -77,6 +78,7 @@
 		BC4FF9C01EC9BBC90062CC77 /* ScrollableGraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollableGraphView.swift; sourceTree = "<group>"; };
 		BC4FF9C21EC9E22C0062CC77 /* Chameleon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Chameleon.framework; path = Carthage/Build/iOS/Chameleon.framework; sourceTree = "<group>"; };
 		BC4FF9C61ECB49470062CC77 /* SettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		BC624F131F2D22FA0080CA94 /* GroupBy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupBy.swift; sourceTree = "<group>"; };
 		BC764F681EC7591B00258E11 /* Charts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Charts.framework; path = Carthage/Build/iOS/Charts.framework; sourceTree = "<group>"; };
 		BC764F6A1EC7823800258E11 /* JourneyVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JourneyVC.swift; sourceTree = "<group>"; };
 		BC76A7861ECE10AD00844B09 /* Presentr.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Presentr.framework; path = Carthage/Build/iOS/Presentr.framework; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 				BC93B73C1ED058FB005EDC5A /* Logout.swift */,
 				BC0E73DD1ED32A1A009BC0E3 /* SimpleAlert.swift */,
 				BC0E73DF1ED331AE009BC0E3 /* Feedback.swift */,
+				BC624F131F2D22FA0080CA94 /* GroupBy.swift */,
 			);
 			name = custom;
 			sourceTree = "<group>";
@@ -494,6 +497,7 @@
 				BC4FF9C11EC9BBC90062CC77 /* ScrollableGraphView.swift in Sources */,
 				BC9D36631ECCC896003EF321 /* BroccoliColors.swift in Sources */,
 				BC764F6B1EC7823800258E11 /* JourneyVC.swift in Sources */,
+				BC624F141F2D22FA0080CA94 /* GroupBy.swift in Sources */,
 				BC93B73D1ED058FB005EDC5A /* Logout.swift in Sources */,
 				BC0E73DE1ED32A1A009BC0E3 /* SimpleAlert.swift in Sources */,
 				BCF8B8121ECB963B00126CCA /* BroccoliNavigationController.swift in Sources */,

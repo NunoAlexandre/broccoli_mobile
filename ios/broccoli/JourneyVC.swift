@@ -12,6 +12,8 @@ class JourneyVC : UIViewController, PointSelectedProtocol {
     @IBOutlet weak var statsBarView: UIView!
     @IBOutlet weak var avgField: UILabel!
     @IBOutlet weak var medianField: UILabel!
+    @IBOutlet weak var bestDayField: UILabel!
+    @IBOutlet weak var worstDayField: UILabel!
     
     
     override open func loadView() {
@@ -59,6 +61,9 @@ class JourneyVC : UIViewController, PointSelectedProtocol {
     func display(journeyStatistics: JourneyStats) {
         self.avgField.text = String(journeyStatistics.average())
         self.medianField.text = String(journeyStatistics.median())
+        let (best, worst) = journeyStatistics.bestAndWorstDays()
+        self.bestDayField.text = best
+        self.worstDayField.text = worst
     }
     
     func pointWasSelectedAt(index:Int, label: String, value: Double, location: CGPoint) {

@@ -11,4 +11,17 @@ class Day {
         self.level = level
         self.note = note
     }
+    
+    func weekDay() -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "E"
+        return dateFormatter.string(from: self.date())
+    }
+    
+    func date() -> Date {
+        let formatter  = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd"
+        return formatter.date(from: day)!
+    }
+    
 }
